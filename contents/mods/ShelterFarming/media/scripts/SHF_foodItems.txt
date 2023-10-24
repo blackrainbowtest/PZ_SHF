@@ -1,0 +1,527 @@
+module SHF {
+/*___________________ИМПОРТ_БАЗОВОГО_КЛАССА___________________*/
+    imports
+    {
+        Base
+    }
+
+/*___________________ПРЕДМЕТЫ: СЕМЕНА___________________*/
+
+	/*___________________ТИП: ФРУКТЫ___________________*/
+
+	 	/* семена яблоки - 4 */
+            item Appleseed {
+                DisplayCategory             = Gardening,
+                Type				        = Normal,
+                DisplayName			        = Apple Seeds,
+                Icon				        = SHF_Seed_AppleSeeds,
+                Weight				        = 0.009,
+                SurvivalGear                = TRUE,
+                WorldStaticModel            = AppleSeeds_Ground,
+            }
+
+        /* семена банана - 4 */
+            item Bananaseed {
+                DisplayCategory             = Gardening,
+                Type				        = Normal,
+                DisplayName			        = Banana Seeds,
+                Icon				        = SHF_Seed_BananaSeeds,
+                Weight				        = 0.009,
+                SurvivalGear                = TRUE,
+                WorldStaticModel            = BananaSeeds_Ground,
+            }
+
+        /* семена черники - 8 */
+            item BerryBlackseed {
+                DisplayCategory             = Gardening,
+                Type				        = Normal,
+                DisplayName			        = Berry Black Seeds,
+                Icon				        = SHF_Seed_BerryBlackSeeds,
+                Weight				        = 0.009,
+                SurvivalGear                = TRUE,
+                WorldStaticModel            = BerryBlackSeeds_Ground,
+            }
+
+        /* семена смородины - 8 */
+            item BerryBlueseed {
+                DisplayCategory             = Gardening,
+                Type				        = Normal,
+                DisplayName			        = Berry Blue Seeds,
+                Icon				        = SHF_Seed_BerryBlueSeeds,
+                Weight				        = 0.009,
+                SurvivalGear                = TRUE,
+                WorldStaticModel            = BerryBlueSeeds_Ground,
+            }
+
+        /* семена вишни - 6 */
+            item Cherryseed {
+                DisplayCategory             = Gardening,
+                Type				        = Normal,
+                DisplayName			        = Cherry Seeds,
+                Icon				        = SHF_Seed_CherrySeeds,
+                Weight				        = 0.009,
+                SurvivalGear                = TRUE,
+                WorldStaticModel            = CherrySeeds_Ground,
+            }
+
+        /* семена грейфрута - 4 */
+            item Grapefruitseed {
+                DisplayCategory             = Gardening,
+                Type				        = Normal,
+                DisplayName			        = Grapefruit Seeds,
+                Icon				        = SHF_Seed_GrapefruitSeeds,
+                Weight				        = 0.009,
+                SurvivalGear                = TRUE,
+                WorldStaticModel            = GrapefruitSeeds_Ground,
+            }
+        
+        /* семена винограда - 6 */
+            item Grapesseed {
+                DisplayCategory             = Gardening,
+                Type				        = Normal,
+                DisplayName			        = Grapes Seeds,
+                Icon				        = SHF_Seed_GrapesSeeds,
+                Weight				        = 0.009,
+                SurvivalGear                = TRUE,
+                WorldStaticModel            = GrapesSeeds_Ground,
+            }
+
+        /* семена лимона - 4 */
+            item Lemonseed {
+                DisplayCategory             = Gardening,
+                Type				        = Normal,
+                DisplayName			        = Lemon Seeds,
+                Icon				        = SHF_Seed_LemonSeeds,
+                Weight				        = 0.009,
+                SurvivalGear                = TRUE,
+                WorldStaticModel            = LemonSeeds_Ground,
+            }
+        
+        /* семена лайма - 4 */
+            item Limeseed {
+                DisplayCategory             = Gardening,
+                Type				        = Normal,
+                DisplayName			        = Lime Seeds,
+                Icon				        = SHF_Seed_LimeSeeds,
+                Weight				        = 0.009,
+                SurvivalGear                = TRUE,
+                WorldStaticModel            = LimeSeeds_Ground,
+            }
+
+        /* семена манго - 4 */
+            item Mangoseed {
+                DisplayCategory             = Gardening,
+                Type				        = Normal,
+                DisplayName			        = Mango Seeds,
+                Icon				        = SHF_Seed_MangoSeeds,
+                Weight				        = 0.009,
+                SurvivalGear                = TRUE,
+                WorldStaticModel            = MangoSeeds_Ground,
+            }
+        
+        /* семена апельсина - 4 */
+            item Orangeseed {
+                DisplayCategory             = Gardening,
+                Type				        = Normal,
+                DisplayName			        = Orange Seeds,
+                Icon				        = SHF_Seed_OrangeSeeds,
+                Weight				        = 0.009,
+                SurvivalGear                = TRUE,
+                WorldStaticModel            = OrangeSeeds_Ground,
+            }
+
+        /* семена персика - 4 */
+            item Peachseed {
+                DisplayCategory             = Gardening,
+                Type				        = Normal,
+                DisplayName			        = Peach Seeds,
+                Icon				        = SHF_Seed_PeachSeeds,
+                Weight				        = 0.009,
+                SurvivalGear                = TRUE,
+                WorldStaticModel            = PeachSeeds_Ground,
+            }
+
+        /* семена груши - 4 */
+            item Pearseed {
+                DisplayCategory             = Gardening,
+                Type				        = Normal,
+                DisplayName			        = Pear Seeds,
+                Icon				        = SHF_Seed_PearSeeds,
+                Weight				        = 0.009,
+                SurvivalGear                = TRUE,
+                WorldStaticModel            = PearSeeds_Ground,
+            }
+
+        /* семена ананаса - 4 */
+            item Pineappleseed {
+                DisplayCategory             = Gardening,
+                Type				        = Normal,
+                DisplayName			        = Pineapple Seeds,
+                Icon				        = SHF_Seed_PineappleSeeds,
+                Weight				        = 0.009,
+                SurvivalGear                = TRUE,
+                WorldStaticModel            = PineappleSeeds_Ground,
+            }
+
+
+	/*___________________ТИП:  ОВОЩИ___________________*/
+
+		/* семена авокадо */
+			item Avocadoseed {
+				DisplayCategory 	= 		Gardening,
+				Type				=		Normal,
+				DisplayName			=		Avocado Seeds,
+				Icon				=		SHF_Seed_AvocadoSeeds,
+				Weight				=		0.009,
+				SurvivalGear 		= 		TRUE,
+				WorldStaticModel	= 		AvocadoSeeds_Ground,
+			}
+
+		/* семена кукурузы */
+			item Cornseed {
+				DisplayCategory 	= 		Gardening,
+				Type				=		Normal,
+				DisplayName			=		Corn Seeds,
+				Icon				=		SHF_Seed_CornSeeds,
+				Weight				=		0.009,
+				SurvivalGear 		= 		TRUE,
+				WorldStaticModel 	= 		CornSeeds_Ground,
+			}
+
+		/* семена баклажана */
+			item Eggplantseed {
+				DisplayCategory 	= 		Gardening,
+				Type				=		Normal,
+				DisplayName			=		Eggplant Seeds,
+				Icon				=		SHF_Seed_EggplantSeeds,
+				Weight				=		0.009,
+				SurvivalGear 		= 		TRUE,
+				WorldStaticModel 	= 		EggplantSeeds_Ground,
+			}
+
+		/* семена лука-порей */
+			item Leekseed {
+				DisplayCategory 	= 		Gardening,
+				Type				=		Normal,
+				DisplayName			=		Leek Seeds,
+				Icon				=		SHF_Seed_LeekSeeds,
+				Weight				=		0.009,
+				SurvivalGear 		= 		TRUE,
+				WorldStaticModel 	= 		LeekSeeds_Ground,
+			}
+
+		/* семена салата */
+			item Lettuceseed {
+				DisplayCategory 	= 		Gardening,
+				Type				=		Normal,
+				DisplayName			=		Lettuce Seeds,
+				Icon				=		SHF_Seed_LettuceSeeds,
+				Weight				=		0.009,
+				SurvivalGear 		= 		TRUE,
+				WorldStaticModel 	= 		LettuceSeeds_Ground,
+			}
+
+		/* семена лука */
+			item Onionseed {
+				DisplayCategory 	= 		Gardening,
+				Type				=		Normal,
+				DisplayName			=		Onion Seeds,
+				Icon				=		SHF_Seed_OnionSeeds,
+				Weight				=		0.009,
+				SurvivalGear 		= 		TRUE,
+				WorldStaticModel 	= 		OnionSeeds_Ground,
+			}
+		
+		/* семена перца */
+			item Pepperseed {
+				DisplayCategory 	= 		Gardening,
+				Type				=		Normal,
+				DisplayName			=		Pepper Seeds,
+				Icon				=		SHF_Seed_PepperSeeds,
+				Weight				=		0.009,
+				SurvivalGear 		= 		TRUE,
+				WorldStaticModel 	= 		PepperSeeds_Ground,
+			}
+
+		/* семена арбуза */
+			item Watermelonseed {
+				DisplayCategory 	= 		Gardening,
+				Type				=		Normal,
+				DisplayName			=		Watermelon Seeds,
+				Icon				=		SHF_Seed_WatermelonSeeds,
+				Weight				=		0.009,
+				SurvivalGear 		= 		TRUE,
+				WorldStaticModel 	= 		WatermelonSeeds_Ground,
+			}
+
+		/* семена кабачков */
+			item Zucchiniseed {
+				DisplayCategory 	= 		Gardening,
+				Type				=		Normal,
+				DisplayName			=		Zucchini Seeds,
+				Icon				=		SHF_Seed_ZucchiniSeeds,
+				Weight				=		0.009,
+				SurvivalGear 		= 		TRUE,
+				WorldStaticModel 	= 		ZucchiniSeeds_Ground,
+			}
+
+/*___________________ПРЕДМЕТЫ: ПАЧКИ СЕМЯН___________________*/
+
+	/*___________________ТИП: ФРУКТЫ___________________*/
+
+		/* пачка семян яблоки */	
+            item AppleBagSeed {
+                DisplayCategory                 = Gardening,
+                Type				            = Normal,
+                DisplayName			            = Apple Seeds Packet,
+                Icon				            = SHF_Bag_AppleSeedBag,
+                Weight				            = 0.1,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = AppleSeedBag_Ground,
+            }
+
+        /* пачка семян банана */
+            item BananaBagSeed {
+                DisplayCategory                 = Gardening,
+                Type				            = Normal,
+                DisplayName			            = Banana Seeds Packet,
+                Icon				            = SHF_Bag_BananaSeedBag,
+                Weight				            = 0.1,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = BananaSeedBag_Ground,
+            }
+        
+        /* пачка семян черники */
+            item BerryBlackBagSeed {
+                DisplayCategory                 = Gardening,
+                Type				            = Normal,
+                DisplayName			            = BerryBlack Seeds Packet,
+                Icon				            = SHF_Bag_BerryBlackSeedBag,
+                Weight				            = 0.1,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = BerryBlackSeedBag_Ground,
+            }
+        
+        /* пачка семян смородины */
+            item BerryBlueBagSeed {
+                DisplayCategory                 = Gardening,
+                Type				            = Normal,
+                DisplayName			            = BerryBlue Seeds Packet,
+                Icon				            = SHF_Bag_BerryBlueSeedBag,
+                Weight				            = 0.1,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = BerryBlueSeedBag_Ground,
+            }
+        
+        /* пачка семян вишни */
+            item CherryBagSeed {
+                DisplayCategory                 = Gardening,
+                Type				            = Normal,
+                DisplayName			            = Cherry Seeds Packet,
+                Icon				            = SHF_Bag_CherrySeedBag,
+                Weight				            = 0.1,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = CherrySeedBag_Ground,
+            }
+        
+        /* пачка семян грейфрута */
+            item GrapefruitBagSeed {
+                DisplayCategory                 = Gardening,
+                Type				            = Normal,
+                DisplayName			            = Grapefruit Seeds Packet,
+                Icon				            = SHF_Bag_GrapefruitSeedBag,
+                Weight				            = 0.1,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = GrapefruitSeedBag_Ground,
+            }
+        
+        /* пачка семян винограда */
+            item GrapesBagSeed {
+                DisplayCategory                 = Gardening,
+                Type				            = Normal,
+                DisplayName			            = Grapes Seeds Packet,
+                Icon				            = SHF_Bag_GrapesSeedBag,
+                Weight				            = 0.1,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = GrapesSeedBag_Ground,
+            }
+        
+        /* пачка семян лимона */
+            item LemonBagSeed {
+                DisplayCategory                 = Gardening,
+                Type				            = Normal,
+                DisplayName			            = Lemon Seeds Packet,
+                Icon				            = SHF_Bag_LemonSeedBag,
+                Weight				            = 0.1,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = LemonSeedBag_Ground,
+            }
+
+        /* пачка семян лайма */
+            item LimeBagSeed {
+                DisplayCategory                 = Gardening,
+                Type				            = Normal,
+                DisplayName			            = Lime Seeds Packet,
+                Icon				            = SHF_Bag_LimeSeedBag,
+                Weight				            = 0.1,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = LimeSeedBag_Ground,
+            }
+        
+        /* пачка семян манго */
+            item MangoBagSeed {
+                DisplayCategory                 = Gardening,
+                Type				            = Normal,
+                DisplayName			            = Mango Seeds Packet,
+                Icon				            = SHF_Bag_MangoSeedBag,
+                Weight				            = 0.1,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = MangoSeedBag_Ground,
+            }
+        
+        /* пачка семян апельсина */
+            item OrangeBagSeed {
+                DisplayCategory                 = Gardening,
+                Type				            = Normal,
+                DisplayName			            = Orange Seeds Packet,
+                Icon				            = SHF_Bag_OrangeSeedBag,
+                Weight				            = 0.1,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = OrangeSeedBag_Ground,
+            }
+
+        /* пачка семян персика */
+            item PeachBagSeed {
+                DisplayCategory                 = Gardening,
+                Type				            = Normal,
+                DisplayName			            = Peach Seeds Packet,
+                Icon				            = SHF_Bag_PeachSeedBag,
+                Weight				            = 0.1,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = PeachSeedBag_Ground,
+            }
+        
+        /* пачка семян груши */
+            item PearBagSeed {
+                DisplayCategory                 = Gardening,
+                Type				            = Normal,
+                DisplayName			            = Pear Seeds Packet,
+                Icon				            = SHF_Bag_PearSeedBag,
+                Weight				            = 0.1,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = PearSeedBag_Ground,
+            }
+        
+        /* пачка семян ананаса */
+            item PineappleBagSeed {
+                DisplayCategory                 = Gardening,
+                Type				            = Normal,
+                DisplayName			            = Pineapple Seeds Packet,
+                Icon				            = SHF_Bag_PineappleSeedBag,
+                Weight				            = 0.1,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = PineappleSeedBag_Ground,
+            }
+
+
+	/*___________________ТИП:  ОВОЩИ___________________*/
+
+		/* пачка семян авокадо */
+			item AvocadoBagSeed {
+				DisplayCategory 	= 		Gardening,
+				Type				=		Normal,
+				DisplayName			=		Avocado Seeds Packet,
+				Icon				=		SHF_Bag_AvocadoSeedBag,
+				Weight				=		0.1,
+				SurvivalGear 		= 		TRUE,
+				WorldStaticModel 	= 		AvocadoSeedBag_Ground,
+			}
+
+		/* пачка семян кукурузы */
+			item CornBagSeed {
+				DisplayCategory 	= 		Gardening,
+				Type				=		Normal,
+				DisplayName			=		Corn Seeds Packet,
+				Icon				=		SHF_Bag_CornSeedBag,
+				Weight				=		0.1,
+				SurvivalGear 		= 		TRUE,
+				WorldStaticModel 	= 		CornSeedBag_Ground,
+			}
+
+		/* пачка семян баклажана */
+			item EggplantBagSeed {
+				DisplayCategory 	= 		Gardening,
+				Type				=		Normal,
+				DisplayName			=		Eggplant Seeds Packet,
+				Icon				=		SHF_Bag_EggplantSeedBag,
+				Weight				=		0.1,
+				SurvivalGear 		= 		TRUE,
+				WorldStaticModel 	= 		EggplantSeedBag_Ground,
+			}
+
+		/* пачка семян лука-порей */
+			item LeekBagSeed {
+				DisplayCategory 	= 		Gardening,
+				Type				=		Normal,
+				DisplayName			=		Leek Seeds Packet,
+				Icon				=		SHF_Bag_LeekSeedBag,
+				Weight				=		0.1,
+				SurvivalGear 		= 		TRUE,
+				WorldStaticModel 	= 		LeekSeedBag_Ground,
+			}
+
+		/* пачка семян салата */
+			item LettuceBagSeed {
+				DisplayCategory 	= 		Gardening,
+				Type				=		Normal,
+				DisplayName			=		Lettuce Seeds Packet,
+				Icon				=		SHF_Bag_LettuceSeedBag,
+				Weight				=		0.1,
+				SurvivalGear 		= 		TRUE,
+				WorldStaticModel 	= 		LettuceSeedBag_Ground,
+			}
+
+		/* пачка семян лука */
+			item OnionBagSeed {
+				DisplayCategory 	= 		Gardening,
+				Type				=		Normal,
+				DisplayName			=		Onion Seeds Packet,
+				Icon				=		SHF_Bag_OnionSeedBag,
+				Weight				=		0.1,
+				SurvivalGear 		= 		TRUE,
+				WorldStaticModel 	= 		OnionSeedBag_Ground,
+			}
+
+		/* пачка семян арбуза */
+			item WatermelonBagSeed {
+				DisplayCategory 	= 		Gardening,
+				Type				=		Normal,
+				DisplayName			=		Watermelon Seeds Packet,
+				Icon				=		SHF_Bag_WatermelonSeedBag,
+				Weight				=		0.1,
+				SurvivalGear 		= 		TRUE,
+				WorldStaticModel 	= 		WatermelonSeedBag_Ground,
+			}
+		
+		/* пачка семян перца */
+			item PepperBagSeed {
+				DisplayCategory 	= 		Gardening,
+				Type				=		Normal,
+				DisplayName			=		Pepper Seeds Packet,
+				Icon				=		SHF_Bag_PepperSeedBag,
+				Weight				=		0.1,
+				SurvivalGear 		= 		TRUE,
+				WorldStaticModel 	= 		PepperSeedBag_Ground,
+			}
+
+		/* пачка семян кабачков */
+			item ZucchiniBagSeed {
+				DisplayCategory 	= 		Gardening,
+				Type				=		Normal,
+				DisplayName			=		Zucchini Seeds Packet,
+				Icon				=		SHF_Bag_ZucchiniSeedBag,
+				Weight				=		0.1,
+				SurvivalGear 		= 		TRUE,
+				WorldStaticModel 	= 		ZucchiniSeedBag_Ground,
+			}
+}

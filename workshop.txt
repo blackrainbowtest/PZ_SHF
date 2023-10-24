@@ -1,0 +1,14 @@
+version=1
+id=3050914195
+title=Shelter Farm mod
+description=Bugs that will be fixed soon.
+description=
+description=The appearance of seeds at spawn points.
+description=Balancing the amount of seeds needed for growing fruits and vegetables.
+description=Balancing plant growth time.
+description=
+description=The following will also be added:
+description=tea tree (Melaleuca), coffee tree (Coffea), cocoa tree (Theobroma).
+description=sunflowers.
+tags=Build 41;Food;Items
+visibility=public

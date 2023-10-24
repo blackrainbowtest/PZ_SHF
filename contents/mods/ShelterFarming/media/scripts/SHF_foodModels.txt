@@ -1,0 +1,385 @@
+module SFZ
+{
+/*___________________ИМПОРТ_БАЗОВОГО_КЛАССА___________________*/
+    imports
+    {
+        Base
+    }
+/*___________________ПРЕДМЕТЫ: СЕМЕНА___________________*/
+
+    /*___________________ТИП: ФРУКТЫ___________________*/
+
+        /* семена яблоки */
+            model AppleSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_AppleSeeds_Ground,
+                scale		= 0.5,
+            }
+
+        /* семена банана */
+            model BananaSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_BananaSeeds_Ground,
+                scale		= 0.5,
+            }
+
+        /* семена черники */
+            model BerryBlackSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_BerryBlackSeeds_Ground,
+                scale		= 0.5,
+            }
+
+        /* семена смородины */
+            model BerryBlueSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_BerryBlueSeeds_Ground,
+                scale		= 0.5,
+            }
+
+        /* семена вишни */
+            model CherrySeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_CherrySeeds_Ground,
+                scale		= 0.5,
+            }
+
+        /* семена грейфрута */
+            model GrapefruitSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_GrapefruitSeeds_Ground,
+                scale		= 0.5,
+            }
+
+        /* семена винограда */
+            model GrapesSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_GrapesSeeds_Ground,
+                scale		= 0.5,
+            }
+
+        /* семена лимона */
+            model LemonSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_LemonSeeds_Ground,
+                scale		= 0.5,
+            }
+
+        /* семена лайма */
+            model LimeSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_LimeSeeds_Ground,
+                scale		= 0.5,
+            }
+
+        /* семена манго */
+            model MangoSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_MangoSeeds_Ground,
+                scale		= 0.5,
+            }
+        
+        /* семена апельсина */
+            model OrangeSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_OrangeSeeds_Ground,
+                scale		= 0.5,
+            }
+        
+        /* семена персика */
+            model PeachSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_PeachSeeds_Ground,
+                scale		= 0.5,
+            }
+        
+        /* семена груши */
+            model PearSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_PearSeeds_Ground,
+                scale		= 0.5,
+            }
+        
+        /* семена ананаса */
+            model PineappleSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_PineappleSeeds_Ground,
+                scale		= 0.5,
+            }
+    /*___________________ТИП:  ОВОЩИ___________________*/
+        
+        /* семена авокадо */
+            model AvocadoSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_AvocadoSeeds_Ground,
+                scale		= 0.5,
+            }
+        
+        /* семена кукурузы */
+            model CornSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_CornSeeds_Ground,
+                scale		= 0.5,
+            }
+        
+        /* семена баклажана */
+            model EggplantSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_EggplantSeeds_Ground,
+                scale		= 0.5,
+            }
+        
+        /* семена лука-порей */
+            model LeekSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_LeekSeeds_Ground,
+                scale		= 0.5,
+            }
+        
+        /* семена салата */
+            model LettuceSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_LettuceSeeds_Ground,
+                scale		= 0.5,
+            }
+        
+        /* семена лука */
+            model OnionSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_OnionSeeds_Ground,
+                scale		= 0.5,
+            }
+        
+        /* семена перца */
+            model PepperSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_PepperSeeds_Ground,
+                scale		= 0.5,
+            }
+        
+        /* семена арбуза */
+            model WatermelonSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_WatermelonSeeds_Ground,
+                scale		= 0.5,
+            }
+        
+        /* семена кабачков */
+            model ZucchiniSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_ZucchiniSeeds_Ground,
+                scale		= 0.5,
+            }
+
+/*___________________ПРЕДМЕТЫ: ПАЧКИ СЕМЯН___________________*/
+
+    /*___________________ТИП: ФРУКТЫ___________________*/
+
+        /* пачка семян яблоки */
+            model AppleSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_AppleSeedBag_Ground,
+                scale		= 0.5,
+            }
+        
+        /* пачка семян банана */
+            model BananaSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_BananaSeedBag_Ground,
+                scale		= 0.5,
+            }
+        
+        /* пачка семян черники */
+            model BerryBlackSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_BerryBlackSeedBag_Ground,
+                scale		= 0.5,
+            }
+        
+        /* пачка семян смородины */
+            model BerryBlueSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_BerryBlueSeedBag_Ground,
+                scale		= 0.5,
+            }
+
+        /* пачка семян вишни */
+            model CherrySeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_CherrySeedBag_Ground,
+                scale		= 0.5,
+            }
+        
+        /* пачка семян грейфрута */
+            model GrapefruitSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_GrapefruitSeedBag_Ground,
+                scale		= 0.5,
+            }
+        
+        /* пачка семян винограда */
+            model GrapesSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_GrapesSeedBag_Ground,
+                scale		= 0.5,
+            }
+        
+        /* пачка семян лимона */
+            model LemonSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_LemonSeedBag_Ground,
+                scale		= 0.5,
+            }
+        
+        /* пачка семян лайма */
+            model LimeSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_LimeSeedBag_Ground,
+                scale		= 0.5,
+            }
+
+        /* пачка семян манго */
+            model MangoSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_MangoSeedBag_Ground,
+                scale		= 0.5,
+            }
+        
+        /* пачка семян апельсина */
+            model OrangeSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_OrangeSeedBag_Ground,
+                scale		= 0.5,
+            }
+
+        /* пачка семян персика */
+            model PeachSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_PeachSeedBag_Ground,
+                scale		= 0.5,
+            }
+        
+        /* пачка семян груши */
+            model PearSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_PearSeedBag_Ground,
+                scale		= 0.5,
+            }
+        
+        /* пачка семян ананаса */
+            model PineappleSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_PineappleSeedBag_Ground,
+                scale		= 0.5,
+            }
+    /*___________________ТИП:  ОВОЩИ___________________*/
+
+        /* пачка семян авокадо */
+            model AvocadoSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_AvocadoSeedBag_Ground,
+                scale		= 0.5,
+            }
+        
+        /* пачка семян кукурузы */
+            model CornSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_CornSeedBag_Ground,
+                scale		= 0.5,
+            }
+        
+        /* пачка семян баклажана */
+            model EggplantSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_EggplantSeedBag_Ground,
+                scale		= 0.5,
+            }
+        
+        /* пачка семян лука-порей */
+            model LeekSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_LeekSeedBag_Ground,
+                scale		= 0.5,
+            }
+        
+        /* пачка семян салата */
+            model LettuceSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_LettuceSeedBag_Ground,
+                scale		= 0.5,
+            }
+        
+        /* пачка семян лука */
+            model OnionSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_OnionSeedBag_Ground,
+                scale		= 0.5,
+            }
+        
+        /* пачка семян перца */
+            model PepperSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_PepperSeedBag_Ground,
+                scale		= 0.5,
+            }
+        
+        /* пачка семян арбуза */
+            model WatermelonSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_WatermelonSeedBag_Ground,
+                scale		= 0.5,
+            }
+        
+        /* пачка семян кабачков */
+            model ZucchiniSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_ZucchiniSeedBag_Ground,
+                scale		= 0.5,
+            }
+}

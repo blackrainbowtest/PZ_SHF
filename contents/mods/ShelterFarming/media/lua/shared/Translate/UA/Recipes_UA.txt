@@ -1,0 +1,88 @@
+Recipes_UA {
+/*___________________РЕЦЕПТИ_ДЛЯ_ВІДКРИТТЯ_ПАЧОК___________________*/
+    
+ 	/*___________________ТИП: ФРУКТИ___________________*/
+     	Recipe_Open_Packet_of_Apple_Seeds = "Відкрити пачку з насінням яблук"
+     	Recipe_Open_Packet_of_Banana_Seeds = "Відкрити пачку з насінням бананів"
+     	Recipe_Open_Packet_of_BerryBlack_Seeds = "Відкрити пачку з насінням чорниці"
+     	Recipe_Open_Packet_of_BerryBlue_Seeds = "Відкрити пачку з насінням смородини"
+     	Recipe_Open_Packet_of_Cherry_Seeds = "Відкрити пачку з насінням вишні"
+     	Recipe_Open_Packet_of_Grapefruit_Seeds = "Відкрити пачку з насінням грейпфрута"
+     	Recipe_Open_Packet_of_Grapes_Seeds = "Відкрити пачку з насінням винограду"
+     	Recipe_Open_Packet_of_Lemon_Seeds = "Відкрити пачку з насінням лимона"
+     	Recipe_Open_Packet_of_Lime_Seeds = "Відкрити пачку з насінням лайма"
+     	Recipe_Open_Packet_of_Mango_Seeds = "Відкрити пачку з насінням манго"
+     	Recipe_Open_Packet_of_Orange_Seeds = "Відкрити пачку з насінням апельсина"
+     	Recipe_Open_Packet_of_Peach_Seeds = "Відкрити пачку з насінням персика"
+     	Recipe_Open_Packet_of_Pear_Seeds = "Відкрити пачку з насінням груші"
+     	Recipe_Open_Packet_of_Pineapple_Seeds = "Відкрити пачку з насінням ананаса"
+ 	/*___________________ТИП: ОВОЧІ___________________*/
+     	Recipe_Open_Packet_of_Avocado_Seeds = "Відкрити пачку з насінням авокадо",
+     	Recipe_Open_Packet_of_Corn_Seeds = "Відкрити пачку з насінням кукурудзи",
+     	Recipe_Open_Packet_of_Eggplant_Seeds = "Відкрити пачку з насінням баклажана",
+     	Recipe_Open_Packet_of_Leek_Seeds = "Відкрити пачку з насінням цибулі-порей",
+     	Recipe_Open_Packet_of_Lettuce_Seeds = "Відкрити пачку з насінням салату",
+     	Recipe_Open_Packet_of_Onion_Seeds = "Відкрити пачку з насінням цибулі",
+     	Recipe_Open_Packet_of_Pepper_Seeds = "Відкрити пачку з насінням перцю",
+     	Recipe_Open_Packet_of_Watermelon_Seeds = "Відкрити пачку з насінням кавуна",
+     	Recipe_Open_Packet_of_Zucchini_Seeds = "Відкрити пачку з насінням кабачків",
+
+/*___________________РЕЦЕПТИ_ДЛЯ_ЗАКРИТТЯ_ПАЧОК___________________*/
+    
+ 	/*___________________ТИП: ФРУКТИ___________________*/
+     	Recipe_Put_Apple_Seeds_in_Packet = "Покласти насіння яблук у пачку"
+     	Recipe_Put_Banana_Seeds_in_Packet = "Покласти насіння бананів у пачку"
+     	Recipe_Put_BerryBlack_Seeds_in_Packet = "Покласти насіння чорниці в пачку"
+     	Recipe_Put_BerryBlue_Seeds_in_Packet = "Покласти насіння смородини в пачку"
+     	Recipe_Put_Cherry_Seeds_in_Packet = "Покласти насіння вишні в пачку"
+     	Recipe_Put_Grapefruit_Seeds_in_Packet = "Покласти насіння грейпфрута в пачку"
+     	Recipe_Put_Grapes_Seeds_in_Packet = "Покласти насіння винограду в пачку"
+     	Recipe_Put_Lemon_Seeds_in_Packet = "Покласти насіння лимона в пачку"
+     	Recipe_Put_Lime_Seeds_in_Packet = "Покласти насіння лайма в пачку"
+     	Recipe_Put_Mango_Seeds_in_Packet = "Покласти насіння манго в пачку"
+     	Recipe_Put_Orange_Seeds_in_Packet = "Покласти насіння апельсина в пачку"
+     	Recipe_Put_Peach_Seeds_in_Packet = "Покласти насіння персика в пачку"
+     	Recipe_Put_Pear_Seeds_in_Packet = "Покласти насіння груші в пачку"
+     	Recipe_Put_Pineapple_Seeds_in_Packet = "Покласти насіння ананаса в пачку"
+ 	/*___________________ТИП: ОВОЧІ___________________*/
+     	Recipe_Put_Avocado_Seeds_in_Packet = "Покласти насіння авокадо в пачку",
+     	Recipe_Put_Corn_Seeds_in_Packet = "Покласти насіння кукурудзи в пачку",
+     	Recipe_Put_Eggplant_Seeds_in_Packet = "Покласти насіння баклажана в пачку",
+     	Recipe_Put_Leek_Seeds_in_Packet = "Покласти насіння цибулі-порей у пачку",
+     	Recipe_Put_Lettuce_Seeds_in_Packet = "Покласти насіння салату в пачку",
+     	Recipe_Put_Onion_Seeds_in_Packet = "Покласти насіння цибулі в пачку",
+     	Recipe_Put_Pepper_Seeds_in_Packet = "Покласти насіння перцю в пачку",
+     	Recipe_Put_Watermelon_Seeds_in_Packet = "Покласти насіння кавуна в пачку",
+     	Recipe_Put_Zucchini_Seeds_in_Packet = "Покласти насіння кабачків у пачку",
+
+/*___________________РЕЦЕПТИ_ДЛЯ_ОТРИМАННЯ_НАСІННЯ__________________*/
+
+ 	/*___________________ТИП: ФРУКТИ___________________*/
+     	Recipe_Claim_Apple_Seeds = "Отримати насіння"
+     	Recipe_Claim_Banana_Seeds = "Отримати насіння"
+     	Recipe_Claim_BerryBlack_Seeds = "Отримати насіння"
+     	Recipe_Claim_BerryBlue_Seeds = "Отримати насіння"
+     	Recipe_Claim_Cherry_Seeds = "Отримати насіння"
+     	Recipe_Claim_Grapefruit_Seeds = "Отримати насіння"
+     	Recipe_Claim_Grapes_Seeds = "Отримати насіння"
+     	Recipe_Claim_Lemon_Seeds = "Отримати насіння"
+     	Recipe_Claim_Lime_Seeds = "Отримати насіння"
+     	Recipe_Claim_Mango_Seeds = "Отримати насіння"
+     	Recipe_Claim_Orange_Seeds = "Отримати насіння"
+     	Recipe_Claim_Peach_Seeds = "Отримати насіння"
+     	Recipe_Claim_Pear_Seeds = "Отримати насіння"
+     	Recipe_Claim_Pineapple_Seeds = "Отримати насіння"
+    
+ 	/*___________________ТИП: ОВОЧІ___________________*/
+   	 
+     	Recipe_Claim_Avocado_Seeds = "Отримати насіння"
+     	Recipe_Claim_Corn_Seeds = "Отримати насіння"
+     	Recipe_Claim_Eggplant_Seeds = "Отримати насіння"
+     	Recipe_Claim_Leek_Seeds = "Отримати насіння"
+     	Recipe_Claim_Lettuce_Seeds = "Отримати насіння"
+     	Recipe_Claim_Onion_Seeds = "Отримати насіння"
+     	Recipe_Claim_Pepper_Seeds = "Отримати насіння"
+     	Recipe_Claim_Watermelon_Seeds = "Отримати насіння"
+     	Recipe_Claim_Zucchini_Seeds = "Отримати насіння"
+
+}

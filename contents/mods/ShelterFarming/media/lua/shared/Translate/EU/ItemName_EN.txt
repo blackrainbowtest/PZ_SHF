@@ -1,0 +1,61 @@
+ItemName_EN = {
+/*___________________ПРЕДМЕТЫ: СЕМЕНА___________________*/
+
+    /*___________________ТИП: ФРУКТЫ___________________*/
+        ItemName_SHF.Appleseed          = "Apple seeds",
+        ItemName_SHF.Bananaseed         = "Banana seeds",
+        ItemName_SHF.BerryBlackseed     = "Berry Black seeds",
+        ItemName_SHF.BerryBlueseed      = "Berry Blue seeds",
+        ItemName_SHF.Cherryseed         = "Cherry seeds",
+        ItemName_SHF.Grapefruitseed     = "Grapefruit seeds",
+        ItemName_SHF.Grapesseed         = "Grapes seeds",
+        ItemName_SHF.Lemonseed          = "Lemon seeds",
+        ItemName_SHF.Limeseed           = "Lime seeds",
+        ItemName_SHF.Mangoseed          = "Mango seeds",
+        ItemName_SHF.Orangeseed         = "Orange seeds",
+        ItemName_SHF.Peachseed          = "Peach seeds",
+        ItemName_SHF.Pearseed           = "Pear seeds",
+        ItemName_SHF.Pineappleseed      = "Pineapple seeds",
+
+    /*___________________ТИП:  ОВОЩИ___________________*/
+        ItemName_SHF.Avocadoseed        = "Avocado seeds",
+        ItemName_SHF.Cornseed           = "Corn seeds",
+        ItemName_SHF.Eggplantseed       = "Eggplant seeds",
+        ItemName_SHF.Leekseed           = "Leek seeds",
+        ItemName_SHF.Lettuceseed        = "Lettuce seeds",
+        ItemName_SHF.Onionseed          = "Onion seeds",
+        ItemName_SHF.Pepperseed         = "Pepper seeds",
+        ItemName_SHF.Watermelonseed     = "Watermelon seeds",
+        ItemName_SHF.Zucchiniseed       = "Zucchini seeds",
+
+/*___________________ПРЕДМЕТЫ: ПАЧКИ СЕМЯН___________________*/
+
+    /*___________________ТИП: ФРУКТЫ___________________*/
+        ItemName_SHF.AppleBagSeed       = "Apple seed packet",
+        ItemName_SHF.BananaBagSeed      = "Banana seed packet",
+        ItemName_SHF.BerryBlackBagSeed  = "BerryBlack seed packet",
+        ItemName_SHF.BerryBlueBagSeed   = "BerryBlue seed packet",
+        ItemName_SHF.CherryBagSeed      = "Cherry seed packet",
+        ItemName_SHF.GrapefruitBagSeed  = "Grapefruit seed packet",
+        ItemName_SHF.GrapesBagSeed      = "Grapes seed packet",
+        ItemName_SHF.LemonBagSeed       = "Lemon seed packet",
+        ItemName_SHF.LimeBagSeed        = "Lime seed packet",
+        ItemName_SHF.MangoBagSeed       = "Mango seed packet",
+        ItemName_SHF.OrangeBagSeed      = "Orange seed packet",
+        ItemName_SHF.PeachBagSeed       = "APeachvoPeachcado seed packet",
+        ItemName_SHF.PearBagSeed        = "Pear seed packet",
+        ItemName_SHF.PineappleBagSeed   = "Pineapple seed packet",
+
+    /*___________________ТИП:  ОВОЩИ___________________*/
+        ItemName_SHF.AvocadoBagSeed     = "Avocado seed packet",
+        ItemName_SHF.CornBagSeed        = "Corn seed packet",
+        ItemName_SHF.EggplantBagSeed    = "Eggplant seed packet",
+        ItemName_SHF.LeekBagSeed        = "Leek seed packet",
+        ItemName_SHF.LettuceBagSeed     = "Lettuce seed packet",
+        ItemName_SHF.OnionBagSeed       = "Onion seed packet",
+        ItemName_SHF.WatermelonBagSeed  = "Watermelon seed packet",
+        ItemName_SHF.PepperBagSeed      = "Pepper seed packet",
+        ItemName_SHF.ZucchiniBagSeed    = "Zucchini seed packet",
+
+
+}

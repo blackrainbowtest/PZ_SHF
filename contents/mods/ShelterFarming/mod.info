@@ -1,0 +1,8 @@
+name=Shelter Farms
+poster=poster.png
+id=SHF
+icon=icon.png
+description=Add 23 vegetations.
+versionMin=41.56
+pack=shf_default
+pack=shf_farm

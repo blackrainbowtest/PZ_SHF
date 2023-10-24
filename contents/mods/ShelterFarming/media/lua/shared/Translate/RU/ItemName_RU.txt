@@ -1,0 +1,59 @@
+ItemName_RU = {
+/*___________________ПРЕДМЕТЫ: СЕМЕНА___________________*/
+
+    /*___________________ТИП: ФРУКТЫ___________________*/
+        ItemName_SHF.Appleseed          = "Семена яблоки",
+        ItemName_SHF.Bananaseed         = "Семена банана",
+        ItemName_SHF.BerryBlackseed     = "Семена черники",
+        ItemName_SHF.BerryBlueseed      = "Семена смородинны",
+        ItemName_SHF.Cherryseed         = "Семена вишни",
+        ItemName_SHF.Grapefruitseed     = "Семена грейпфрута",
+        ItemName_SHF.Grapesseed         = "Семена винограда",
+        ItemName_SHF.Lemonseed          = "Семена лимона",
+        ItemName_SHF.Limeseed           = "Семена лайма",
+        ItemName_SHF.Mangoseed          = "Семена манго",
+        ItemName_SHF.Orangeseed         = "Семена апельсина",
+        ItemName_SHF.Peachseed          = "Семена персика",
+        ItemName_SHF.Pearseed           = "Семена груши",
+        ItemName_SHF.Pineappleseed      = "Семена ананаса",
+        
+    /*___________________ТИП:  ОВОЩИ___________________*/
+        ItemName_SHF.Avocadoseed        = "Семена авокадо",
+        ItemName_SHF.Cornseed           = "Семена кукурузы",
+        ItemName_SHF.Eggplantseed       = "Семена баклажана",
+        ItemName_SHF.Leekseed           = "Семена лука-порей",
+        ItemName_SHF.Lettuceseed        = "Семена салата",
+        ItemName_SHF.Onionseed          = "Семена лука",
+        ItemName_SHF.Pepperseed         = "Семена перца",
+        ItemName_SHF.Watermelonseed     = "Семена арбуза",
+        ItemName_SHF.Zucchiniseed       = "Семена кабачков",
+
+/*___________________ПРЕДМЕТЫ: ПАЧКИ СЕМЯН___________________*/
+
+    /*___________________ТИП: ФРУКТЫ___________________*/
+        ItemName_SHF.AppleBagSeed       = "Пачка семян яблок",
+        ItemName_SHF.BananaBagSeed      = "Пачка семян банана",
+        ItemName_SHF.BerryBlackBagSeed  = "Пачка семян черники",
+        ItemName_SHF.BerryBlueBagSeed   = "Пачка семян смородинны",
+        ItemName_SHF.CherryBagSeed      = "Пачка семян вишни",
+        ItemName_SHF.GrapefruitBagSeed  = "Пачка семян грейпфрута",
+        ItemName_SHF.GrapesBagSeed      = "Пачка семян винограда",
+        ItemName_SHF.LemonBagSeed       = "Пачка семян лимона",
+        ItemName_SHF.LimeBagSeed        = "Пачка семян лайма",
+        ItemName_SHF.MangoBagSeed       = "Пачка семян манго",
+        ItemName_SHF.OrangeBagSeed      = "Пачка семян апельсина",
+        ItemName_SHF.PeachBagSeed       = "Пачка семян персика",
+        ItemName_SHF.PearBagSeed        = "Пачка семян груши",
+        ItemName_SHF.PineappleBagSeed   = "Пачка семян ананаса",
+
+    /*___________________ТИП:  ОВОЩИ___________________*/
+        ItemName_SHF.AvocadoBagSeed     = "Пачка семян авокадо",
+        ItemName_SHF.CornBagSeed        = "Пачка семян кукурузы",
+        ItemName_SHF.EggplantBagSeed    = "Пачка семян баклажана",
+        ItemName_SHF.LeekBagSeed        = "Пачка семян лука-порей",
+        ItemName_SHF.LettuceBagSeed     = "Пачка семян салата",
+        ItemName_SHF.OnionBagSeed       = "Пачка семян лука",
+        ItemName_SHF.PepperBagSeed      = "Пачка семян перца",
+        ItemName_SHF.WatermelonBagSeed  = "Пачка семян арбуза",
+        ItemName_SHF.ZucchiniBagSeed    = "Пачка семян кабачков",
+}

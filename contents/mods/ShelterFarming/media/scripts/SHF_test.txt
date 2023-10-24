@@ -1,0 +1,153 @@
+module SHF {
+    /*___________________ИМПОРТ_БАЗОВОГО_КЛАССА___________________*/
+    imports
+    {
+        Base
+    }
+
+    /*
+        ВНИМАНИЕ В ЭТОМ РАЗДЕЛЕ БУДУТ ТЕСТОВЫЕ ПРОДУКТЫ, НЕ РЕКОМЕНДУЕТС СПАВНИТЬ ИХ НА РАБОЧЕМ СЕРВЕРЕ ЧЕРЕЗ
+        АДМИН КОМАНДЫ. 
+    */
+
+/*___________________ПРЕДМЕТЫ: СЕМЕНА___________________*/
+
+	/*___________________ТИП: ХЗ___________________*/
+
+	 	/* семена чая */
+            item Teaseed {
+                DisplayCategory             = Gardening,
+                Type				        = Normal,
+                DisplayName			        = Tea Seeds,
+                Icon				        = SHF_Seed_TeaSeeds,
+                Weight				        = 0.009,
+                SurvivalGear                = TRUE,
+                WorldStaticModel            = TeaSeeds_Ground,
+            }
+/*___________________ПРЕДМЕТЫ: ПАЧКИ СЕМЯН___________________*/
+
+	/*___________________ТИП: ХЗ___________________*/
+
+		/* пачка семян чая */	
+            item TeaBagSeed {
+                DisplayCategory                 = Gardening,
+                Type				            = Normal,
+                DisplayName			            = Tea Seeds Packet,
+                Icon				            = SHF_Bag_TeaSeedBag,
+                Weight				            = 0.1,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = TeaSeedBag_Ground,
+            }
+/*___________________ПРЕДМЕТЫ: ЛИСТЬЯ ЧАЯ___________________*/
+
+	/*___________________ТИП: ХЗ___________________*/
+
+		/* чайные листья */	
+            item TeaLeaves {
+                DisplayCategory                 = Gardening,
+                Type				            = Normal,
+                DisplayName			            = Tea Leaves,
+                Icon				            = SHF_Food_TeaLeaves,
+                Weight				            = 0.003,
+                Icon				            = SHF_TeaLeaves,
+                Weight				            = 0.003,
+                FatigueChange                   = -10,
+                HungerChange                    = -6,
+                UnhappyChange                   = 10,
+                IsCookable                      = false,
+                Calories                        = 2,
+                Carbohydrates                   = 0,
+                Lipids                          = 0,
+                Proteins                        = 1,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = TeaLeaves_Ground,
+            }
+
+            /* MODELS */
+/*___________________ПРЕДМЕТЫ: ЛИСТЬЯ ЧАЯ___________________*/
+
+    /*___________________ТИП: ХЗ___________________*/
+
+        /* семена чая */
+            model TeaLeaves_Ground
+            {
+                mesh = WorldItems/GrapeLeaves,
+                texture		= WorldItems/CommonMallowGrapeLeaves,
+                scale		= 0.5,
+            }
+/*___________________ПРЕДМЕТЫ: СЕМЕНА___________________*/
+
+    /*___________________ТИП: ХЗ___________________*/
+
+        /* семена чая */
+            model TeaSeeds_Ground
+            {
+                mesh		= WorldItems/Seeds,
+                texture		= WorldItems/SHF_Seed_TeaSeeds_Ground,
+                scale		= 0.5,
+            }
+/*___________________ПРЕДМЕТЫ: ПАЧКИ СЕМЯН___________________*/
+
+    /*___________________ТИП: ФРУКТЫ___________________*/
+
+        /* пачка семян чая */
+            model AppleSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_TeaSeedBag_Ground,
+                scale		= 0.5,
+            }
+
+
+	recipe Make Tea Bag
+	{
+		BoxofTeaBags,
+		Result 		: Teabag2,
+		Time 		: 30.0,
+		NeedToBeLearn 		: false,
+		OnGiveXP 		: NoXP_OnGiveXP,
+		CanBeDoneFromFloor 		: false,
+		StopOnWalk 		: false,
+		Sound 		: CardboardOpen,
+	}
+
+
+
+
+/*___________________ПРЕДМЕТЫ: ПАЧКИ СЕМЯН___________________*/
+
+    /*___________________ТИП: ХЗ___________________*/
+
+        /* пачка семян чая */
+            model TeaSeedBag_Ground
+            {
+                mesh		= WorldItems/SeedPacket,
+                texture		= WorldItems/SHF_Bag_TeaSeedBag_Ground,
+                scale		= 0.5,
+            }
+/*___________________РЕЦЕПТЫ_ДЛЯ_ОТКРЫТИЯ_ПАЧЕК___________________*/
+    
+    /*___________________ТИП: ХЗ___________________*/
+
+        /* пачка семян чая */
+            recipe Open Packet of Tea Seeds {
+                TeaBagSeed,
+        
+                Result:Teaseed=50,
+                Time:20.0,
+                Category:Farming,
+                Sound:OpenSeedPacket,
+            }
+/*___________________РЕЦЕПТЫ_ДЛЯ_ЗАКРЫТИЯ_ПАЧЕК___________________*/
+    
+    /*___________________ТИП: ХЗ___________________*/
+
+        /* пачка семян чая */
+            recipe Put Tea Seeds in Packet {
+                Teaseed=50,
+
+                Result:TeaBagSeed,
+                Time:20.0,
+                Category:Farming,
+                Sound:OpenSeedPacket,
+            }

@@ -1,0 +1,59 @@
+ItemName_UA = {
+/*___________________ПРЕДМЕТИ: НАСІННЯ___________________*/
+
+     /*___________________ТИП: ФРУКТИ___________________*/
+         ItemName_SHF.Appleseed = "Насіння яблука",
+         ItemName_SHF.Bananaseed = "Насіння банана",
+         ItemName_SHF.BerryBlackseed = "Насіння чорниці",
+         ItemName_SHF.BerryBlueseed = "Насіння смородини",
+         ItemName_SHF.Cherryseed = "Насіння вишні",
+         ItemName_SHF.Grapefruitseed = "Насіння грейпфрута",
+         ItemName_SHF.Grapesseed = "Насіння винограду",
+         ItemName_SHF.Lemonseed = "Насіння лимона",
+         ItemName_SHF.Limeseed = "Насіння лайма",
+         ItemName_SHF.Mangoseed = "Насіння манго",
+         ItemName_SHF.Orangeseed = "Насіння апельсина",
+         ItemName_SHF.Peachseed = "Насіння персика",
+         ItemName_SHF.Pearseed = "Насіння груші",
+         ItemName_SHF.Pineappleseed = "Насіння ананаса",
+        
+     /*___________________ТИП: ОВОЧІ___________________*/
+         ItemName_SHF.Avocadoseed = "Насіння авокадо",
+         ItemName_SHF.Cornseed = "Насіння кукурудзи",
+         ItemName_SHF.Eggplantseed = "Насіння баклажана",
+         ItemName_SHF.Leekseed = "Насіння цибулі-порей",
+         ItemName_SHF.Lettuceseed = "Насіння салату",
+         ItemName_SHF.Onionseed = "Насіння цибулі",
+         ItemName_SHF.Pepperseed = "Насіння перцю",
+         ItemName_SHF.Watermelonseed = "Насіння кавуна",
+         ItemName_SHF.Zucchiniseed = "Насіння кабачків",
+
+/*___________________ПРЕДМЕТИ: ПАЧКИ НАСІННЯ_____*/
+
+     /*___________________ТИП: ФРУКТИ___________________*/
+         ItemName_SHF.AppleBagSeed = "Пачка насіння яблук",
+         ItemName_SHF.BananaBagSeed = "Пачка насіння банана",
+         ItemName_SHF.BerryBlackBagSeed = "Пачка насіння чорниці",
+         ItemName_SHF.BerryBlueBagSeed = "Пачка насіння смородини",
+         ItemName_SHF.CherryBagSeed = "Пачка насіння вишні",
+         ItemName_SHF.GrapefruitBagSeed = "Пачка насіння грейпфрута",
+         ItemName_SHF.GrapesBagSeed = "Пачка насіння винограду",
+         ItemName_SHF.LemonBagSeed = "Пачка насіння лимона",
+         ItemName_SHF.LimeBagSeed = "Пачка насіння лайма",
+         ItemName_SHF.MangoBagSeed = "Пачка насіння манго",
+         ItemName_SHF.OrangeBagSeed = "Пачка насіння апельсина",
+         ItemName_SHF.PeachBagSeed = "Пачка насіння персика",
+         ItemName_SHF.PearBagSeed = "Пачка насіння груші",
+         ItemName_SHF.PineappleBagSeed = "Пачка насіння ананаса",
+
+     /*___________________ТИП: ОВОЧІ___________________*/
+         ItemName_SHF.AvocadoBagSeed = "Пачка насіння авокадо",
+         ItemName_SHF.CornBagSeed = "Пачка насіння кукурудзи",
+         ItemName_SHF.EggplantBagSeed = "Пачка насіння баклажана",
+         ItemName_SHF.LeekBagSeed = "Пачка насіння цибулі-порей",
+         ItemName_SHF.LettuceBagSeed = "Пачка насіння салату",
+         ItemName_SHF.OnionBagSeed = "Пачка насіння цибулі",
+         ItemName_SHF.PepperBagSeed = "Пачка насіння перцю",
+         ItemName_SHF.WatermelonBagSeed = "Пачка насіння кавуна",
+         ItemName_SHF.ZucchiniBagSeed = "Пачка насіння кабачків",
+}

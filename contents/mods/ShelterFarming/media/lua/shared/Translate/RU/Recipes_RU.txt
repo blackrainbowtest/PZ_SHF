@@ -1,0 +1,88 @@
+Recipes_RU {
+/*___________________РЕЦЕПТЫ_ДЛЯ_ОТКРЫТИЯ_ПАЧЕК___________________*/
+    
+	/*___________________ТИП: ФРУКТЫ___________________*/
+    	Recipe_Open_Packet_of_Apple_Seeds       	= "Открыть пачку с семенами яблок"
+    	Recipe_Open_Packet_of_Banana_Seeds      	= "Открыть пачку с семенами бананов"
+    	Recipe_Open_Packet_of_BerryBlack_Seeds  	= "Открыть пачку с семенами черники"
+    	Recipe_Open_Packet_of_BerryBlue_Seeds   	= "Открыть пачку с семенами смородинны"
+    	Recipe_Open_Packet_of_Cherry_Seeds      	= "Открыть пачку с семенами вишни"
+    	Recipe_Open_Packet_of_Grapefruit_Seeds  	= "Открыть пачку с семенами грейпфрута"
+    	Recipe_Open_Packet_of_Grapes_Seeds      	= "Открыть пачку с семенами винограда"
+    	Recipe_Open_Packet_of_Lemon_Seeds       	= "Открыть пачку с семенами лимона"
+    	Recipe_Open_Packet_of_Lime_Seeds        	= "Открыть пачку с семенами лайма"
+    	Recipe_Open_Packet_of_Mango_Seeds       	= "Открыть пачку с семенами манго"
+    	Recipe_Open_Packet_of_Orange_Seeds      	= "Открыть пачку с семенами апельсина"
+    	Recipe_Open_Packet_of_Peach_Seeds       	= "Открыть пачку с семенами персика"
+    	Recipe_Open_Packet_of_Pear_Seeds        	= "Открыть пачку с семенами груши"
+    	Recipe_Open_Packet_of_Pineapple_Seeds   	= "Открыть пачку с семенами ананаса"
+	/*___________________ТИП:  ОВОЩИ___________________*/
+    	Recipe_Open_Packet_of_Avocado_Seeds     	= "Открыть пачку с семенами авокадо",
+    	Recipe_Open_Packet_of_Corn_Seeds        	= "Открыть пачку с семенами кукурузы",
+    	Recipe_Open_Packet_of_Eggplant_Seeds    	= "Открыть пачку с семенами баклажана",
+    	Recipe_Open_Packet_of_Leek_Seeds        	= "Открыть пачку с семенами лука-порей",
+    	Recipe_Open_Packet_of_Lettuce_Seeds     	= "Открыть пачку с семенами салата",
+    	Recipe_Open_Packet_of_Onion_Seeds       	= "Открыть пачку с семенами лука",
+    	Recipe_Open_Packet_of_Pepper_Seeds      	= "Открыть пачку с семенами перца",
+    	Recipe_Open_Packet_of_Watermelon_Seeds  	= "Открыть пачку с семенами арбуза",
+    	Recipe_Open_Packet_of_Zucchini_Seeds    	= "Открыть пачку с семенами кабачков",
+
+/*___________________РЕЦЕПТЫ_ДЛЯ_ЗАКРЫТИЯ_ПАЧЕК___________________*/
+    
+	/*___________________ТИП: ФРУКТЫ___________________*/
+    	Recipe_Put_Apple_Seeds_in_Packet       		= "Положить семена яблок в пачку"
+    	Recipe_Put_Banana_Seeds_in_Packet      		= "Положить семена бананов в пачку"
+    	Recipe_Put_BerryBlack_Seeds_in_Packet  		= "Положить семена черники в пачку"
+    	Recipe_Put_BerryBlue_Seeds_in_Packet   		= "Положить семена смородины в пачку"
+    	Recipe_Put_Cherry_Seeds_in_Packet      		= "Положить семена вишни в пачку"
+    	Recipe_Put_Grapefruit_Seeds_in_Packet  		= "Положить семена грейпфрута в пачку"
+    	Recipe_Put_Grapes_Seeds_in_Packet      		= "Положить семена винограда в пачку"
+    	Recipe_Put_Lemon_Seeds_in_Packet       		= "Положить семена лимона в пачку"
+    	Recipe_Put_Lime_Seeds_in_Packet        		= "Положить семена лайма в пачку"
+    	Recipe_Put_Mango_Seeds_in_Packet       		= "Положить семена манго в пачку"
+    	Recipe_Put_Orange_Seeds_in_Packet      		= "Положить семена апельсина в пачку"
+    	Recipe_Put_Peach_Seeds_in_Packet       		= "Положить семена персика в пачку"
+    	Recipe_Put_Pear_Seeds_in_Packet        		= "Положить семена груши в пачку"
+    	Recipe_Put_Pineapple_Seeds_in_Packet   		= "Положить семена ананаса в пачку"
+	/*___________________ТИП:  ОВОЩИ___________________*/
+    	Recipe_Put_Avocado_Seeds_in_Packet      	= "Положить семена авокадо в пачку",
+    	Recipe_Put_Corn_Seeds_in_Packet         	= "Положить семена кукурузы в пачку",
+    	Recipe_Put_Eggplant_Seeds_in_Packet     	= "Положить семена баклажана в пачку",
+    	Recipe_Put_Leek_Seeds_in_Packet         	= "Положить семена лука-порей в пачку",
+    	Recipe_Put_Lettuce_Seeds_in_Packet      	= "Положить семена салата в пачку",
+    	Recipe_Put_Onion_Seeds_in_Packet        	= "Положить семена лука в пачку",
+    	Recipe_Put_Pepper_Seeds_in_Packet       	= "Положить семена перца в пачку",
+    	Recipe_Put_Watermelon_Seeds_in_Packet   	= "Положить семена арбуза в пачку",
+    	Recipe_Put_Zucchini_Seeds_in_Packet     	= "Положить семена кабачков в пачку",
+
+/*___________________РЕЦЕПТЫ_ДЛЯ_ПОЛУЧЕНИЯ_СЕМЯН__________________*/
+
+	/*___________________ТИП: ФРУКТЫ___________________*/
+    	Recipe_Claim_Apple_Seeds                	= "Получить семена"
+    	Recipe_Claim_Banana_Seeds               	= "Получить семена"
+    	Recipe_Claim_BerryBlack_Seeds           	= "Получить семена"
+    	Recipe_Claim_BerryBlue_Seeds            	= "Получить семена"
+    	Recipe_Claim_Cherry_Seeds               	= "Получить семена"
+    	Recipe_Claim_Grapefruit_Seeds           	= "Получить семена"
+    	Recipe_Claim_Grapes_Seeds               	= "Получить семена"
+    	Recipe_Claim_Lemon_Seeds                	= "Получить семена"
+    	Recipe_Claim_Lime_Seeds                 	= "Получить семена"
+    	Recipe_Claim_Mango_Seeds                	= "Получить семена"
+    	Recipe_Claim_Orange_Seeds               	= "Получить семена"
+    	Recipe_Claim_Peach_Seeds                	= "Получить семена"
+    	Recipe_Claim_Pear_Seeds                 	= "Получить семена"
+    	Recipe_Claim_Pineapple_Seeds            	= "Получить семена"
+    
+	/*___________________ТИП:  ОВОЩИ___________________*/
+   	 
+    	Recipe_Claim_Avocado_Seeds              	= "Получить семена"
+    	Recipe_Claim_Corn_Seeds                 	= "Получить семена"
+    	Recipe_Claim_Eggplant_Seeds             	= "Получить семена"
+    	Recipe_Claim_Leek_Seeds                 	= "Получить семена"
+    	Recipe_Claim_Lettuce_Seeds              	= "Получить семена"
+    	Recipe_Claim_Onion_Seeds                	= "Получить семена"
+    	Recipe_Claim_Pepper_Seeds               	= "Получить семена"
+    	Recipe_Claim_Watermelon_Seeds           	= "Получить семена"
+    	Recipe_Claim_Zucchini_Seeds             	= "Получить семена"
+
+}
