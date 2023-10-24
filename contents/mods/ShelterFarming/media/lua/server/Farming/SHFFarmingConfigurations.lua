@@ -704,28 +704,3 @@ farming_vegetableconf.sprite["Pineapple"] = {
 "shf_pineapple_07", 
 "shf_pineapple_08"
 }
-
-if ProceduralDistributions then
-    farming_vegetableconf.props["Avocado"].waterLvlMax = 100;
-    farming_vegetableconf.props["Pepper"].waterLvlMax = 100;
-    farming_vegetableconf.props["Corn"].waterLvlMax = 100;
-    farming_vegetableconf.props["Eggplant"].waterLvlMax = 100;
-    farming_vegetableconf.props["Leek"].waterLvlMax = 65;
-    farming_vegetableconf.props["Lettuce"].waterLvlMax = 100;
-    farming_vegetableconf.props["Onion"].waterLvlMax = 65;
-    farming_vegetableconf.props["Zucchini"].waterLvlMax = 85;
-    farming_vegetableconf.props["Apple"].waterLvlMax = 100;
-    farming_vegetableconf.props["Banana"].waterLvlMax = 100;
-    farming_vegetableconf.props["BerryBlack"].waterLvlMax = 90;
-    farming_vegetableconf.props["BerryBlue"].waterLvlMax = 85;
-    farming_vegetableconf.props["Cherry"].waterLvlMax = 85;
-    farming_vegetableconf.props["Grapefruit"].waterLvlMax = 65;
-    farming_vegetableconf.props["Grapes"].waterLvlMax = 55;
-    farming_vegetableconf.props["Lemon"].waterLvlMax = 65;
-    farming_vegetableconf.props["Lime"].waterLvlMax = 75;
-    farming_vegetableconf.props["Mango"].waterLvlMax = 85;
-    farming_vegetableconf.props["Orange"].waterLvlMax = 85;
-    farming_vegetableconf.props["Peach"].waterLvlMax = 100;
-    farming_vegetableconf.props["Pear"].waterLvlMax = 100;
-    farming_vegetableconf.props["Pineapple"].waterLvlMax = 100;
-end

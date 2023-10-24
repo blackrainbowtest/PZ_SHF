@@ -1,3 +1,10 @@
+--******************************************************************************************
+--**                   				USER FOR REFERENCE                  				  **
+--**                        			MoCrops                        					  **
+--** https://steamcommunity.com/sharedfiles/filedetails/?id=2762018937&searchtext=MoCrops **
+--**                                                                                      **
+--******************************************************************************************
+
 require "Farming/SFarmingSystem"
 require "Farming/farming_vegetableconf"
 
