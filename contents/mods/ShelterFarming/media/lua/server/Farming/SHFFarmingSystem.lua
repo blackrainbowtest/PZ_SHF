@@ -1,12 +1,9 @@
---******************************************************************************************
---**                   				USER FOR REFERENCE                  				  **
---**                        			MoCrops                        					  **
---** https://steamcommunity.com/sharedfiles/filedetails/?id=2762018937&searchtext=MoCrops **
---**                                                                                      **
---******************************************************************************************
+-- Проверка наличия модуля ProceduralDistributions и отсутствия клиентской части
+if isClient() and not isServer() then return end
 
 require "Farming/SFarmingSystem"
 require "Farming/farming_vegetableconf"
+require "Farming/SPlantGlobalObject"
 
 if (getActivatedMods():contains("Hydrocraft")) then
     require "Farming/HCFarmingSystem"

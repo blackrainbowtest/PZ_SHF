@@ -1,8 +1,6 @@
 --******************************************************************************************
 --**                   				USER FOR REFERENCE                  				  **
 --**                        			MoCrops                        					  **
---** https://steamcommunity.com/sharedfiles/filedetails/?id=2762018937&searchtext=MoCrops **
---**                                                                                      **
 --******************************************************************************************
 
 require "Items/SuburbsDistributions"
@@ -172,6 +170,114 @@ else
 end
 
 
+--Gigamart Farming
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.AvocadoBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.PepperBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.EggplantBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.LeekBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.OnionBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.WatermelonBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.ZucchiniBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.AppleBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.BananaBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.BerryBlackBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.BerryBlueBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.CherryBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.GrapefruitBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.GrapesBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.LemonBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.LimeBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.MangoBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.OrangeBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.PeachBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.PearBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.PineappleBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+
+--Soul Filcher's Farming compat
+if (getActivatedMods():contains("FarmingTime")) then
+
+else
+    table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.CornBagSeed");
+    table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+    table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.LettuceBagSeed");
+    table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+end
+
+
+--Homesteading
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.AvocadoBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.PepperBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.EggplantBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.LeekBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.OnionBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.WatermelonBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.ZucchiniBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.AppleBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.BananaBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.BerryBlackBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.BerryBlueBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.CherryBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.GrapefruitBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.GrapesBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.LemonBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.LimeBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.MangoBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.OrangeBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.PeachBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.PearBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.PineappleBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+
+--Soul Filcher's Farming compat
+if (getActivatedMods():contains("FarmingTime")) then
+
+else
+    table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.CornBagSeed");
+    table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+    table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.LettuceBagSeed");
+    table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+end
 
     -- =====================
     --    Bags/Containers
@@ -231,55 +337,113 @@ else
 end
 
 
-table.insert(SuburbsDistributions.SeedBag.items, "SHF.AvocadoBagSeed");
-table.insert(SuburbsDistributions.SeedBag.items, 20);
-table.insert(SuburbsDistributions.SeedBag.items, "SHF.PepperBagSeed");
-table.insert(SuburbsDistributions.SeedBag.items, 20);
-table.insert(SuburbsDistributions.SeedBag.items, "SHF.EggplantBagSeed");
-table.insert(SuburbsDistributions.SeedBag.items, 20);
-table.insert(SuburbsDistributions.SeedBag.items, "SHF.LeekBagSeed");
-table.insert(SuburbsDistributions.SeedBag.items, 20);
-table.insert(SuburbsDistributions.SeedBag.items, "SHF.OnionBagSeed");
-table.insert(SuburbsDistributions.SeedBag.items, 20);
-table.insert(SuburbsDistributions.SeedBag.items, "SHF.WatermelonBagSeed");
-table.insert(SuburbsDistributions.SeedBag.items, 20);
-table.insert(SuburbsDistributions.SeedBag.items, "SHF.ZucchiniBagSeed");
-table.insert(SuburbsDistributions.SeedBag.items, 20);
-table.insert(SuburbsDistributions.SeedBag.items, "SHF.AppleBagSeed");
-table.insert(SuburbsDistributions.SeedBag.items, 20);
-table.insert(SuburbsDistributions.SeedBag.items, "SHF.BananaBagSeed");
-table.insert(SuburbsDistributions.SeedBag.items, 20);
-table.insert(SuburbsDistributions.SeedBag.items, "SHF.BerryBlackBagSeed");
-table.insert(SuburbsDistributions.SeedBag.items, 20);
-table.insert(SuburbsDistributions.SeedBag.items, "SHF.BerryBlueBagSeed");
-table.insert(SuburbsDistributions.SeedBag.items, 20);
-table.insert(SuburbsDistributions.SeedBag.items, "SHF.CherryBagSeed");
-table.insert(SuburbsDistributions.SeedBag.items, 20);
-table.insert(SuburbsDistributions.SeedBag.items, "SHF.GrapefruitBagSeed");
-table.insert(SuburbsDistributions.SeedBag.items, 20);
-table.insert(SuburbsDistributions.SeedBag.items, "SHF.GrapesBagSeed");
-table.insert(SuburbsDistributions.SeedBag.items, 20);
-table.insert(SuburbsDistributions.SeedBag.items, "SHF.LemonBagSeed");
-table.insert(SuburbsDistributions.SeedBag.items, 20);
-table.insert(SuburbsDistributions.SeedBag.items, "SHF.LimeBagSeed");
-table.insert(SuburbsDistributions.SeedBag.items, 20);
-table.insert(SuburbsDistributions.SeedBag.items, "SHF.MangoBagSeed");
-table.insert(SuburbsDistributions.SeedBag.items, 20);
-table.insert(SuburbsDistributions.SeedBag.items, "SHF.OrangeBagSeed");
-table.insert(SuburbsDistributions.SeedBag.items, 20);
-table.insert(SuburbsDistributions.SeedBag.items, "SHF.PeachBagSeed");
-table.insert(SuburbsDistributions.SeedBag.items, 20);
-table.insert(SuburbsDistributions.SeedBag.items, "SHF.PearBagSeed");
-table.insert(SuburbsDistributions.SeedBag.items, 20);
-table.insert(SuburbsDistributions.SeedBag.items, "SHF.PineappleBagSeed");
-table.insert(SuburbsDistributions.SeedBag.items, 20);
+
+--Seed Bag
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.AvocadoBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.PepperBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.EggplantBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.LeekBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.OnionBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.WatermelonBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.ZucchiniBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.AppleBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.BananaBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.BerryBlackBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.BerryBlueBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.CherryBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.GrapefruitBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.GrapesBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.LemonBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.LimeBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.MangoBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.OrangeBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.PeachBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.PearBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.PineappleBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
 
 --Soul Filcher's Farming compat
 if (getActivatedMods():contains("FarmingTime")) then
 
 else
-    table.insert(SuburbsDistributions.SeedBag.items, "SHF.CornBagSeed");
-    table.insert(SuburbsDistributions.SeedBag.items, 20);
-    table.insert(SuburbsDistributions.SeedBag.items, "SHF.LettuceBagSeed");
-    table.insert(SuburbsDistributions.SeedBag.items, 20);
+    table.insert(SuburbsDistributions["SeedBag"].items, "SHF.CornBagSeed");
+    table.insert(SuburbsDistributions["SeedBag"].items, 8);
+    table.insert(SuburbsDistributions["SeedBag"].items, "SHF.LettuceBagSeed");
+    table.insert(SuburbsDistributions["SeedBag"].items, 8);
+end
+
+
+
+--Tool Store Farming
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.AvocadoBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.PepperBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.EggplantBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.LeekBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.OnionBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.WatermelonBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.ZucchiniBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.AppleBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.BananaBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.BerryBlackBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.BerryBlueBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.CherryBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.GrapefruitBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.GrapesBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.LemonBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.LimeBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.MangoBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.OrangeBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.PeachBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.PearBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.PineappleBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+
+--Soul Filcher's Farming compat
+if (getActivatedMods():contains("FarmingTime")) then
+
+else
+    table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.CornBagSeed");
+    table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+    table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.LettuceBagSeed");
+    table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
 end
