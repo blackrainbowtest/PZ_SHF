@@ -28,6 +28,11 @@ Recipes_EN {
         Recipe_Open_Packet_of_Watermelon_Seeds      = "Open packet of watermelon seeds",
         Recipe_Open_Packet_of_Zucchini_Seeds        = "Open packet of zucchini seeds",
 
+    /*___________________ТИП: ХЗ___________________*/
+        Recipe_Open_Packet_of_Tea_Seeds             = "Open packet of tea seeds",
+        Recipe_Open_Packet_of_Coffee_Seeds          = "Open packet of coffee seeds",
+
+
 /*___________________РЕЦЕПТЫ_ДЛЯ_ЗАКРЫТИЯ_ПАЧЕК___________________*/
     
     /*___________________ТИП: ФРУКТЫ___________________*/
@@ -56,6 +61,10 @@ Recipes_EN {
         Recipe_Put_Pepper_Seeds_in_Packet           = "Put pepper seeds in the packet",
         Recipe_Put_Watermelon_Seeds_in_Packet       = "Put watermelon seeds in the packet",
         Recipe_Put_Zucchini_Seeds_in_Packet         = "Put zucchini seeds in the packet",
+
+    /*___________________ТИП: ХЗ___________________*/
+        Recipe_Put_Tea_Seeds_in_Packet              = "Put tea seeds in the packet",
+        Recipe_Put_Coffee_Seeds_in_Packet           = "Put coffee seeds in the packet",
 
 /*___________________РЕЦЕПТЫ_ДЛЯ_ПОЛУЧЕНИЯ_СЕМЯН__________________*/
 
@@ -86,4 +95,15 @@ Recipes_EN {
         Recipe_Claim_Pepper_Seeds                   = "Get seeds"
         Recipe_Claim_Watermelon_Seeds               = "Get seeds"
         Recipe_Claim_Zucchini_Seeds                 = "Get seeds"
+
+    /*___________________ТИП: ХЗ___________________*/
+        Recipe_Claim_Tea_Seeds                      = "Get seeds"
+        Recipe_Claim_Coffee_Seeds                   = "Get seeds"
+
+/*_________________РЕЦЕПТЫ_ДЛЯ_СОЗДАНИЯ_ПРЕДМЕТОВ_________________*/
+
+    /*___________________ТИП: ХЗ___________________*/
+
+        Recipe_Make_Tea_Bag                         = "Make tea bag"
+        Recipe_Make_Coffee                          = "Make coffee"
 }

@@ -49,6 +49,10 @@ table.insert(SuburbsDistributions.all.crate.items, "SHF.PearBagSeed");
 table.insert(SuburbsDistributions.all.crate.items, 0.8);
 table.insert(SuburbsDistributions.all.crate.items, "SHF.PineappleBagSeed");
 table.insert(SuburbsDistributions.all.crate.items, 0.8);
+table.insert(SuburbsDistributions.all.crate.items, "SHF.TeaBagSeed");
+table.insert(SuburbsDistributions.all.crate.items, 0.8);
+table.insert(SuburbsDistributions.all.crate.items, "SHF.CoffeeBagSeed");
+table.insert(SuburbsDistributions.all.crate.items, 0.8);
 
 --Soul Filcher's Farming compat
 if (getActivatedMods():contains("FarmingTime")) then
@@ -104,6 +108,10 @@ table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.PearBagSeed")
 table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
 table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.PineappleBagSeed");
 table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
+table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.TeaBagSeed");
+table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
+table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.CoffeeBagSeed");
+table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
 
 --Soul Filcher's Farming compat
 if (getActivatedMods():contains("FarmingTime")) then
@@ -157,6 +165,10 @@ table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
 table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.PearBagSeed");
 table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
 table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.PineappleBagSeed");
+table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
+table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.TeaBagSeed");
+table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
+table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.TeaBagSeed");
 table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
 
 --Soul Filcher's Farming compat
@@ -213,6 +225,10 @@ table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.Pear
 table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
 table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.PineappleBagSeed");
 table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.TeaBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.CoffeeBagSeed");
+table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
 
 --Soul Filcher's Farming compat
 if (getActivatedMods():contains("FarmingTime")) then
@@ -267,6 +283,10 @@ table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
 table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.PearBagSeed");
 table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
 table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.PineappleBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.TeaBagSeed");
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
+table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.CoffeeBagSeed");
 table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
 
 --Soul Filcher's Farming compat
@@ -325,6 +345,10 @@ table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.PearBagSeed");
 table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
 table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.PineappleBagSeed");
 table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
+table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.TeaBagSeed");
+table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
+table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.CoffeeBagSeed");
+table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
 
 --Soul Filcher's Farming compat
 if (getActivatedMods():contains("FarmingTime")) then
@@ -380,6 +404,10 @@ table.insert(SuburbsDistributions["SeedBag"].items, 8);
 table.insert(SuburbsDistributions["SeedBag"].items, "SHF.PearBagSeed");
 table.insert(SuburbsDistributions["SeedBag"].items, 8);
 table.insert(SuburbsDistributions["SeedBag"].items, "SHF.PineappleBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.TeaBagSeed");
+table.insert(SuburbsDistributions["SeedBag"].items, 8);
+table.insert(SuburbsDistributions["SeedBag"].items, "SHF.CoffeeBagSeed");
 table.insert(SuburbsDistributions["SeedBag"].items, 8);
 
 --Soul Filcher's Farming compat
@@ -437,6 +465,10 @@ table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.Pea
 table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
 table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.PineappleBagSeed");
 table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.TeaBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.CoffeeBagSeed");
+table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
 
 --Soul Filcher's Farming compat
 if (getActivatedMods():contains("FarmingTime")) then
@@ -447,3 +479,86 @@ else
     table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.LettuceBagSeed");
     table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
 end
+
+
+table.insert(ProceduralDistributions["list"]["BakeryKitchenFridge"].items,"WPSkillLeterature.TeaLeaves");
+table.insert(ProceduralDistributions["list"]["BakeryKitchenFridge"].items, 1);
+table.insert(ProceduralDistributions["list"]["BandPracticeFridge"].items,"WPSkillLeterature.TeaLeaves");
+table.insert(ProceduralDistributions["list"]["BandPracticeFridge"].items, 6);
+table.insert(ProceduralDistributions["list"]["BurgerKitchenFridge"].items,"WPSkillLeterature.TeaLeaves");
+table.insert(ProceduralDistributions["list"]["BurgerKitchenFridge"].items, 4);
+table.insert(ProceduralDistributions["list"]["CafeKitchenFridge"].items,"WPSkillLeterature.TeaLeaves");
+table.insert(ProceduralDistributions["list"]["CafeKitchenFridge"].items, 5);
+table.insert(ProceduralDistributions["list"]["CrateTea"].items,"WPSkillLeterature.TeaLeaves");
+table.insert(ProceduralDistributions["list"]["CrateTea"].items, 20);
+table.insert(ProceduralDistributions["list"]["FridgeBreakRoom"].items,"WPSkillLeterature.TeaLeaves");
+table.insert(ProceduralDistributions["list"]["FridgeBreakRoom"].items, 1);
+table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items,"WPSkillLeterature.TeaLeaves");
+table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, 1);
+table.insert(ProceduralDistributions["list"]["FridgeOffice"].items,"WPSkillLeterature.TeaLeaves");
+table.insert(ProceduralDistributions["list"]["FridgeOffice"].items, 8);
+table.insert(ProceduralDistributions["list"]["FridgeOther"].items,"WPSkillLeterature.TeaLeaves");
+table.insert(ProceduralDistributions["list"]["FridgeOther"].items, 1);
+table.insert(ProceduralDistributions["list"]["FridgeRich"].items,"WPSkillLeterature.TeaLeaves");
+table.insert(ProceduralDistributions["list"]["FridgeRich"].items, 1);
+table.insert(ProceduralDistributions["list"]["SpiffosKitchenFridge"].items,"WPSkillLeterature.TeaLeaves");
+table.insert(ProceduralDistributions["list"]["SpiffosKitchenFridge"].items, 20);
+table.insert(ProceduralDistributions["list"]["SushiKitchenFridge"].items,"WPSkillLeterature.TeaLeaves");
+table.insert(ProceduralDistributions["list"]["SushiKitchenFridge"].items, 1);
+table.insert(ProceduralDistributions["list"]["WesternKitchenFridge"].items,"WPSkillLeterature.TeaLeaves");
+table.insert(ProceduralDistributions["list"]["WesternKitchenFridge"].items, 1);
+
+table.insert(ProceduralDistributions["list"]["BakeryKitchenFridge"].items,"WPSkillLeterature.CoffeeBeans");
+table.insert(ProceduralDistributions["list"]["BakeryKitchenFridge"].items, 1);
+table.insert(ProceduralDistributions["list"]["BandPracticeFridge"].items,"WPSkillLeterature.CoffeeBeans");
+table.insert(ProceduralDistributions["list"]["BandPracticeFridge"].items, 6);
+table.insert(ProceduralDistributions["list"]["BurgerKitchenFridge"].items,"WPSkillLeterature.CoffeeBeans");
+table.insert(ProceduralDistributions["list"]["BurgerKitchenFridge"].items, 4);
+table.insert(ProceduralDistributions["list"]["CafeKitchenFridge"].items,"WPSkillLeterature.CoffeeBeans");
+table.insert(ProceduralDistributions["list"]["CafeKitchenFridge"].items, 5);
+table.insert(ProceduralDistributions["list"]["CrateCoffee"].items,"WPSkillLeterature.CoffeeBeans");
+table.insert(ProceduralDistributions["list"]["CrateCoffee"].items, 20);
+table.insert(ProceduralDistributions["list"]["FridgeBreakRoom"].items,"WPSkillLeterature.CoffeeBeans");
+table.insert(ProceduralDistributions["list"]["FridgeBreakRoom"].items, 1);
+table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items,"WPSkillLeterature.CoffeeBeans");
+table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, 1);
+table.insert(ProceduralDistributions["list"]["FridgeOffice"].items,"WPSkillLeterature.CoffeeBeans");
+table.insert(ProceduralDistributions["list"]["FridgeOffice"].items, 8);
+table.insert(ProceduralDistributions["list"]["FridgeOther"].items,"WPSkillLeterature.CoffeeBeans");
+table.insert(ProceduralDistributions["list"]["FridgeOther"].items, 1);
+table.insert(ProceduralDistributions["list"]["FridgeRich"].items,"WPSkillLeterature.CoffeeBeans");
+table.insert(ProceduralDistributions["list"]["FridgeRich"].items, 1);
+table.insert(ProceduralDistributions["list"]["SpiffosKitchenFridge"].items,"WPSkillLeterature.CoffeeBeans");
+table.insert(ProceduralDistributions["list"]["SpiffosKitchenFridge"].items, 20);
+table.insert(ProceduralDistributions["list"]["SushiKitchenFridge"].items,"WPSkillLeterature.CoffeeBeans");
+table.insert(ProceduralDistributions["list"]["SushiKitchenFridge"].items, 1);
+table.insert(ProceduralDistributions["list"]["WesternKitchenFridge"].items,"WPSkillLeterature.CoffeeBeans");
+table.insert(ProceduralDistributions["list"]["WesternKitchenFridge"].items, 1);
+
+table.insert(ProceduralDistributions["list"]["BakeryKitchenFridge"].items,"WPSkillLeterature.CoffeeBeansRoasted");
+table.insert(ProceduralDistributions["list"]["BakeryKitchenFridge"].items, 1);
+table.insert(ProceduralDistributions["list"]["BandPracticeFridge"].items,"WPSkillLeterature.CoffeeBeansRoasted");
+table.insert(ProceduralDistributions["list"]["BandPracticeFridge"].items, 6);
+table.insert(ProceduralDistributions["list"]["BurgerKitchenFridge"].items,"WPSkillLeterature.CoffeeBeansRoasted");
+table.insert(ProceduralDistributions["list"]["BurgerKitchenFridge"].items, 4);
+table.insert(ProceduralDistributions["list"]["CafeKitchenFridge"].items,"WPSkillLeterature.CoffeeBeansRoasted");
+table.insert(ProceduralDistributions["list"]["CafeKitchenFridge"].items, 5);
+table.insert(ProceduralDistributions["list"]["CrateCoffee"].items,"WPSkillLeterature.CoffeeBeansRoasted");
+table.insert(ProceduralDistributions["list"]["CrateCoffee"].items, 20);
+table.insert(ProceduralDistributions["list"]["FridgeBreakRoom"].items,"WPSkillLeterature.CoffeeBeansRoasted");
+table.insert(ProceduralDistributions["list"]["FridgeBreakRoom"].items, 1);
+table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items,"WPSkillLeterature.CoffeeBeansRoasted");
+table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, 1);
+table.insert(ProceduralDistributions["list"]["FridgeOffice"].items,"WPSkillLeterature.CoffeeBeansRoasted");
+table.insert(ProceduralDistributions["list"]["FridgeOffice"].items, 8);
+table.insert(ProceduralDistributions["list"]["FridgeOther"].items,"WPSkillLeterature.CoffeeBeansRoasted");
+table.insert(ProceduralDistributions["list"]["FridgeOther"].items, 1);
+table.insert(ProceduralDistributions["list"]["FridgeRich"].items,"WPSkillLeterature.CoffeeBeansRoasted");
+table.insert(ProceduralDistributions["list"]["FridgeRich"].items, 1);
+table.insert(ProceduralDistributions["list"]["SpiffosKitchenFridge"].items,"WPSkillLeterature.CoffeeBeansRoasted");
+table.insert(ProceduralDistributions["list"]["SpiffosKitchenFridge"].items, 20);
+table.insert(ProceduralDistributions["list"]["SushiKitchenFridge"].items,"WPSkillLeterature.CoffeeBeansRoasted");
+table.insert(ProceduralDistributions["list"]["SushiKitchenFridge"].items, 1);
+table.insert(ProceduralDistributions["list"]["WesternKitchenFridge"].items,"WPSkillLeterature.CoffeeBeansRoasted");
+table.insert(ProceduralDistributions["list"]["WesternKitchenFridge"].items, 1);
+

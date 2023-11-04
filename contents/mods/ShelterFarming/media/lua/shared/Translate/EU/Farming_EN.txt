@@ -25,4 +25,7 @@ Farming_EN = {
   Farming_Pear = "Pear",
   Farming_Pineapple = "Pineapple",
 
+  Farming_TeaLeaves = "Tea Leaves",
+  Farming_CoffeeBeans = "Coffee Beans",
+
 }

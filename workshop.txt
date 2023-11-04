@@ -1,7 +1,7 @@
 version=1
 id=3050914195
 title=Shelter Farm mod
-description=Bugs that will be fixed soon.
+description=[h1]The mod will be updated depending on the needs of the server.[/h1]
 description=
 description=The appearance of seeds at spawn points.
 description=Balancing the amount of seeds needed for growing fruits and vegetables.

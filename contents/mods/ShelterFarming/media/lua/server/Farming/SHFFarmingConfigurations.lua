@@ -85,6 +85,9 @@ farming_vegetableconf.icons["Peach"] = "media/textures/WorldItems/Fruit/item_Pea
 farming_vegetableconf.icons["Pear"] = "media/textures/WorldItems/Fruit/item_Pear.png"
 farming_vegetableconf.icons["Pineapple"] = "media/textures/WorldItems/Fruit/item_Pineapple.png"
 
+farming_vegetableconf.icons["TeaLeaves"] = "media/textures/item_TeaLeaves.png"
+farming_vegetableconf.icons["CoffeeBeans"] = "media/textures/item_CoffeeBeans.png"
+
 -- Конфигурация для растения Авокадо (16 to 20 weeks to grow)
 farming_vegetableconf.props["Avocado"] = farming_vegetableconf.props["Avocado"] or {}
 farming_vegetableconf.props["Avocado"].seedsRequired = 12;
@@ -101,7 +104,7 @@ farming_vegetableconf.props["Avocado"].seedPerVeg = 3;
 farming_vegetableconf.props["Avocado"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Avocado"].minVeg = 4;
 farming_vegetableconf.props["Avocado"].maxVeg = 8;
-farming_vegetableconf.props["Avocado"].retainOnHarvest = 2;
+farming_vegetableconf.props["Avocado"].retainOnHarvest = 3;
 
 -- Конфигурация для растения кукуруза (12 to 16 weeks to grow)
 farming_vegetableconf.props["Corn"] = farming_vegetableconf.props["Corn"] or {}
@@ -249,7 +252,7 @@ farming_vegetableconf.props["Apple"].seedPerVeg = 2;
 farming_vegetableconf.props["Apple"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Apple"].minVeg = 4;
 farming_vegetableconf.props["Apple"].maxVeg = 5;
-farming_vegetableconf.props["Apple"].retainOnHarvest = 2;
+farming_vegetableconf.props["Apple"].retainOnHarvest = 3;
 
 -- Конфигурация для растения Банана (20 to 24 weeks to grow)
 farming_vegetableconf.props["Banana"] = farming_vegetableconf.props["Banana"] or {}
@@ -266,7 +269,7 @@ farming_vegetableconf.props["Banana"].seedPerVeg = 4;
 farming_vegetableconf.props["Banana"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Banana"].minVeg = 4;
 farming_vegetableconf.props["Banana"].maxVeg = 5;
-farming_vegetableconf.props["Banana"].retainOnHarvest = 2;
+farming_vegetableconf.props["Banana"].retainOnHarvest = 3;
 
 -- Конфигурация для растения черники (6 to 8 weeks to grow)
 farming_vegetableconf.props["BerryBlack"] = farming_vegetableconf.props["BerryBlack"] or {}
@@ -278,12 +281,12 @@ farming_vegetableconf.props["BerryBlack"].minVegAutorized = 9;
 farming_vegetableconf.props["BerryBlack"].maxVegAutorized = 16;
 farming_vegetableconf.props["BerryBlack"].vegetableName = "Base.BerryBlack";
 farming_vegetableconf.props["BerryBlack"].seedName = "SHF.BerryBlackseed";
-farming_vegetableconf.props["BerryBlack"].seedPerVeg = 4;
+farming_vegetableconf.props["BerryBlack"].seedPerVeg = 2;
 
 farming_vegetableconf.props["BerryBlack"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["BerryBlack"].minVeg = 8;
 farming_vegetableconf.props["BerryBlack"].maxVeg = 10;
-farming_vegetableconf.props["BerryBlack"].retainOnHarvest = 2;
+farming_vegetableconf.props["BerryBlack"].retainOnHarvest = 3;
 
 -- Конфигурация для растения смородины (6 to 8 weeks to grow)
 farming_vegetableconf.props["BerryBlue"] = farming_vegetableconf.props["BerryBlue"] or {}
@@ -295,12 +298,12 @@ farming_vegetableconf.props["BerryBlue"].minVegAutorized = 9;
 farming_vegetableconf.props["BerryBlue"].maxVegAutorized = 16;
 farming_vegetableconf.props["BerryBlue"].vegetableName = "Base.BerryBlue";
 farming_vegetableconf.props["BerryBlue"].seedName = "SHF.BerryBlueseed";
-farming_vegetableconf.props["BerryBlue"].seedPerVeg = 4
+farming_vegetableconf.props["BerryBlue"].seedPerVeg = 2;
 
 farming_vegetableconf.props["BerryBlue"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["BerryBlue"].minVeg = 8;
 farming_vegetableconf.props["BerryBlue"].maxVeg = 10;
-farming_vegetableconf.props["BerryBlue"].retainOnHarvest = 2;
+farming_vegetableconf.props["BerryBlue"].retainOnHarvest = 3;
 
 -- Конфигурация для растения вишни (16 to 20 weeks to grow)
 farming_vegetableconf.props["Cherry"] = farming_vegetableconf.props["Cherry"] or {}
@@ -317,7 +320,7 @@ farming_vegetableconf.props["Cherry"].seedPerVeg = 4;
 farming_vegetableconf.props["Cherry"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Cherry"].minVeg = 5;
 farming_vegetableconf.props["Cherry"].maxVeg = 6;
-farming_vegetableconf.props["Cherry"].retainOnHarvest = 2;
+farming_vegetableconf.props["Cherry"].retainOnHarvest = 3;
 
 -- Конфигурация для растения грейфрута (16 to 20 weeks to grow)
 farming_vegetableconf.props["Grapefruit"] = farming_vegetableconf.props["Grapefruit"] or {}
@@ -334,7 +337,7 @@ farming_vegetableconf.props["Grapefruit"].seedPerVeg = 3;
 farming_vegetableconf.props["Grapefruit"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Grapefruit"].minVeg = 2;
 farming_vegetableconf.props["Grapefruit"].maxVeg = 3;
-farming_vegetableconf.props["Grapefruit"].retainOnHarvest = 2;
+farming_vegetableconf.props["Grapefruit"].retainOnHarvest = 3;
 
 -- Конфигурация для растения винограда (20 to 24 weeks to grow)
 farming_vegetableconf.props["Grapes"] = farming_vegetableconf.props["Grapes"] or {}
@@ -351,7 +354,7 @@ farming_vegetableconf.props["Grapes"].seedPerVeg = 5;
 farming_vegetableconf.props["Grapes"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Grapes"].minVeg = 3;
 farming_vegetableconf.props["Grapes"].maxVeg = 5;
-farming_vegetableconf.props["Grapes"].retainOnHarvest = 2;
+farming_vegetableconf.props["Grapes"].retainOnHarvest = 3;
 
 -- Конфигурация для растения лимона (16 to 20 weeks to grow)
 farming_vegetableconf.props["Lemon"] = farming_vegetableconf.props["Lemon"] or {}
@@ -368,7 +371,7 @@ farming_vegetableconf.props["Lemon"].seedPerVeg = 3;
 farming_vegetableconf.props["Lemon"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Lemon"].minVeg = 5;
 farming_vegetableconf.props["Lemon"].maxVeg = 7;
-farming_vegetableconf.props["Lemon"].retainOnHarvest = 2;
+farming_vegetableconf.props["Lemon"].retainOnHarvest = 3;
 
 -- Конфигурация для растения лайма (16 to 20 weeks to grow)
 farming_vegetableconf.props["Lime"] = farming_vegetableconf.props["Lime"] or {}
@@ -385,7 +388,7 @@ farming_vegetableconf.props["Lime"].seedPerVeg = 3;
 farming_vegetableconf.props["Lime"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Lime"].minVeg = 5;
 farming_vegetableconf.props["Lime"].maxVeg = 7;
-farming_vegetableconf.props["Lime"].retainOnHarvest = 2;
+farming_vegetableconf.props["Lime"].retainOnHarvest = 3;
 
 -- Конфигурация для растения манго (16 to 20 weeks to grow)
 farming_vegetableconf.props["Mango"] = farming_vegetableconf.props["Mango"] or {}
@@ -402,7 +405,7 @@ farming_vegetableconf.props["Mango"].seedPerVeg = 2;
 farming_vegetableconf.props["Mango"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Mango"].minVeg = 3;
 farming_vegetableconf.props["Mango"].maxVeg = 5;
-farming_vegetableconf.props["Mango"].retainOnHarvest = 2;
+farming_vegetableconf.props["Mango"].retainOnHarvest = 3;
 
 -- Конфигурация для растения апельсина (16 to 20 weeks to grow)
 farming_vegetableconf.props["Orange"] = farming_vegetableconf.props["Orange"] or {}
@@ -419,7 +422,7 @@ farming_vegetableconf.props["Orange"].seedPerVeg = 3;
 farming_vegetableconf.props["Orange"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Orange"].minVeg = 4;
 farming_vegetableconf.props["Orange"].maxVeg = 7;
-farming_vegetableconf.props["Orange"].retainOnHarvest = 2;
+farming_vegetableconf.props["Orange"].retainOnHarvest = 3;
 
 -- Конфигурация для растения персика (20 to 24 weeks to grow)
 farming_vegetableconf.props["Peach"] = farming_vegetableconf.props["Peach"] or {}
@@ -437,7 +440,7 @@ farming_vegetableconf.props["Peach"].seedPerVeg = 2;
 farming_vegetableconf.props["Peach"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Peach"].minVeg = 4;
 farming_vegetableconf.props["Peach"].maxVeg = 5;
-farming_vegetableconf.props["Peach"].retainOnHarvest = 2;
+farming_vegetableconf.props["Peach"].retainOnHarvest = 3;
 
 -- Конфигурация для растения груши (20 to 24 weeks to grow)
 farming_vegetableconf.props["Pear"] = farming_vegetableconf.props["Pear"] or {}
@@ -454,7 +457,7 @@ farming_vegetableconf.props["Pear"].seedPerVeg = 2;
 farming_vegetableconf.props["Pear"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Pear"].minVeg = 5;
 farming_vegetableconf.props["Pear"].maxVeg = 7;
-farming_vegetableconf.props["Pear"].retainOnHarvest = 2;
+farming_vegetableconf.props["Pear"].retainOnHarvest = 3;
 
 -- Конфигурация для растения ананаса (4 to 8 weeks to grow)
 farming_vegetableconf.props["Pineapple"] = farming_vegetableconf.props["Pineapple"] or {}
@@ -471,7 +474,41 @@ farming_vegetableconf.props["Pineapple"].seedPerVeg = 2;
 farming_vegetableconf.props["Pineapple"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Pineapple"].minVeg = 3;
 farming_vegetableconf.props["Pineapple"].maxVeg = 4;
-farming_vegetableconf.props["Pineapple"].retainOnHarvest = 2;
+farming_vegetableconf.props["Pineapple"].retainOnHarvest = 3;
+
+-- Конфигурация для растения чайное дерево (20 to 24 weeks to grow)
+farming_vegetableconf.props["TeaLeaves"] = farming_vegetableconf.props["TeaLeaves"] or {}
+farming_vegetableconf.props["TeaLeaves"].seedsRequired = 6;
+farming_vegetableconf.props["TeaLeaves"].texture = "shf_tealeaves_07";
+farming_vegetableconf.props["TeaLeaves"].waterLvl = 85;
+farming_vegetableconf.props["TeaLeaves"].timeToGrow = ZombRand(103, 117);
+farming_vegetableconf.props["TeaLeaves"].minVegAutorized = 6;
+farming_vegetableconf.props["TeaLeaves"].maxVegAutorized = 12;
+farming_vegetableconf.props["TeaLeaves"].vegetableName = "SHF.TeaLeaves";
+farming_vegetableconf.props["TeaLeaves"].seedName = "SHF.Teaseed";
+farming_vegetableconf.props["TeaLeaves"].seedPerVeg = 1;
+
+farming_vegetableconf.props["TeaLeaves"].growCode = "SHFFarmingConfigurations.growNewCrop";
+farming_vegetableconf.props["TeaLeaves"].minVeg = 5;
+farming_vegetableconf.props["TeaLeaves"].maxVeg = 7;
+farming_vegetableconf.props["TeaLeaves"].retainOnHarvest = 3;
+
+-- Конфигурация для растения кофейное дерево (20 to 24 weeks to grow)
+farming_vegetableconf.props["CoffeeBeans"] = farming_vegetableconf.props["CoffeeBeans"] or {}
+farming_vegetableconf.props["CoffeeBeans"].seedsRequired = 6;
+farming_vegetableconf.props["CoffeeBeans"].texture = "shf_coffeebeans_07";
+farming_vegetableconf.props["CoffeeBeans"].waterLvl = 85;
+farming_vegetableconf.props["CoffeeBeans"].timeToGrow = ZombRand(103, 117);
+farming_vegetableconf.props["CoffeeBeans"].minVegAutorized = 6;
+farming_vegetableconf.props["CoffeeBeans"].maxVegAutorized = 12;
+farming_vegetableconf.props["CoffeeBeans"].vegetableName = "SHF.CoffeeBeans";
+farming_vegetableconf.props["CoffeeBeans"].seedName = "SHF.Coffeeseed";
+farming_vegetableconf.props["CoffeeBeans"].seedPerVeg = 1;
+
+farming_vegetableconf.props["CoffeeBeans"].growCode = "SHFFarmingConfigurations.growNewCrop";
+farming_vegetableconf.props["CoffeeBeans"].minVeg = 5;
+farming_vegetableconf.props["CoffeeBeans"].maxVeg = 7;
+farming_vegetableconf.props["CoffeeBeans"].retainOnHarvest = 3;
 
 -- спрайты
 farming_vegetableconf.sprite["Avocado"] = {
@@ -703,4 +740,24 @@ farming_vegetableconf.sprite["Pineapple"] = {
 "shf_pineapple_06",
 "shf_pineapple_07", 
 "shf_pineapple_08"
+}
+farming_vegetableconf.sprite["TeaLeaves"] = {
+"shf_tealeaves_01", 
+"shf_tealeaves_02", 
+"shf_tealeaves_03", 
+"shf_tealeaves_04", 
+"shf_tealeaves_05",
+"shf_tealeaves_06", 
+"shf_tealeaves_07", 
+"shf_tealeaves_08"
+}
+farming_vegetableconf.sprite["CoffeeBeans"] = {
+"shf_coffeebeans_01", 
+"shf_coffeebeans_02", 
+"shf_coffeebeans_03", 
+"shf_coffeebeans_04", 
+"shf_coffeebeans_05",
+"shf_coffeebeans_06", 
+"shf_coffeebeans_07", 
+"shf_coffeebeans_08"
 }

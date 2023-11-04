@@ -88,59 +88,27 @@ end
 
 -- get the object name depending on his current phase
 farming_vegetableconf.getObjectName = function(plant)
-    local props = farming_vegetableconf.props[plant.typeOfSeed]
+    if plant.state == "plow" then return getText("Farming_Plowed_Land") end
 
-    if plant.state == "plow" then
-        return getText("Farming_Plowed_Land")
-    end
-    if plant.state == "destroy" then
-        return getText("Farming_Destroyed") .. " " .. getText("Farming_" .. plant.typeOfSeed)
-    end
-    if plant.state == "dry" then
-        return getText("Farming_Receding") .. " " .. getText("Farming_" .. plant.typeOfSeed)
-    end
-    if plant.state == "rotten" then
-        return getText("Farming_Rotten") .. " " .. getText("Farming_" .. plant.typeOfSeed)
-    end
-    if plant.nbOfGrow <= 1 then
-        if props.phaseName1 ~= nil then
-            return getText(props.phaseName1) .. " " .. getText("Farming_" .. plant.typeOfSeed);
-        else
-            return getText("Farming_Seedling") .. " " .. getText("Farming_" .. plant.typeOfSeed);
-        end
-    elseif plant.nbOfGrow == 2 then
-        if props.phaseName2 ~= nil then
-            return getText(props.phaseName2) .. " " .. getText("Farming_" .. plant.typeOfSeed);
-        else
-            return getText("Farming_Young") .. " " .. getText("Farming_" .. plant.typeOfSeed);
-        end
-    elseif plant.nbOfGrow == 3 then
-        if props.phaseName3 ~= nil then
-            return getText(props.phaseName3) .. " " .. getText("Farming_" .. plant.typeOfSeed);
-        else
-            return getText("Farming_Young") .. " " .. getText("Farming_" .. plant.typeOfSeed);
-        end
-    elseif plant.nbOfGrow == 4 then
-        if props.phaseName4 ~= nil then
-            return getText(props.phaseName4) .. " " .. getText("Farming_" .. plant.typeOfSeed);
-        else
-            return getText("Farming_Young") .. " " .. getText("Farming_" .. plant.typeOfSeed);
-        end
-    elseif plant.nbOfGrow == 5 then
-        if props.phaseName5 ~= nil then
-            return getText(props.phaseName5) .. " " .. getText("Farming_" .. plant.typeOfSeed);
-        elseif plant.typeOfSeed == "Tomato" then
-            return getText("Farming_Young") .. " " .. getText("Farming_" .. plant.typeOfSeed);
-        elseif plant.typeOfSeed == "Strawberry plant" or plant.typeOfSeed == "Potatoes" then
-            return getText("Farming_In_bloom") .. " " .. getText("Farming_" .. plant.typeOfSeed);
-        else
-            return getText("Farming_Ready_for_Harvest") .. " " .. getText("Farming_" .. plant.typeOfSeed);
-        end
-    elseif plant.nbOfGrow == 6 then
-        if props.phaseName6 ~= nil then
-            return getText(props.phaseName6) .. " " .. getText("Farming_" .. plant.typeOfSeed);
-        else
-            return getText("Farming_Seed-bearing") .. " " .. getText("Farming_" .. plant.typeOfSeed);
+    local props = farming_vegetableconf.props[plant.typeOfSeed]
+    
+    if props then
+        local textPrefix = props.textPrefix or "Farming_"
+
+        if plant.state == "destroy" then return getText("Farming_Destroyed") .. " " .. getText(textPrefix .. plant.typeOfSeed) end
+        if plant.state == "dry" then return getText("Farming_Receding") .. " " .. getText(textPrefix .. plant.typeOfSeed) end
+        if plant.state == "rotten" then return getText("Farming_Rotten") .. " " .. getText(textPrefix .. plant.typeOfSeed) end
+        
+        local customPhaseText = props["phaseName"..plant.nbOfGrow]
+
+        if plant.nbOfGrow <= 1 then
+            return getText("Farming_Seedling") .. " " .. getText(textPrefix ..plant.typeOfSeed);
+        elseif plant.nbOfGrow <= 4 then
+            return getText("Farming_Young") .. " " .. getText(textPrefix ..plant.typeOfSeed);
+        elseif plant.nbOfGrow == 5 then
+            return getText("Farming_Ready_for_Harvest") .. " " .. getText(textPrefix ..plant.typeOfSeed);
+        elseif plant.nbOfGrow == 6 then
+            return getText("Farming_Seed-bearing") .. " " .. getText(textPrefix ..plant.typeOfSeed);
         end
     end
     return "Mystery Plant"

@@ -5,6 +5,7 @@ module SFZ
     {
         Base
     }
+
 /*___________________ПРЕДМЕТЫ: СЕМЕНА___________________*/
 
     /*___________________ТИП: ФРУКТЫ___________________*/
@@ -192,6 +193,23 @@ module SFZ
                 mesh		= WorldItems/Seeds,
                 texture		= WorldItems/SHF_Seed_ZucchiniSeeds_Ground,
                 scale		= 0.5,
+            }
+    /*___________________ТИП: ХЗ___________________*/
+
+        /* семена чая */
+            model TeaSeeds_Ground
+            {
+                mesh            = WorldItems/Seeds,
+                texture         = WorldItems/SHF_Seed_TeaSeeds_Ground,
+                scale           = 0.5,
+            }
+        
+        /* семена кофе */
+            model CoffeeSeeds_Ground
+            {
+                mesh            = WorldItems/Seeds,
+                texture         = WorldItems/SHF_Seed_CoffeeSeeds_Ground,
+                scale           = 0.5,
             }
 
 /*___________________ПРЕДМЕТЫ: ПАЧКИ СЕМЯН___________________*/
@@ -381,5 +399,50 @@ module SFZ
                 mesh		= WorldItems/SeedPacket,
                 texture		= WorldItems/SHF_Bag_ZucchiniSeedBag_Ground,
                 scale		= 0.5,
+            }
+    /*___________________ТИП: ХЗ___________________*/
+
+        /* пачка семян чая */
+            model TeaSeedBag_Ground
+            {
+                mesh            = WorldItems/SeedPacket,
+                texture         = WorldItems/SHF_Bag_TeaSeedBag_Ground,
+                scale           = 0.5,
+            }
+
+        /* пачка семян кофе */
+            model CoffeeSeedBag_Ground
+            {
+                mesh            = WorldItems/SeedPacket,
+                texture         = WorldItems/SHF_Bag_CoffeeSeeds_Ground,
+                scale           = 0.5,
+            }
+
+/*___________________ПРЕДМЕТЫ: НОВЫЕ ПРОД.___________________*/
+
+    /*___________________ТИП: ХЗ___________________*/
+
+        /* листья чая */
+            model TeaLeaves_Ground
+            {
+                mesh            = WorldItems/GrapeLeaves,
+                texture         = WorldItems/CommonMallowGrapeLeaves,
+                scale           = 0.5,
+            }
+
+        /* зерна кофе */
+            model CoffeeBeans_Ground
+            {
+                mesh            = WorldItems/ChocolateCoveredCoffeeBeans,
+                texture         = WorldItems/SHF_item_CoffeeBeans,
+                scale           = 0.5,
+            }
+        
+        /* жареные зерна кофе */
+            model CoffeeBeansRoasted_Ground
+            {
+                mesh            = WorldItems/ChocolateCoveredCoffeeBeans,
+                texture         = WorldItems/SHF_item_CoffeeBeansRoasted,
+                scale           = 0.5,
             }
 }

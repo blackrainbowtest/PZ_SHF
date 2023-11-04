@@ -27,6 +27,11 @@ ItemName_EN = {
         ItemName_SHF.Pepperseed         = "Pepper seeds",
         ItemName_SHF.Watermelonseed     = "Watermelon seeds",
         ItemName_SHF.Zucchiniseed       = "Zucchini seeds",
+    
+    /*___________________ТИП: ХЗ_______________________*/
+        ItemName_SHF.Teaseed            = "Tea seeds",
+        ItemName_SHF.Coffeeseed         = "Coffee seeds",
+
 
 /*___________________ПРЕДМЕТЫ: ПАЧКИ СЕМЯН___________________*/
 
@@ -56,6 +61,19 @@ ItemName_EN = {
         ItemName_SHF.WatermelonBagSeed  = "Watermelon seed packet",
         ItemName_SHF.PepperBagSeed      = "Pepper seed packet",
         ItemName_SHF.ZucchiniBagSeed    = "Zucchini seed packet",
+
+    /*___________________ТИП: ХЗ_______________________*/
+        ItemName_SHF.TeaBagSeed         = "Tea seed packet",
+        ItemName_SHF.CoffeeBagSeed      = "Coffee seed packet",
+
+
+/*___________________ПРЕДМЕТЫ: НОВЫЕ ХЗ ОБЕКТЫ___________________*/
+
+
+    /*___________________ТИП: ХЗ___________________*/
+        ItemName_SHF.TeaLeaves          = "Tea Leaves",
+        ItemName_SHF.CoffeeBeans        = "Coffee Beans",
+        ItemName_SHF.CoffeeBeansRoasted = "Coffee Beans Roasted",
 
 
 }

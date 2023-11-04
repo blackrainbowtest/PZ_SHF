@@ -243,6 +243,27 @@ module SFZ
                 Sound:OpenSeedPacket,
             }
 
+    /*___________________ТИП: ХЗ___________________*/
+
+        /* пачка семян чая */
+            recipe Open Packet of Tea Seeds {
+                TeaBagSeed,
+        
+                Result:Teaseed=50,
+                Time:20.0,
+                Category:Farming,
+                Sound:OpenSeedPacket,
+            }
+        /* пачка семян кофе */
+            recipe Open Packet of Coffee Seeds {
+                CoffeeBagSeed,
+        
+                Result:Coffeeseed=50,
+                Time:20.0,
+                Category:Farming,
+                Sound:OpenSeedPacket,
+            }
+
 /*___________________РЕЦЕПТЫ_ДЛЯ_ЗАКРЫТИЯ_ПАЧЕК___________________*/
     
     /*___________________ТИП: ФРУКТЫ___________________*/
@@ -474,6 +495,27 @@ module SFZ
                 Zucchiniseed=50,
 
                 Result:ZucchiniBagSeed,
+                Time:20.0,
+                Category:Farming,
+                Sound:OpenSeedPacket,
+            }
+
+    /*___________________ТИП: ХЗ___________________*/
+
+        /* пачка семян чая */
+            recipe Put Tea Seeds in Packet {
+                Teaseed=50,
+
+                Result:TeaBagSeed,
+                Time:20.0,
+                Category:Farming,
+                Sound:OpenSeedPacket,
+            }
+        /* пачка семян кофе */
+            recipe Put Coffee Seeds in Packet {
+                Coffeeseed=50,
+
+                Result:CoffeeBagSeed,
                 Time:20.0,
                 Category:Farming,
                 Sound:OpenSeedPacket,
@@ -783,4 +825,75 @@ module SFZ
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
                 }
+    
+    /*___________________ТИП: ХЗ___________________*/
+
+        /* пачка семян чая */
+            recipe Claim Tea Seeds
+                {
+                    TeaLeaves=10,
+
+                    Result:Teaseed=5,
+                    Time:150.0,
+                    OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
+                    Category:Farming,
+                    NeedToBeLearn:False,
+                    Sound:GetingSeeds,
+                }
+
+        /* пачка семян кофе */
+            recipe Claim Coffee Seeds
+                {
+                    CoffeeBeans=10,
+
+                    Result:Coffeeseed=5,
+                    Time:150.0,
+                    OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
+                    Category:Farming,
+                    NeedToBeLearn:False,
+                    Sound:GetingSeeds,
+                }
+
+/*_________________РЕЦЕПТЫ_ДЛЯ_СОЗДАНИЯ_ПРЕДМЕТОВ_________________*/
+    
+    /*___________________ТИП: ХЗ___________________*/
+        
+        /* создание чайнего пакетика */
+            recipe Make Tea Bag {
+                TeaLeaves=15,
+                keep MortarPestle,
+                keep [Recipe.GetItemTypes.Scissors]/[Recipe.GetItemTypes.DullKnife]/[Recipe.GetItemTypes.SharpKnife]/SharpedStone,
+                Paperclip,
+                Thread=5,
+                SheetPaper2/PaperNapkins/PaperBagJays/PaperBagSpiffo,
+
+                Result:Teabag2,
+                Time:80.0,
+                NeedToBeLearn:false,
+                OnGiveXP:Recipe.OnGiveXP.SHFCooking3,
+                CanBeDoneFromFloor:false,
+                StopOnWalk:false,
+                Sound:MakePlaster,
+                Category:Cooking,
+                AnimNode:Disassemble,
+            }
+
+        /* создание кофейнего пакетика */
+            recipe Make Coffee
+            {
+                keep MortarPestle,
+                CoffeeBeansRoasted=15,
+                Plasticbag/Tote/Garbagebag,
+
+                Result:Coffee2,
+                Time:80.0,
+                NeedToBeLearn:false,
+                OnGiveXP:Recipe.OnGiveXP.SHFCooking3,
+                CanBeDoneFromFloor:false,
+                StopOnWalk:false,
+                Sound:MakePlaster,
+                Category:Cooking,
+                AnimNode:Disassemble,
+            }
+
 }

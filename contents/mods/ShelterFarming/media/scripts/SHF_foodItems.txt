@@ -265,6 +265,31 @@ module SHF {
 				WorldStaticModel 	= 		ZucchiniSeeds_Ground,
 			}
 
+
+    /*___________________ТИП: ХЗ___________________*/
+
+         /* семена чая */
+            item Teaseed {
+                DisplayCategory                 = Gardening,
+                Type                            = Normal,
+                DisplayName                     = Tea Seeds,
+                Icon                            = SHF_Seed_TeaSeeds,
+                Weight                          = 0.009,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = TeaSeeds_Ground,
+            }
+
+        /* семена кофе */
+            item Coffeeseed{
+                DisplayCategory                 = Gardening,
+                Type                            = Normal,
+                DisplayName                     = Coffee Seeds,
+                Icon                            = SHF_Seed_CoffeeSeeds,
+                Weight                          = 0.009,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = CoffeeSeeds_Ground,
+            }
+
 /*___________________ПРЕДМЕТЫ: ПАЧКИ СЕМЯН___________________*/
 
 	/*___________________ТИП: ФРУКТЫ___________________*/
@@ -524,4 +549,111 @@ module SHF {
 				SurvivalGear 		= 		TRUE,
 				WorldStaticModel 	= 		ZucchiniSeedBag_Ground,
 			}
+
+
+    /*___________________ТИП: ХЗ___________________*/
+
+        /* пачка семян чая */    
+            item TeaBagSeed {
+                DisplayCategory                 = Gardening,
+                Type                            = Normal,
+                DisplayName                     = Tea Seeds Packet,
+                Icon                            = SHF_Bag_TeaSeedBag,
+                Weight                          = 0.1,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = TeaSeedBag_Ground,
+            }
+        
+        /* пачка семян кофе */
+            item CoffeeBagSeed{
+                DisplayCategory                 = Gardening,
+                Type                            = Normal,
+                DisplayName                     = Coffee Seeds Packet,
+                Icon                            = SHF_Bag_CoffeeSeedBag,
+                Weight                          = 0.1,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = CoffeeSeedBag_Ground,
+            }
+
+/*___________________ПРЕДМЕТЫ: НОВЫЕ ХЗ ОБЕКТЫ___________________*/
+
+    /*___________________ТИП: ХЗ___________________*/
+
+        /* чайные листья */    
+            item TeaLeaves {
+                DisplayCategory                 = Food,
+                Type                            = Food,
+                DisplayName                     = Tea Leaves,
+                Icon                            = TeaLeaves,
+                Weight                          = 0.003,
+                FatigueChange                   = -10,
+                HungerChange                    = -6,
+                ThirstChange                    = 5,
+                UnhappyChange                   = 10,
+                Calories                        = 2,
+                Carbohydrates                   = 0,
+                Lipids                          = 0,
+                Proteins                        = 1,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = TeaLeaves_Ground,
+                IsCookable                      = false,
+                DaysFresh                       = 14,
+                DaysTotallyRotten               = 28,
+                EvolvedRecipe                   = HotDrink:5;HotDrinkRed:5;HotDrinkWhite:5;HotDrinkSpiffo:5;HotDrinkTea:5,
+                CustomEatSound                  = EatingMushy,
+            }
+        
+        /* зерна кофе */    
+            item CoffeeBeans {
+                DisplayCategory                 = Food,
+                Type                            = Food,
+                DisplayName                     = Coffee Beans,
+                Icon                            = CoffeeBeans,
+                Weight                          = 0.02,
+                FatigueChange                   = -10,
+                HungerChange                    = -5,
+                ThirstChange                    = 30,
+                UnhappyChange                   = 20,
+                Calories                        = 2,
+                Carbohydrates                   = 0,
+                Lipids                          = 0,
+                Proteins                        = 0.5,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = CoffeeBeans_Ground,
+                BadCold                         = true,
+                BadInMicrowave                  = true,
+                DangerousUncooked               = TRUE,
+                GoodHot                         = true,
+                IsCookable                      = true,
+                RemoveUnhappinessWhenCooked     = true,
+                MinutesToCook                   = 20,
+                MinutesToBurn                   = 60,
+                DaysFresh                       = 14,
+                DaysTotallyRotten               = 28,
+                EvolvedRecipe                   = HotDrink:5;HotDrinkRed:5;HotDrinkWhite:5;HotDrinkSpiffo:5;HotDrinkTea:5,
+                CustomEatSound                  = EatingCrispy,
+                ReplaceOnCooked                 = SHF.CoffeeBeansRoasted
+            }
+        
+        /* Приготовленные зерна кофе */
+            item CoffeeBeansRoasted {
+                DisplayCategory                 = Food,
+                Type                            = Food,
+                DisplayName                     = Coffee Beans Roasted,
+                Icon                            = CoffeeBeansRoasted,
+                Weight                          = 0.02,
+                Packaged                        = TRUE,
+                FatigueChange                   = -15,
+                HungerChange                    = -6,
+                ThirstChange                    = 40,
+                UnhappyChange                   = 5,
+                Calories                        = 2,
+                Carbohydrates                   = 0,
+                Lipids                          = 0,
+                Proteins                        = 0.5,
+                WorldStaticModel                = CoffeeBeansRoasted_Ground,
+                CustomEatSound                  = Eating,
+                
+            }
+
 }
