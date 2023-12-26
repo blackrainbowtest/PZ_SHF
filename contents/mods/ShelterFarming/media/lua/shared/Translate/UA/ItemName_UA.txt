@@ -27,6 +27,10 @@ ItemName_UA = {
          ItemName_SHF.Pepperseed = "Насіння перцю",
          ItemName_SHF.Watermelonseed = "Насіння кавуна",
          ItemName_SHF.Zucchiniseed = "Насіння кабачків",
+    
+    /*___________________ТИП: ХЗ_______________________*/
+        ItemName_SHF.Teaseed            = "Насіння чаю",
+        ItemName_SHF.Coffeeseed         = "Насіння кави",
 
 /*___________________ПРЕДМЕТИ: ПАЧКИ НАСІННЯ_____*/
 
@@ -56,4 +60,18 @@ ItemName_UA = {
          ItemName_SHF.PepperBagSeed = "Пачка насіння перцю",
          ItemName_SHF.WatermelonBagSeed = "Пачка насіння кавуна",
          ItemName_SHF.ZucchiniBagSeed = "Пачка насіння кабачків",
+    
+    /*___________________ТИП: ХЗ_______________________*/
+        ItemName_SHF.TeaBagSeed         = "Пачка насіння чаю",
+        ItemName_SHF.CoffeeBagSeed      = "Пачка насіння кави",
+
+
+/*___________________ПРЕДМЕТЫ: НОВЫЕ ХЗ ОБЕКТЫ___________________*/
+
+
+    /*___________________ТИП: ХЗ___________________*/
+        ItemName_SHF.TeaLeaves          = "Чайне листя",
+        ItemName_SHF.CoffeeBeans        = "Кавові зерна",
+        ItemName_SHF.CoffeeBeansRoasted = "Смажені кавові зерна",
+        ItemName_SHF.SunFlower          = "Соняшник",
 }

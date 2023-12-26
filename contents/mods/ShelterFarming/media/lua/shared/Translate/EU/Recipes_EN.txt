@@ -99,6 +99,7 @@ Recipes_EN {
     /*___________________ТИП: ХЗ___________________*/
         Recipe_Claim_Tea_Seeds                      = "Get seeds"
         Recipe_Claim_Coffee_Seeds                   = "Get seeds"
+        Recipe_Claim_SunFlower_Seeds                = "Get seeds"
 
 /*_________________РЕЦЕПТЫ_ДЛЯ_СОЗДАНИЯ_ПРЕДМЕТОВ_________________*/
 

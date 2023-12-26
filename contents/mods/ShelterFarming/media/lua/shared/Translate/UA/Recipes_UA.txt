@@ -16,6 +16,7 @@ Recipes_UA {
      	Recipe_Open_Packet_of_Peach_Seeds = "Відкрити пачку з насінням персика"
      	Recipe_Open_Packet_of_Pear_Seeds = "Відкрити пачку з насінням груші"
      	Recipe_Open_Packet_of_Pineapple_Seeds = "Відкрити пачку з насінням ананаса"
+
  	/*___________________ТИП: ОВОЧІ___________________*/
      	Recipe_Open_Packet_of_Avocado_Seeds = "Відкрити пачку з насінням авокадо",
      	Recipe_Open_Packet_of_Corn_Seeds = "Відкрити пачку з насінням кукурудзи",
@@ -26,6 +27,11 @@ Recipes_UA {
      	Recipe_Open_Packet_of_Pepper_Seeds = "Відкрити пачку з насінням перцю",
      	Recipe_Open_Packet_of_Watermelon_Seeds = "Відкрити пачку з насінням кавуна",
      	Recipe_Open_Packet_of_Zucchini_Seeds = "Відкрити пачку з насінням кабачків",
+	
+	/*___________________ТИП: ХЗ___________________*/
+        Recipe_Open_Packet_of_Tea_Seeds             = "Відкрити пачку з насінням чаю",
+        Recipe_Open_Packet_of_Coffee_Seeds          = "Відкрити пачку з насінням кави",
+
 
 /*___________________РЕЦЕПТИ_ДЛЯ_ЗАКРИТТЯ_ПАЧОК___________________*/
     
@@ -44,6 +50,7 @@ Recipes_UA {
      	Recipe_Put_Peach_Seeds_in_Packet = "Покласти насіння персика в пачку"
      	Recipe_Put_Pear_Seeds_in_Packet = "Покласти насіння груші в пачку"
      	Recipe_Put_Pineapple_Seeds_in_Packet = "Покласти насіння ананаса в пачку"
+
  	/*___________________ТИП: ОВОЧІ___________________*/
      	Recipe_Put_Avocado_Seeds_in_Packet = "Покласти насіння авокадо в пачку",
      	Recipe_Put_Corn_Seeds_in_Packet = "Покласти насіння кукурудзи в пачку",
@@ -54,6 +61,10 @@ Recipes_UA {
      	Recipe_Put_Pepper_Seeds_in_Packet = "Покласти насіння перцю в пачку",
      	Recipe_Put_Watermelon_Seeds_in_Packet = "Покласти насіння кавуна в пачку",
      	Recipe_Put_Zucchini_Seeds_in_Packet = "Покласти насіння кабачків у пачку",
+
+	/*___________________ТИП: ХЗ___________________*/
+        Recipe_Put_Tea_Seeds_in_Packet              = "Покласти насіння чаю в пачку",
+        Recipe_Put_Coffee_Seeds_in_Packet           = "Покласти насіння кави в пачку",
 
 /*___________________РЕЦЕПТИ_ДЛЯ_ОТРИМАННЯ_НАСІННЯ__________________*/
 
@@ -82,7 +93,18 @@ Recipes_UA {
      	Recipe_Claim_Lettuce_Seeds = "Отримати насіння"
      	Recipe_Claim_Onion_Seeds = "Отримати насіння"
      	Recipe_Claim_Pepper_Seeds = "Отримати насіння"
-     	Recipe_Claim_Watermelon_Seeds = "Отримати насіння"
-     	Recipe_Claim_Zucchini_Seeds = "Отримати насіння"
+     	Recipe_Claim_Watermelon_Seeds				= "Отримати насіння"
+     	Recipe_Claim_Zucchini_Seeds 				= "Отримати насіння"
+	
+	/*___________________ТИП: ХЗ___________________*/
+        Recipe_Claim_Tea_Seeds                      = "Отримати насіння"
+        Recipe_Claim_Coffee_Seeds                   = "Отримати насіння"
+        Recipe_Claim_SunFlower_Seeds                = "Отримати насіння"
 
+/*_________________РЕЦЕПТЫ_ДЛЯ_СОЗДАНИЯ_ПРЕДМЕТОВ_________________*/
+
+    /*___________________ТИП: ХЗ___________________*/
+
+        Recipe_Make_Tea_Bag                         = "Виготовити пакетик чаю"
+        Recipe_Make_Coffee                          = "Виготовити пакет кави"
 }

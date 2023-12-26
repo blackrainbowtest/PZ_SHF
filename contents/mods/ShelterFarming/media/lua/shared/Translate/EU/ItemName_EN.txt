@@ -74,6 +74,7 @@ ItemName_EN = {
         ItemName_SHF.TeaLeaves          = "Tea Leaves",
         ItemName_SHF.CoffeeBeans        = "Coffee Beans",
         ItemName_SHF.CoffeeBeansRoasted = "Coffee Beans Roasted",
+        ItemName_SHF.SunFlower          = "Sunflower",
 
 
 }

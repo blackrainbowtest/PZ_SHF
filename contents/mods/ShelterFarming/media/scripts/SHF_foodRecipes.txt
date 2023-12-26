@@ -854,6 +854,19 @@ module SFZ
                     Sound:GetingSeeds,
                 }
 
+        /* подсолнухи */
+            recipe Claim SunFlower Seeds
+                {
+                    SunFlower=1,
+
+                    Result:Base.SunflowerSeeds=5,
+                    Time:150.0,
+                    OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
+                    Category:Farming,
+                    NeedToBeLearn:False,
+                    Sound:GetingSeeds,
+                }
+
 /*_________________РЕЦЕПТЫ_ДЛЯ_СОЗДАНИЯ_ПРЕДМЕТОВ_________________*/
     
     /*___________________ТИП: ХЗ___________________*/

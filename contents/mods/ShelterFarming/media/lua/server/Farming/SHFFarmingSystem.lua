@@ -79,6 +79,15 @@ function SFarmingSystem:harvest(luaObject, player)
     elseif props.retainOnHarvest ~= nil then
         luaObject.nbOfGrow = props.retainOnHarvest
         luaObject.fertilizer = 0;
+        if luaObject.mildewLvl > 0 then
+            luaObject.mildewLvl = 0
+        end
+        if luaObject.fliesLvl > 0 then
+            luaObject.fliesLvl = 0
+        end
+        if luaObject.waterLvl > 50 then
+            luaObject.waterLvl = 50
+        end
         self:growPlant(luaObject, nil, true)
         luaObject:saveData()
     else

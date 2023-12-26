@@ -87,6 +87,7 @@ farming_vegetableconf.icons["Pineapple"] = "media/textures/WorldItems/Fruit/item
 
 farming_vegetableconf.icons["TeaLeaves"] = "media/textures/item_TeaLeaves.png"
 farming_vegetableconf.icons["CoffeeBeans"] = "media/textures/item_CoffeeBeans.png"
+farming_vegetableconf.icons["SunFlower"] = "media/textures/item_SunFlower.png"
 
 -- Конфигурация для растения Авокадо (16 to 20 weeks to grow)
 farming_vegetableconf.props["Avocado"] = farming_vegetableconf.props["Avocado"] or {}
@@ -510,6 +511,22 @@ farming_vegetableconf.props["CoffeeBeans"].minVeg = 5;
 farming_vegetableconf.props["CoffeeBeans"].maxVeg = 7;
 farming_vegetableconf.props["CoffeeBeans"].retainOnHarvest = 3;
 
+-- Конфигурация для растения подсолнух (20 to 24 weeks to grow)
+farming_vegetableconf.props["SunFlower"] = farming_vegetableconf.props["SunFlower"] or {}
+farming_vegetableconf.props["SunFlower"].seedsRequired = 5;
+farming_vegetableconf.props["SunFlower"].texture = "shf_sunflower_07";
+farming_vegetableconf.props["SunFlower"].waterLvl = 85;
+farming_vegetableconf.props["SunFlower"].timeToGrow = ZombRand(103, 117);
+farming_vegetableconf.props["SunFlower"].minVegAutorized = 4;
+farming_vegetableconf.props["SunFlower"].maxVegAutorized = 8;
+farming_vegetableconf.props["SunFlower"].vegetableName = "SHF.SunFlower";
+farming_vegetableconf.props["SunFlower"].seedName = "Base.SunflowerSeeds";
+farming_vegetableconf.props["SunFlower"].seedPerVeg = 1;
+
+farming_vegetableconf.props["SunFlower"].growCode = "SHFFarmingConfigurations.growNewCrop";
+farming_vegetableconf.props["SunFlower"].minVeg = 5;
+farming_vegetableconf.props["SunFlower"].maxVeg = 7;
+
 -- спрайты
 farming_vegetableconf.sprite["Avocado"] = {
 "shf_avocado_01", 
@@ -760,4 +777,14 @@ farming_vegetableconf.sprite["CoffeeBeans"] = {
 "shf_coffeebeans_06", 
 "shf_coffeebeans_07", 
 "shf_coffeebeans_08"
+}
+farming_vegetableconf.sprite["SunFlower"] = {
+"shf_sunflower_01", 
+"shf_sunflower_02", 
+"shf_sunflower_03", 
+"shf_sunflower_04", 
+"shf_sunflower_05",
+"shf_sunflower_06", 
+"shf_sunflower_07", 
+"shf_sunflower_08"
 }

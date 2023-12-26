@@ -24,4 +24,8 @@ Farming_UA = {
    Farming_Peach = "Персик",
    Farming_Pear = "Груша",
    Farming_Pineapple = "Ананас",
+
+   Farming_TeaLeaves = "Чайне листя",
+   Farming_CoffeeBeans = "Кавові зерна",
+   Farming_SunFlower = "Соняшник",
 }

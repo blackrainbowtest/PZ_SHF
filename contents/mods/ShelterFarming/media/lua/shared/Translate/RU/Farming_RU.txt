@@ -24,4 +24,8 @@ Farming_RU = {
   Farming_Peach       = "Персик",
   Farming_Pear        = "Груша",
   Farming_Pineapple   = "Ананас",
+
+  Farming_TeaLeaves = "Чайные листья",
+  Farming_CoffeeBeans = "Кофейные зерна",
+  Farming_SunFlower = "Подсолнух",
 }

@@ -445,4 +445,12 @@ module SFZ
                 texture         = WorldItems/SHF_item_CoffeeBeansRoasted,
                 scale           = 0.5,
             }
+        
+        /* подсолнух */
+            model SunFlower_Ground
+            {
+                mesh            = WorldItems/GrapeLeaves,
+                texture         = WorldItems/SunFlower,
+                scale           = 0.5,
+            }
 }

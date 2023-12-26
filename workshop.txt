@@ -1,14 +1,30 @@
 version=1
 id=3050914195
 title=Shelter Farm mod
+description=[h1]Bugs that will be fixed soon.[/h1]
+description=
+description=
 description=[h1]The mod will be updated depending on the needs of the server.[/h1]
 description=
-description=The appearance of seeds at spawn points.
-description=Balancing the amount of seeds needed for growing fruits and vegetables.
-description=Balancing plant growth time.
+description=[h1]UPDATE 12/24/2023 SUNFLOWERS[/h1]
 description=
-description=The following will also be added:
-description=tea tree (Melaleuca), coffee tree (Coffea), cocoa tree (Theobroma).
-description=sunflowers.
+description=[h2]    * Added new food sunflower.[/h2]
+description=[h2]    * Added missing translation for Russian and Ukrainian.[/h2]
+description=[h2]    * After a successful harvest, the plant returns to phase 03 without disease.[/h2]
+description=
+description=
+description=[h1]SUNFLOWERS GROWING SPRITES[/h1]
+description=[table equalcells=1]
+description=[tr]
+description=[td][img]https://steamcommunity.com/sharedfiles/filedetails/?id=3121843065[/img][/td]
+description=[td][img]https://steamcommunity.com/sharedfiles/filedetails/?id=3121842717[/img][/td]
+description=[td][img]https://steamcommunity.com/sharedfiles/filedetails/?id=3121843150[/img][/td]
+description=[td][img]https://steamcommunity.com/sharedfiles/filedetails/?id=3121843266[/img][/td]
+description=[td][img]https://steamcommunity.com/sharedfiles/filedetails/?id=3121843364[/img][/td]
+description=[td][img]https://steamcommunity.com/sharedfiles/filedetails/?id=3121843434[/img][/td]
+description=[td][img]https://steamcommunity.com/sharedfiles/filedetails/?id=3121843515[/img][/td]
+description=[td][img]https://steamcommunity.com/sharedfiles/filedetails/?id=3121843599[/img][/td]
+description=[/tr]
+description=[/table]
 tags=Build 41;Food;Items
 visibility=public

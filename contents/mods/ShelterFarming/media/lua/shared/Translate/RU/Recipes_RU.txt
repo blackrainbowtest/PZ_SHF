@@ -16,6 +16,7 @@ Recipes_RU {
     	Recipe_Open_Packet_of_Peach_Seeds       	= "Открыть пачку с семенами персика"
     	Recipe_Open_Packet_of_Pear_Seeds        	= "Открыть пачку с семенами груши"
     	Recipe_Open_Packet_of_Pineapple_Seeds   	= "Открыть пачку с семенами ананаса"
+
 	/*___________________ТИП:  ОВОЩИ___________________*/
     	Recipe_Open_Packet_of_Avocado_Seeds     	= "Открыть пачку с семенами авокадо",
     	Recipe_Open_Packet_of_Corn_Seeds        	= "Открыть пачку с семенами кукурузы",
@@ -26,6 +27,11 @@ Recipes_RU {
     	Recipe_Open_Packet_of_Pepper_Seeds      	= "Открыть пачку с семенами перца",
     	Recipe_Open_Packet_of_Watermelon_Seeds  	= "Открыть пачку с семенами арбуза",
     	Recipe_Open_Packet_of_Zucchini_Seeds    	= "Открыть пачку с семенами кабачков",
+
+	/*___________________ТИП: ХЗ___________________*/
+        Recipe_Open_Packet_of_Tea_Seeds             = "Открыть пачку с семенами чая",
+        Recipe_Open_Packet_of_Coffee_Seeds          = "Открыть пачку с семенами кофе",
+
 
 /*___________________РЕЦЕПТЫ_ДЛЯ_ЗАКРЫТИЯ_ПАЧЕК___________________*/
     
@@ -44,6 +50,7 @@ Recipes_RU {
     	Recipe_Put_Peach_Seeds_in_Packet       		= "Положить семена персика в пачку"
     	Recipe_Put_Pear_Seeds_in_Packet        		= "Положить семена груши в пачку"
     	Recipe_Put_Pineapple_Seeds_in_Packet   		= "Положить семена ананаса в пачку"
+
 	/*___________________ТИП:  ОВОЩИ___________________*/
     	Recipe_Put_Avocado_Seeds_in_Packet      	= "Положить семена авокадо в пачку",
     	Recipe_Put_Corn_Seeds_in_Packet         	= "Положить семена кукурузы в пачку",
@@ -54,6 +61,10 @@ Recipes_RU {
     	Recipe_Put_Pepper_Seeds_in_Packet       	= "Положить семена перца в пачку",
     	Recipe_Put_Watermelon_Seeds_in_Packet   	= "Положить семена арбуза в пачку",
     	Recipe_Put_Zucchini_Seeds_in_Packet     	= "Положить семена кабачков в пачку",
+
+	/*___________________ТИП: ХЗ___________________*/
+        Recipe_Put_Tea_Seeds_in_Packet              = "Положить семена чая в пачку",
+        Recipe_Put_Coffee_Seeds_in_Packet           = "Положить семена кофе в пачку",
 
 /*___________________РЕЦЕПТЫ_ДЛЯ_ПОЛУЧЕНИЯ_СЕМЯН__________________*/
 
@@ -85,4 +96,15 @@ Recipes_RU {
     	Recipe_Claim_Watermelon_Seeds           	= "Получить семена"
     	Recipe_Claim_Zucchini_Seeds             	= "Получить семена"
 
+	/*___________________ТИП: ХЗ___________________*/
+        Recipe_Claim_Tea_Seeds                      = "Получить семена"
+        Recipe_Claim_Coffee_Seeds                   = "Получить семена"
+        Recipe_Claim_SunFlower_Seeds                = "Получить семена"
+	
+/*_________________РЕЦЕПТЫ_ДЛЯ_СОЗДАНИЯ_ПРЕДМЕТОВ_________________*/
+
+    /*___________________ТИП: ХЗ___________________*/
+
+        Recipe_Make_Tea_Bag                         = "Изготовить пакетик чая"
+        Recipe_Make_Coffee                          = "Изготовить пакет кофе"
 }

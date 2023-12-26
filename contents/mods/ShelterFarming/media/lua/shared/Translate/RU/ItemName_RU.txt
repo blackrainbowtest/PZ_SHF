@@ -27,6 +27,10 @@ ItemName_RU = {
         ItemName_SHF.Pepperseed         = "Семена перца",
         ItemName_SHF.Watermelonseed     = "Семена арбуза",
         ItemName_SHF.Zucchiniseed       = "Семена кабачков",
+    
+    /*___________________ТИП: ХЗ_______________________*/
+        ItemName_SHF.Teaseed            = "Семена чая",
+        ItemName_SHF.Coffeeseed         = "Семена кофе",
 
 /*___________________ПРЕДМЕТЫ: ПАЧКИ СЕМЯН___________________*/
 
@@ -56,4 +60,18 @@ ItemName_RU = {
         ItemName_SHF.PepperBagSeed      = "Пачка семян перца",
         ItemName_SHF.WatermelonBagSeed  = "Пачка семян арбуза",
         ItemName_SHF.ZucchiniBagSeed    = "Пачка семян кабачков",
+    
+    /*___________________ТИП: ХЗ_______________________*/
+        ItemName_SHF.TeaBagSeed         = "Пачка семян чая",
+        ItemName_SHF.CoffeeBagSeed      = "Пачка семян кофе",
+
+
+/*___________________ПРЕДМЕТЫ: НОВЫЕ ХЗ ОБЕКТЫ___________________*/
+
+
+    /*___________________ТИП: ХЗ___________________*/
+        ItemName_SHF.TeaLeaves          = "Чайные листья",
+        ItemName_SHF.CoffeeBeans        = "Кофейные зерна",
+        ItemName_SHF.CoffeeBeansRoasted = "Жареные кофейные зерна",
+        ItemName_SHF.SunFlower          = "Подсолнух",
 }

@@ -655,5 +655,23 @@ module SHF {
                 CustomEatSound                  = Eating,
                 
             }
+        
+        /* Подсолнух */    
+            item SunFlower {
+                DisplayCategory                 = Food,
+                Type                            = Food,
+                DisplayName                     = Sun Flower,
+                Icon                            = SunFlower,
+                Weight                          = 0.6,
+                HungerChange                    = -50,
+                Calories                        = 755,
+                Carbohydrates                   = 70.6,
+                Lipids                          = 0,
+                Proteins                        = 21.7,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = SunFlower_Ground,
+                IsCookable                      = false,
+                CustomEatSound                  = EatingMushy,
+            }
 
 }
