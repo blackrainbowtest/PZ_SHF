@@ -64,6 +64,7 @@ ItemName_UA = {
     /*___________________ТИП: ХЗ_______________________*/
         ItemName_SHF.TeaBagSeed         = "Пачка насіння чаю",
         ItemName_SHF.CoffeeBagSeed      = "Пачка насіння кави",
+        ItemName_SHF.WheatBagSeed       = "Пачка насіння пшениці",
 
 
 /*___________________ПРЕДМЕТЫ: НОВЫЕ ХЗ ОБЕКТЫ___________________*/
@@ -74,4 +75,6 @@ ItemName_UA = {
         ItemName_SHF.CoffeeBeans        = "Кавові зерна",
         ItemName_SHF.CoffeeBeansRoasted = "Смажені кавові зерна",
         ItemName_SHF.SunFlower          = "Соняшник",
+        ItemName_SHF.WheatGrain         = "Зерна пшениці",
+        ItemName_SHF.Wheat              = "Пшениця",
 }

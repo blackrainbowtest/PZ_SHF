@@ -65,6 +65,7 @@ ItemName_EN = {
     /*___________________ТИП: ХЗ_______________________*/
         ItemName_SHF.TeaBagSeed         = "Tea seed packet",
         ItemName_SHF.CoffeeBagSeed      = "Coffee seed packet",
+        ItemName_SHF.WheatBagSeed       = "Wheat seed packet",
 
 
 /*___________________ПРЕДМЕТЫ: НОВЫЕ ХЗ ОБЕКТЫ___________________*/
@@ -75,6 +76,8 @@ ItemName_EN = {
         ItemName_SHF.CoffeeBeans        = "Coffee Beans",
         ItemName_SHF.CoffeeBeansRoasted = "Coffee Beans Roasted",
         ItemName_SHF.SunFlower          = "Sunflower",
+        ItemName_SHF.WheatGrain         = "Wheat frains",
+        ItemName_SHF.Wheat              = "Wheat",
 
 
 }

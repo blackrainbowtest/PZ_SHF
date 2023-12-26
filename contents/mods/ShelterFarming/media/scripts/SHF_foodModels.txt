@@ -417,6 +417,14 @@ module SFZ
                 texture         = WorldItems/SHF_Bag_CoffeeSeeds_Ground,
                 scale           = 0.5,
             }
+        
+        /* пачка семян пшеницы */
+            model WheatSeedBag_Ground
+            {
+                mesh            = WorldItems/SeedPacket,
+                texture         = WorldItems/SHF_Bag_WheatSeeds_Ground,
+                scale           = 0.5,
+            }
 
 /*___________________ПРЕДМЕТЫ: НОВЫЕ ПРОД.___________________*/
 
@@ -452,5 +460,21 @@ module SFZ
                 mesh            = WorldItems/GrapeLeaves,
                 texture         = WorldItems/SunFlower,
                 scale           = 0.5,
+            }
+        
+        /* зерно пщеницы */
+            model WheatGrain_Ground
+            {
+                mesh            = WorldItems/ChocolateCoveredCoffeeBeans,
+                texture         = WorldItems/SHF_item_WheatGrain,
+                scale           = 0.5,
+            }
+
+        /* пщеница */
+        model Wheat_Ground
+            {
+                mesh            = WorldItems/Leek,
+                texture         = WorldItems/SHF_item_Wheat,
+                scale           = 0.3,
             }
 }

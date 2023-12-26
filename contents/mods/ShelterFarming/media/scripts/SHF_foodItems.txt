@@ -574,6 +574,17 @@ module SHF {
                 SurvivalGear                    = TRUE,
                 WorldStaticModel                = CoffeeSeedBag_Ground,
             }
+        
+        /* пачка семян пшеницы */
+            item WheatBagSeed{
+                DisplayCategory                 = Gardening,
+                Type                            = Normal,
+                DisplayName                     = Wheat Seeds Packet,
+                Icon                            = SHF_Bag_WheatSeedBag,
+                Weight                          = 0.1,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = WheatSeedBag_Ground,
+            }
 
 /*___________________ПРЕДМЕТЫ: НОВЫЕ ХЗ ОБЕКТЫ___________________*/
 
@@ -672,6 +683,42 @@ module SHF {
                 WorldStaticModel                = SunFlower_Ground,
                 IsCookable                      = false,
                 CustomEatSound                  = EatingMushy,
+            }
+        
+        /* зерно пщеницы */    
+            item WheatGrain {
+                DisplayCategory                 = Food,
+                Type                            = Food,
+                DisplayName                     = Wheat Grain,
+                Icon                            = WheatGrain,
+                Weight                          = 0.02,
+                HungerChange                    = -8,
+                Calories                        = 5,
+                Carbohydrates                   = 0,
+                Lipids                          = 0,
+                Proteins                        = 0,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = WheatGrain_Ground,
+                IsCookable                      = false,
+                CustomEatSound                  = Eating,
+            }
+        
+        /* пщеница */    
+            item Wheat {
+                DisplayCategory                 = Food,
+                Type                            = Food,
+                DisplayName                     = Wheat,
+                Icon                            = Wheat,
+                Weight                          = 0.2,
+                HungerChange                    = -80,
+                Calories                        = 50,
+                Carbohydrates                   = 0,
+                Lipids                          = 0,
+                Proteins                        = 0,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = Wheat_Ground,
+                IsCookable                      = false,
+                CustomEatSound                  = Eating,
             }
 
 }

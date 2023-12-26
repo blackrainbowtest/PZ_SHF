@@ -1,9 +1,6 @@
 version=1
 id=3050914195
 title=Shelter Farm mod
-description=[h1]Bugs that will be fixed soon.[/h1]
-description=
-description=
 description=[h1]The mod will be updated depending on the needs of the server.[/h1]
 description=
 description=[h1]UPDATE 12/24/2023 SUNFLOWERS[/h1]
@@ -14,16 +11,19 @@ description=[h2]    * After a successful harvest, the plant returns to phase 03 
 description=
 description=
 description=[h1]SUNFLOWERS GROWING SPRITES[/h1]
-description=[table equalcells=1]
+description=
+description=[table]
 description=[tr]
-description=[td][img]https://steamcommunity.com/sharedfiles/filedetails/?id=3121843065[/img][/td]
-description=[td][img]https://steamcommunity.com/sharedfiles/filedetails/?id=3121842717[/img][/td]
-description=[td][img]https://steamcommunity.com/sharedfiles/filedetails/?id=3121843150[/img][/td]
-description=[td][img]https://steamcommunity.com/sharedfiles/filedetails/?id=3121843266[/img][/td]
-description=[td][img]https://steamcommunity.com/sharedfiles/filedetails/?id=3121843364[/img][/td]
-description=[td][img]https://steamcommunity.com/sharedfiles/filedetails/?id=3121843434[/img][/td]
-description=[td][img]https://steamcommunity.com/sharedfiles/filedetails/?id=3121843515[/img][/td]
-description=[td][img]https://steamcommunity.com/sharedfiles/filedetails/?id=3121843599[/img][/td]
+description=[td][img]https://steamuserimages-a.akamaihd.net/ugc/2285078746115111889/938F14B5B45EADE62401F9F65A5F6C9745DF5FFC/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false[/img][/td]
+description=[td][img]https://steamuserimages-a.akamaihd.net/ugc/2285078746115109349/143B17C603AAFD4034E47A248BFD4EA66642AC76/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false[/img][/td]
+description=[td][img]https://steamuserimages-a.akamaihd.net/ugc/2285078746115112478/1094EC0AA150BFB93F518F3890399FBB943782B5/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false[/img][/td]
+description=[td][img]https://steamuserimages-a.akamaihd.net/ugc/2285078746115113157/5C477701BA9C2702C029310138028C6B9D00D49F/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false[/img][/td]
+description=[/tr]
+description=[tr]
+description=[td][img]https://steamuserimages-a.akamaihd.net/ugc/2285078746115113772/93C44A6BFE880E2C4605C5621B7B0A7067540E73/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false[/img][/td]
+description=[td][img]https://steamuserimages-a.akamaihd.net/ugc/2285078746115114333/91665DD81327EE61D7BE9C11C44FA41155BD631A/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false[/img][/td]
+description=[td][img]https://steamuserimages-a.akamaihd.net/ugc/2285078746115114809/EDE113BDF878500AC424882F2440188F72DBF1BE/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false[/img][/td]
+description=[td][img]https://steamuserimages-a.akamaihd.net/ugc/2285078746115115293/749DEB177249429A816B0937D8F93C10891C4D13/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false[/img][/td]
 description=[/tr]
 description=[/table]
 tags=Build 41;Food;Items

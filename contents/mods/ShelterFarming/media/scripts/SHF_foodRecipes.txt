@@ -263,6 +263,15 @@ module SFZ
                 Category:Farming,
                 Sound:OpenSeedPacket,
             }
+        /* пачка семян пшеницы */
+            recipe Open Packet of Wheat Seeds {
+                WheatBagSeed,
+        
+                Result:WheatGrain=20,
+                Time:20.0,
+                Category:Farming,
+                Sound:OpenSeedPacket,
+            }
 
 /*___________________РЕЦЕПТЫ_ДЛЯ_ЗАКРЫТИЯ_ПАЧЕК___________________*/
     
@@ -516,6 +525,16 @@ module SFZ
                 Coffeeseed=50,
 
                 Result:CoffeeBagSeed,
+                Time:20.0,
+                Category:Farming,
+                Sound:OpenSeedPacket,
+            }
+        
+        /* пачка семян пшеницы */
+            recipe Put Wheat Seeds in Packet {
+                WheatGrain=20,
+
+                Result:WheatBagSeed,
                 Time:20.0,
                 Category:Farming,
                 Sound:OpenSeedPacket,
@@ -866,6 +885,19 @@ module SFZ
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
                 }
+        
+        /* пшеница */
+            recipe Claim Wheat Seeds
+                {
+                    Wheat=1,
+
+                    Result:WheatGrain=7,
+                    Time:150.0,
+                    OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
+                    Category:Farming,
+                    NeedToBeLearn:False,
+                    Sound:GetingSeeds,
+                }
 
 /*_________________РЕЦЕПТЫ_ДЛЯ_СОЗДАНИЯ_ПРЕДМЕТОВ_________________*/
     
@@ -900,6 +932,24 @@ module SFZ
 
                 Result:Coffee2,
                 Time:80.0,
+                NeedToBeLearn:false,
+                OnGiveXP:Recipe.OnGiveXP.SHFCooking3,
+                CanBeDoneFromFloor:false,
+                StopOnWalk:false,
+                Sound:MakePlaster,
+                Category:Cooking,
+                AnimNode:Disassemble,
+            }
+        
+        /* создание мешка с мукой */
+            recipe Make Flour From Wheat Grain
+            {
+                keep MortarPestle,
+                WheatGrain=60,
+                Base.EmptySandbag,
+
+                Result:Flour,
+                Time:180.0,
                 NeedToBeLearn:false,
                 OnGiveXP:Recipe.OnGiveXP.SHFCooking3,
                 CanBeDoneFromFloor:false,

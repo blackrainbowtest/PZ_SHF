@@ -88,6 +88,7 @@ farming_vegetableconf.icons["Pineapple"] = "media/textures/WorldItems/Fruit/item
 farming_vegetableconf.icons["TeaLeaves"] = "media/textures/item_TeaLeaves.png"
 farming_vegetableconf.icons["CoffeeBeans"] = "media/textures/item_CoffeeBeans.png"
 farming_vegetableconf.icons["SunFlower"] = "media/textures/item_SunFlower.png"
+farming_vegetableconf.icons["Wheat"] = "media/textures/item_Wheat.png"
 
 -- Конфигурация для растения Авокадо (16 to 20 weeks to grow)
 farming_vegetableconf.props["Avocado"] = farming_vegetableconf.props["Avocado"] or {}
@@ -527,6 +528,22 @@ farming_vegetableconf.props["SunFlower"].growCode = "SHFFarmingConfigurations.gr
 farming_vegetableconf.props["SunFlower"].minVeg = 5;
 farming_vegetableconf.props["SunFlower"].maxVeg = 7;
 
+-- Конфигурация для растения пшеница (20 to 24 weeks to grow)
+farming_vegetableconf.props["Wheat"] = farming_vegetableconf.props["Wheat"] or {}
+farming_vegetableconf.props["Wheat"].seedsRequired = 5;
+farming_vegetableconf.props["Wheat"].texture = "shf_wheat_07";
+farming_vegetableconf.props["Wheat"].waterLvl = 100;
+farming_vegetableconf.props["Wheat"].timeToGrow = ZombRand(103, 117);
+farming_vegetableconf.props["Wheat"].minVegAutorized = 5;
+farming_vegetableconf.props["Wheat"].maxVegAutorized = 9;
+farming_vegetableconf.props["Wheat"].vegetableName = "SHF.Wheat";
+farming_vegetableconf.props["Wheat"].seedName = "SHF.WheatGrain";
+farming_vegetableconf.props["Wheat"].seedPerVeg = 1;
+
+farming_vegetableconf.props["Wheat"].growCode = "SHFFarmingConfigurations.growNewCrop";
+farming_vegetableconf.props["Wheat"].minVeg = 5;
+farming_vegetableconf.props["Wheat"].maxVeg = 7;
+
 -- спрайты
 farming_vegetableconf.sprite["Avocado"] = {
 "shf_avocado_01", 
@@ -787,4 +804,14 @@ farming_vegetableconf.sprite["SunFlower"] = {
 "shf_sunflower_06", 
 "shf_sunflower_07", 
 "shf_sunflower_08"
+}
+farming_vegetableconf.sprite["Wheat"] = {
+"shf_wheat_01", 
+"shf_wheat_02", 
+"shf_wheat_03", 
+"shf_wheat_04", 
+"shf_wheat_05",
+"shf_wheat_06", 
+"shf_wheat_07", 
+"shf_wheat_08"
 }

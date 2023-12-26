@@ -1,564 +1,429 @@
---******************************************************************************************
---**                   				USER FOR REFERENCE                  				  **
---**                        			MoCrops                        					  **
---******************************************************************************************
+require 'Items/SuburbsDistributions'
+require 'Items/ProceduralDistributions'
 
-require "Items/SuburbsDistributions"
-require "Items/ProceduralDistributions"
+LootRarity = {}
+LootRarity.Common = 15
+LootRarity.Uncommon = 8
+LootRarity.Rare = 3
+LootRarity.Elite = 1
+LootRarity.VeryRare = 0.5
+LootRarity.ExtraRare = 0.01
 
---Crate (general)
-table.insert(SuburbsDistributions.all.crate.items, "SHF.AvocadoBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
-table.insert(SuburbsDistributions.all.crate.items, "SHF.PepperBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
-table.insert(SuburbsDistributions.all.crate.items, "SHF.EggplantBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
-table.insert(SuburbsDistributions.all.crate.items, "SHF.LeekBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
-table.insert(SuburbsDistributions.all.crate.items, "SHF.OnionBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
-table.insert(SuburbsDistributions.all.crate.items, "SHF.WatermelonBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
-table.insert(SuburbsDistributions.all.crate.items, "SHF.ZucchiniBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
-table.insert(SuburbsDistributions.all.crate.items, "SHF.AppleBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
-table.insert(SuburbsDistributions.all.crate.items, "SHF.BananaBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
-table.insert(SuburbsDistributions.all.crate.items, "SHF.BerryBlackBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
-table.insert(SuburbsDistributions.all.crate.items, "SHF.BerryBlueBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
-table.insert(SuburbsDistributions.all.crate.items, "SHF.CherryBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
-table.insert(SuburbsDistributions.all.crate.items, "SHF.GrapefruitBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
-table.insert(SuburbsDistributions.all.crate.items, "SHF.GrapesBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
-table.insert(SuburbsDistributions.all.crate.items, "SHF.LemonBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
-table.insert(SuburbsDistributions.all.crate.items, "SHF.LimeBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
-table.insert(SuburbsDistributions.all.crate.items, "SHF.MangoBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
-table.insert(SuburbsDistributions.all.crate.items, "SHF.OrangeBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
-table.insert(SuburbsDistributions.all.crate.items, "SHF.PeachBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
-table.insert(SuburbsDistributions.all.crate.items, "SHF.PearBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
-table.insert(SuburbsDistributions.all.crate.items, "SHF.PineappleBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
-table.insert(SuburbsDistributions.all.crate.items, "SHF.TeaBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
-table.insert(SuburbsDistributions.all.crate.items, "SHF.CoffeeBagSeed");
-table.insert(SuburbsDistributions.all.crate.items, 0.8);
+local suburbsDistribution = {
+    -- общее
+    all = {
+        -- Crate контейнеры
+        crate = {
+            items = {
+                "SHF.AvocadoBagSeed", LootRarity.VeryRare,
+                "SHF.PepperBagSeed", LootRarity.VeryRare,
+                "SHF.EggplantBagSeed", LootRarity.VeryRare,
+                "SHF.LeekBagSeed", LootRarity.VeryRare,
+                "SHF.OnionBagSeed", LootRarity.VeryRare,
+                "SHF.WatermelonBagSeed", LootRarity.VeryRare,
+                "SHF.ZucchiniBagSeed", LootRarity.VeryRare,
+                "SHF.AppleBagSeed", LootRarity.VeryRare,
+                "SHF.BananaBagSeed", LootRarity.VeryRare,
+                "SHF.BerryBlackBagSeed", LootRarity.VeryRare,
+                "SHF.BerryBlueBagSeed", LootRarity.VeryRare,
+                "SHF.CherryBagSeed", LootRarity.VeryRare,
+                "SHF.GrapefruitBagSeed", LootRarity.VeryRare,
+                "SHF.GrapesBagSeed", LootRarity.VeryRare,
+                "SHF.LemonBagSeed", LootRarity.VeryRare,
+                "SHF.LimeBagSeed", LootRarity.VeryRare,
+                "SHF.MangoBagSeed", LootRarity.VeryRare,
+                "SHF.OrangeBagSeed", LootRarity.VeryRare,
+                "SHF.PeachBagSeed", LootRarity.VeryRare,
+                "SHF.PearBagSeed", LootRarity.VeryRare,
+                "SHF.PineappleBagSeed", LootRarity.VeryRare,
+                "SHF.CornBagSeed", LootRarity.VeryRare,
+                "SHF.LettuceBagSeed", LootRarity.VeryRare,
+                "SHF.TeaBagSeed", LootRarity.VeryRare,
+                "SHF.CoffeeBagSeed", LootRarity.VeryRare,
+                "SHF.WheatBagSeed", LootRarity.VeryRare,
+            }
+        },
+        -- Zombie female inventory
+        inventoryfemale = {
+            items = {
+                "SHF.CoffeeBeansRoasted", LootRarity.ExtraRare,
+            }
+        },
+        -- Zombie male inventory
+        inventorymale = {
+            items = {
+                "SHF.CoffeeBeansRoasted", LootRarity.ExtraRare,
+            }
+        },
+        Outfit_Farmer = {
+            items = {
+                "SHF.AvocadoBagSeed", LootRarity.Rare,
+                "SHF.PepperBagSeed", LootRarity.Rare,
+                "SHF.EggplantBagSeed", LootRarity.Rare,
+                "SHF.LeekBagSeed", LootRarity.Rare,
+                "SHF.OnionBagSeed", LootRarity.Rare,
+                "SHF.WatermelonBagSeed", LootRarity.Rare,
+                "SHF.ZucchiniBagSeed", LootRarity.Rare,
+                "SHF.AppleBagSeed", LootRarity.Rare,
+                "SHF.BananaBagSeed", LootRarity.Rare,
+                "SHF.BerryBlackBagSeed", LootRarity.Rare,
+                "SHF.BerryBlueBagSeed", LootRarity.Rare,
+                "SHF.CherryBagSeed", LootRarity.Rare,
+                "SHF.GrapefruitBagSeed", LootRarity.Rare,
+                "SHF.GrapesBagSeed", LootRarity.Rare,
+                "SHF.LemonBagSeed", LootRarity.Rare,
+                "SHF.LimeBagSeed", LootRarity.Rare,
+                "SHF.MangoBagSeed", LootRarity.Rare,
+                "SHF.OrangeBagSeed", LootRarity.Rare,
+                "SHF.PeachBagSeed", LootRarity.Rare,
+                "SHF.PearBagSeed", LootRarity.Rare,
+                "SHF.PineappleBagSeed", LootRarity.Rare,
+                "SHF.CornBagSeed", LootRarity.Rare,
+                "SHF.LettuceBagSeed", LootRarity.Rare,
+                "SHF.TeaBagSeed", LootRarity.Rare,
+                "SHF.CoffeeBagSeed", LootRarity.Rare,
+                "SHF.WheatBagSeed", LootRarity.Rare,
+            }
+        }
+    },
+    -- большая походная сумка
+    Bag_BigHikingBag = {
+        items = {
+        },
+    },
+    -- обычная походная сумка
+    Bag_NormalHikingBag = {
+        items = {
+        },
+    },
+    -- сумка выжившего
+    Bag_SurvivorBag = {
+        items = {
+            "SHF.AvocadoBagSeed", LootRarity.Rare,
+            "SHF.PepperBagSeed", LootRarity.Rare,
+            "SHF.EggplantBagSeed", LootRarity.Rare,
+            "SHF.LeekBagSeed", LootRarity.Rare,
+            "SHF.OnionBagSeed", LootRarity.Rare,
+            "SHF.WatermelonBagSeed", LootRarity.Rare,
+            "SHF.ZucchiniBagSeed", LootRarity.Rare,
+            "SHF.AppleBagSeed", LootRarity.Rare,
+            "SHF.BananaBagSeed", LootRarity.Rare,
+            "SHF.BerryBlackBagSeed", LootRarity.Rare,
+            "SHF.BerryBlueBagSeed", LootRarity.Rare,
+            "SHF.CherryBagSeed", LootRarity.Rare,
+            "SHF.GrapefruitBagSeed", LootRarity.Rare,
+            "SHF.GrapesBagSeed", LootRarity.Rare,
+            "SHF.LemonBagSeed", LootRarity.Rare,
+            "SHF.LimeBagSeed", LootRarity.Rare,
+            "SHF.MangoBagSeed", LootRarity.Rare,
+            "SHF.OrangeBagSeed", LootRarity.Rare,
+            "SHF.PeachBagSeed", LootRarity.Rare,
+            "SHF.PearBagSeed", LootRarity.Rare,
+            "SHF.PineappleBagSeed", LootRarity.Rare,
+            "SHF.CornBagSeed", LootRarity.Rare,
+            "SHF.LettuceBagSeed", LootRarity.Rare,
+            "SHF.TeaBagSeed", LootRarity.Rare,
+            "SHF.CoffeeBagSeed", LootRarity.Rare,
+            "SHF.WheatBagSeed", LootRarity.Rare,
+        }
+    },
+    -- Сумка с семенами
+    SeedBag = {
+        items = {
+            "SHF.AvocadoBagSeed", LootRarity.Common,
+            "SHF.PepperBagSeed", LootRarity.Common,
+            "SHF.EggplantBagSeed", LootRarity.Common,
+            "SHF.LeekBagSeed", LootRarity.Common,
+            "SHF.OnionBagSeed", LootRarity.Common,
+            "SHF.WatermelonBagSeed", LootRarity.Common,
+            "SHF.ZucchiniBagSeed", LootRarity.Common,
+            "SHF.AppleBagSeed", LootRarity.Common,
+            "SHF.BananaBagSeed", LootRarity.Common,
+            "SHF.BerryBlackBagSeed", LootRarity.Common,
+            "SHF.BerryBlueBagSeed", LootRarity.Common,
+            "SHF.CherryBagSeed", LootRarity.Common,
+            "SHF.GrapefruitBagSeed", LootRarity.Common,
+            "SHF.GrapesBagSeed", LootRarity.Common,
+            "SHF.LemonBagSeed", LootRarity.Common,
+            "SHF.LimeBagSeed", LootRarity.Common,
+            "SHF.MangoBagSeed", LootRarity.Common,
+            "SHF.OrangeBagSeed", LootRarity.Common,
+            "SHF.PeachBagSeed", LootRarity.Common,
+            "SHF.PearBagSeed", LootRarity.Common,
+            "SHF.PineappleBagSeed", LootRarity.Common,
+            "SHF.CornBagSeed", LootRarity.Common,
+            "SHF.LettuceBagSeed", LootRarity.Common,
+            "SHF.TeaBagSeed", LootRarity.Common,
+            "SHF.CoffeeBagSeed", LootRarity.Common,
+            "SHF.WheatBagSeed", LootRarity.Common,
+        }
+    }
+}
 
---Soul Filcher's Farming compat
-if (getActivatedMods():contains("FarmingTime")) then
+local proceduralDistributions = {
+    list = {
+        ArmyStorageMedical = {
+            items = {
+                -- "Base.HeartRateMonitorLeft", LootRarity.ExtraRare,
+            },
+        },
+        -- Фермерские ящики
+        CrateFarming = {
+            items = {
+                "SHF.AvocadoBagSeed", LootRarity.Uncommon,
+                "SHF.PepperBagSeed", LootRarity.Uncommon,
+                "SHF.EggplantBagSeed", LootRarity.Uncommon,
+                "SHF.LeekBagSeed", LootRarity.Uncommon,
+                "SHF.OnionBagSeed", LootRarity.Uncommon,
+                "SHF.WatermelonBagSeed", LootRarity.Uncommon,
+                "SHF.ZucchiniBagSeed", LootRarity.Uncommon,
+                "SHF.AppleBagSeed", LootRarity.Uncommon,
+                "SHF.BananaBagSeed", LootRarity.Uncommon,
+                "SHF.BerryBlackBagSeed", LootRarity.Uncommon,
+                "SHF.BerryBlueBagSeed", LootRarity.Uncommon,
+                "SHF.CherryBagSeed", LootRarity.Uncommon,
+                "SHF.GrapefruitBagSeed", LootRarity.Uncommon,
+                "SHF.GrapesBagSeed", LootRarity.Uncommon,
+                "SHF.LemonBagSeed", LootRarity.Uncommon,
+                "SHF.LimeBagSeed", LootRarity.Uncommon,
+                "SHF.MangoBagSeed", LootRarity.Uncommon,
+                "SHF.OrangeBagSeed", LootRarity.Uncommon,
+                "SHF.PeachBagSeed", LootRarity.Uncommon,
+                "SHF.PearBagSeed", LootRarity.Uncommon,
+                "SHF.PineappleBagSeed", LootRarity.Uncommon,
+                "SHF.CornBagSeed", LootRarity.Uncommon,
+                "SHF.LettuceBagSeed", LootRarity.Uncommon,
+                "SHF.TeaBagSeed", LootRarity.Uncommon,
+                "SHF.CoffeeBagSeed", LootRarity.Uncommon,
+                "SHF.WheatBagSeed", LootRarity.Uncommon,
+            }
+        },
+        -- Магазин садоводства
+        GardenStoreMisc = {
+            items = {
+                "SHF.AvocadoBagSeed", LootRarity.Common,
+                "SHF.PepperBagSeed", LootRarity.Common,
+                "SHF.EggplantBagSeed", LootRarity.Common,
+                "SHF.LeekBagSeed", LootRarity.Common,
+                "SHF.OnionBagSeed", LootRarity.Common,
+                "SHF.WatermelonBagSeed", LootRarity.Common,
+                "SHF.ZucchiniBagSeed", LootRarity.Common,
+                "SHF.AppleBagSeed", LootRarity.Common,
+                "SHF.BananaBagSeed", LootRarity.Common,
+                "SHF.BerryBlackBagSeed", LootRarity.Common,
+                "SHF.BerryBlueBagSeed", LootRarity.Common,
+                "SHF.CherryBagSeed", LootRarity.Common,
+                "SHF.GrapefruitBagSeed", LootRarity.Common,
+                "SHF.GrapesBagSeed", LootRarity.Common,
+                "SHF.LemonBagSeed", LootRarity.Common,
+                "SHF.LimeBagSeed", LootRarity.Common,
+                "SHF.MangoBagSeed", LootRarity.Common,
+                "SHF.OrangeBagSeed", LootRarity.Common,
+                "SHF.PeachBagSeed", LootRarity.Common,
+                "SHF.PearBagSeed", LootRarity.Common,
+                "SHF.PineappleBagSeed", LootRarity.Common,
+                "SHF.CornBagSeed", LootRarity.Common,
+                "SHF.LettuceBagSeed", LootRarity.Common,
+                "SHF.TeaBagSeed", LootRarity.Common,
+                "SHF.CoffeeBagSeed", LootRarity.Common,
+                "SHF.WheatBagSeed", LootRarity.Common,
+            }
+        },
+        -- Гигамаркеты садоводства
+        GigamartFarming = {
+            items = {
+                "SHF.AvocadoBagSeed", LootRarity.Common,
+                "SHF.PepperBagSeed", LootRarity.Common,
+                "SHF.EggplantBagSeed", LootRarity.Common,
+                "SHF.LeekBagSeed", LootRarity.Common,
+                "SHF.OnionBagSeed", LootRarity.Common,
+                "SHF.WatermelonBagSeed", LootRarity.Common,
+                "SHF.ZucchiniBagSeed", LootRarity.Common,
+                "SHF.AppleBagSeed", LootRarity.Common,
+                "SHF.BananaBagSeed", LootRarity.Common,
+                "SHF.BerryBlackBagSeed", LootRarity.Common,
+                "SHF.BerryBlueBagSeed", LootRarity.Common,
+                "SHF.CherryBagSeed", LootRarity.Common,
+                "SHF.GrapefruitBagSeed", LootRarity.Common,
+                "SHF.GrapesBagSeed", LootRarity.Common,
+                "SHF.LemonBagSeed", LootRarity.Common,
+                "SHF.LimeBagSeed", LootRarity.Common,
+                "SHF.MangoBagSeed", LootRarity.Common,
+                "SHF.OrangeBagSeed", LootRarity.Common,
+                "SHF.PeachBagSeed", LootRarity.Common,
+                "SHF.PearBagSeed", LootRarity.Common,
+                "SHF.PineappleBagSeed", LootRarity.Common,
+                "SHF.CornBagSeed", LootRarity.Common,
+                "SHF.LettuceBagSeed", LootRarity.Common,
+                "SHF.TeaBagSeed", LootRarity.Common,
+                "SHF.CoffeeBagSeed", LootRarity.Common,
+                "SHF.WheatBagSeed", LootRarity.Common,
+            }
+        },
+        -- Усадьбы
+        Homesteading = {
+            items = {
+                "SHF.AvocadoBagSeed", LootRarity.Rare,
+                "SHF.PepperBagSeed", LootRarity.Rare,
+                "SHF.EggplantBagSeed", LootRarity.Rare,
+                "SHF.LeekBagSeed", LootRarity.Rare,
+                "SHF.OnionBagSeed", LootRarity.Rare,
+                "SHF.WatermelonBagSeed", LootRarity.Rare,
+                "SHF.ZucchiniBagSeed", LootRarity.Rare,
+                "SHF.AppleBagSeed", LootRarity.Rare,
+                "SHF.BananaBagSeed", LootRarity.Rare,
+                "SHF.BerryBlackBagSeed", LootRarity.Rare,
+                "SHF.BerryBlueBagSeed", LootRarity.Rare,
+                "SHF.CherryBagSeed", LootRarity.Rare,
+                "SHF.GrapefruitBagSeed", LootRarity.Rare,
+                "SHF.GrapesBagSeed", LootRarity.Rare,
+                "SHF.LemonBagSeed", LootRarity.Rare,
+                "SHF.LimeBagSeed", LootRarity.Rare,
+                "SHF.MangoBagSeed", LootRarity.Rare,
+                "SHF.OrangeBagSeed", LootRarity.Rare,
+                "SHF.PeachBagSeed", LootRarity.Rare,
+                "SHF.PearBagSeed", LootRarity.Rare,
+                "SHF.PineappleBagSeed", LootRarity.Rare,
+                "SHF.CornBagSeed", LootRarity.Rare,
+                "SHF.LettuceBagSeed", LootRarity.Rare,
+                "SHF.TeaBagSeed", LootRarity.Rare,
+                "SHF.CoffeeBagSeed", LootRarity.Rare,
+                "SHF.WheatBagSeed", LootRarity.Rare,
+            }
+        },
+        -- Магазин инструментов
+        ToolStoreFarming = {
+            items = {
+                "SHF.AvocadoBagSeed", LootRarity.Uncommon,
+                "SHF.PepperBagSeed", LootRarity.Uncommon,
+                "SHF.EggplantBagSeed", LootRarity.Uncommon,
+                "SHF.LeekBagSeed", LootRarity.Uncommon,
+                "SHF.OnionBagSeed", LootRarity.Uncommon,
+                "SHF.WatermelonBagSeed", LootRarity.Uncommon,
+                "SHF.ZucchiniBagSeed", LootRarity.Uncommon,
+                "SHF.AppleBagSeed", LootRarity.Uncommon,
+                "SHF.BananaBagSeed", LootRarity.Uncommon,
+                "SHF.BerryBlackBagSeed", LootRarity.Uncommon,
+                "SHF.BerryBlueBagSeed", LootRarity.Uncommon,
+                "SHF.CherryBagSeed", LootRarity.Uncommon,
+                "SHF.GrapefruitBagSeed", LootRarity.Uncommon,
+                "SHF.GrapesBagSeed", LootRarity.Uncommon,
+                "SHF.LemonBagSeed", LootRarity.Uncommon,
+                "SHF.LimeBagSeed", LootRarity.Uncommon,
+                "SHF.MangoBagSeed", LootRarity.Uncommon,
+                "SHF.OrangeBagSeed", LootRarity.Uncommon,
+                "SHF.PeachBagSeed", LootRarity.Uncommon,
+                "SHF.PearBagSeed", LootRarity.Uncommon,
+                "SHF.PineappleBagSeed", LootRarity.Uncommon,
+                "SHF.CornBagSeed", LootRarity.Uncommon,
+                "SHF.LettuceBagSeed", LootRarity.Uncommon,
+                "SHF.TeaBagSeed", LootRarity.Uncommon,
+                "SHF.CoffeeBagSeed", LootRarity.Uncommon,
+                "SHF.WheatBagSeed", LootRarity.Uncommon,
+            }
+        },
+        BakeryKitchenFridge = {
+            items = {
+                "SHF.TeaLeaves", LootRarity.Uncommon,
+                "SHF.CoffeeBeans", LootRarity.Uncommon,
+                "SHF.CoffeeBeansRoasted", LootRarity.Uncommon,
+            }
+        },
+        BandPracticeFridge = {
+            items = {
+                "SHF.TeaLeaves", LootRarity.Rare,
+                "SHF.CoffeeBeans", LootRarity.Rare,
+                "SHF.CoffeeBeansRoasted", LootRarity.Rare,
+            }
+        },
+        BurgerKitchenFridge = {
+            items = {
+                "SHF.TeaLeaves", LootRarity.Rare,
+                "SHF.CoffeeBeans", LootRarity.Rare,
+                "SHF.CoffeeBeansRoasted", LootRarity.Uncommon,
+            }
+        },
+        CafeKitchenFridge = {
+            items = {
+                "SHF.TeaLeaves", LootRarity.Rare,
+                "SHF.CoffeeBeans", LootRarity.Uncommon,
+                "SHF.CoffeeBeansRoasted", LootRarity.Common,
+            }
+        },
+        CrateTea = {
+            items = {
+                "SHF.TeaLeaves", LootRarity.Common,
+                "SHF.CoffeeBeans", LootRarity.Rare,
+                "SHF.CoffeeBeansRoasted", LootRarity.Rare,
+            }
+        },
+        FridgeBreakRoom = {
+            items = {
+                "SHF.TeaLeaves", LootRarity.Rare,
+                "SHF.CoffeeBeans", LootRarity.Rare,
+                "SHF.CoffeeBeansRoasted", LootRarity.Rare,
+            }
+        },
+        FridgeGeneric = {
+            items = {
+                "SHF.TeaLeaves", LootRarity.Rare,
+                "SHF.CoffeeBeans", LootRarity.Rare,
+                "SHF.CoffeeBeansRoasted", LootRarity.Rare,
+            }
+        },
+        FridgeOffice = {
+            items = {
+                "SHF.TeaLeaves", LootRarity.VeryRare,
+                "SHF.CoffeeBeans", LootRarity.VeryRare,
+                "SHF.CoffeeBeansRoasted", LootRarity.VeryRare,
+            }
+        },
+        FridgeOther = {
+            items = {
+                "SHF.TeaLeaves", LootRarity.VeryRare,
+                "SHF.CoffeeBeans", LootRarity.VeryRare,
+                "SHF.CoffeeBeansRoasted", LootRarity.VeryRare,
+            }
+        },
+        FridgeRich = {
+            items = {
+                "SHF.TeaLeaves", LootRarity.ExtraRare,
+                "SHF.CoffeeBeans", LootRarity.ExtraRare,
+                "SHF.CoffeeBeansRoasted", LootRarity.ExtraRare,
+            }
+        },
+        SpiffosKitchenFridge = {
+            items = {
+                "SHF.TeaLeaves", LootRarity.Common,
+                "SHF.CoffeeBeans", LootRarity.Common,
+                "SHF.CoffeeBeansRoasted", LootRarity.Common,
+            }
+        },
+        SushiKitchenFridge = {
+            items = {
+                "SHF.TeaLeaves", LootRarity.Uncommon,
+                "SHF.CoffeeBeans", LootRarity.Uncommon,
+                "SHF.CoffeeBeansRoasted", LootRarity.Uncommon,
+            }
+        },
+        WesternKitchenFridge = {
+            items = {
+                "SHF.TeaLeaves", LootRarity.Uncommon,
+                "SHF.CoffeeBeans", LootRarity.Uncommon,
+                "SHF.CoffeeBeansRoasted", LootRarity.Uncommon,
+            }
+        },
+    }
+}
 
-else
-    table.insert(SuburbsDistributions.all.crate.items, "SHF.CornBagSeed");
-    table.insert(SuburbsDistributions.all.crate.items, 0.8);
-    table.insert(SuburbsDistributions.all.crate.items, "SHF.LettuceBagSeed");
-    table.insert(SuburbsDistributions.all.crate.items, 0.8);
+for location, data in pairs(suburbsDistribution.all) do
+    for _, value in ipairs(data.items) do
+        table.insert(SuburbsDistributions['all'][location].items, value);
+    end
 end
 
-
---Crate farming (procedural)
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.AvocadoBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.PepperBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.EggplantBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.LeekBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.OnionBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.WatermelonBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.ZucchiniBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.AppleBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.BananaBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.BerryBlackBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.BerryBlueBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.CherryBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.GrapefruitBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.GrapesBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.LemonBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.LimeBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.MangoBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.OrangeBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.PeachBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.PearBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.PineappleBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.TeaBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.CoffeeBagSeed");
-table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-
---Soul Filcher's Farming compat
-if (getActivatedMods():contains("FarmingTime")) then
-
-else
-    table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.CornBagSeed");
-    table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
-    table.insert(ProceduralDistributions.list.CrateFarming.items, "SHF.LettuceBagSeed");
-    table.insert(ProceduralDistributions.list.CrateFarming.items, 8);
+for location, data in pairs(proceduralDistributions.list) do
+    for _, value in ipairs(data.items) do
+        table.insert(ProceduralDistributions['list'][location].items, value);
+    end
 end
-
---Garden store
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.AvocadoBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.PepperBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.EggplantBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.LeekBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.OnionBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.WatermelonBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.ZucchiniBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.AppleBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.BananaBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.BerryBlackBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.BerryBlueBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.CherryBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.GrapefruitBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.GrapesBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.LemonBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.LimeBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.MangoBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.OrangeBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.PeachBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.PearBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.PineappleBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.TeaBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.TeaBagSeed");
-table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-
---Soul Filcher's Farming compat
-if (getActivatedMods():contains("FarmingTime")) then
-
-else
-    table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.CornBagSeed");
-    table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-    table.insert(ProceduralDistributions.list.GardenStoreMisc.items, "SHF.LettuceBagSeed");
-    table.insert(ProceduralDistributions.list.GardenStoreMisc.items, 20);
-end
-
-
---Gigamart Farming
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.AvocadoBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.PepperBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.EggplantBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.LeekBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.OnionBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.WatermelonBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.ZucchiniBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.AppleBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.BananaBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.BerryBlackBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.BerryBlueBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.CherryBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.GrapefruitBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.GrapesBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.LemonBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.LimeBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.MangoBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.OrangeBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.PeachBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.PearBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.PineappleBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.TeaBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.CoffeeBagSeed");
-table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-
---Soul Filcher's Farming compat
-if (getActivatedMods():contains("FarmingTime")) then
-
-else
-    table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.CornBagSeed");
-    table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-    table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, "SHF.LettuceBagSeed");
-    table.insert(ProceduralDistributions["list"]["GigamartFarming"].items, 4);
-end
-
-
---Homesteading
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.AvocadoBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.PepperBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.EggplantBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.LeekBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.OnionBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.WatermelonBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.ZucchiniBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.AppleBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.BananaBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.BerryBlackBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.BerryBlueBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.CherryBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.GrapefruitBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.GrapesBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.LemonBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.LimeBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.MangoBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.OrangeBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.PeachBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.PearBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.PineappleBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.TeaBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.CoffeeBagSeed");
-table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-
---Soul Filcher's Farming compat
-if (getActivatedMods():contains("FarmingTime")) then
-
-else
-    table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.CornBagSeed");
-    table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-    table.insert(ProceduralDistributions["list"]["Homesteading"].items, "SHF.LettuceBagSeed");
-    table.insert(ProceduralDistributions["list"]["Homesteading"].items, 4);
-end
-
-    -- =====================
-    --    Bags/Containers
-    -- =====================
-
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.AvocadoBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.PepperBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.EggplantBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.LeekBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.OnionBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.WatermelonBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.ZucchiniBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.AppleBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.BananaBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.BerryBlackBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.BerryBlueBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.CherryBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.GrapefruitBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.GrapesBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.LemonBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.LimeBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.MangoBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.OrangeBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.PeachBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.PearBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.PineappleBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.TeaBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.CoffeeBagSeed");
-table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-
---Soul Filcher's Farming compat
-if (getActivatedMods():contains("FarmingTime")) then
-
-else
-    table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.CornBagSeed");
-    table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-    table.insert(SuburbsDistributions.Bag_SurvivorBag.items, "SHF.LettuceBagSeed");
-    table.insert(SuburbsDistributions.Bag_SurvivorBag.items, 5);
-end
-
-
-
---Seed Bag
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.AvocadoBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.PepperBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.EggplantBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.LeekBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.OnionBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.WatermelonBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.ZucchiniBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.AppleBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.BananaBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.BerryBlackBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.BerryBlueBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.CherryBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.GrapefruitBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.GrapesBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.LemonBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.LimeBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.MangoBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.OrangeBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.PeachBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.PearBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.PineappleBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.TeaBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-table.insert(SuburbsDistributions["SeedBag"].items, "SHF.CoffeeBagSeed");
-table.insert(SuburbsDistributions["SeedBag"].items, 8);
-
---Soul Filcher's Farming compat
-if (getActivatedMods():contains("FarmingTime")) then
-
-else
-    table.insert(SuburbsDistributions["SeedBag"].items, "SHF.CornBagSeed");
-    table.insert(SuburbsDistributions["SeedBag"].items, 8);
-    table.insert(SuburbsDistributions["SeedBag"].items, "SHF.LettuceBagSeed");
-    table.insert(SuburbsDistributions["SeedBag"].items, 8);
-end
-
-
-
---Tool Store Farming
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.AvocadoBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.PepperBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.EggplantBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.LeekBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.OnionBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.WatermelonBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.ZucchiniBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.AppleBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.BananaBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.BerryBlackBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.BerryBlueBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.CherryBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.GrapefruitBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.GrapesBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.LemonBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.LimeBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.MangoBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.OrangeBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.PeachBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.PearBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.PineappleBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.TeaBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.CoffeeBagSeed");
-table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-
---Soul Filcher's Farming compat
-if (getActivatedMods():contains("FarmingTime")) then
-
-else
-    table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.CornBagSeed");
-    table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-    table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, "SHF.LettuceBagSeed");
-    table.insert(ProceduralDistributions["list"]["ToolStoreFarming"].items, 6);
-end
-
-
-table.insert(ProceduralDistributions["list"]["BakeryKitchenFridge"].items,"WPSkillLeterature.TeaLeaves");
-table.insert(ProceduralDistributions["list"]["BakeryKitchenFridge"].items, 1);
-table.insert(ProceduralDistributions["list"]["BandPracticeFridge"].items,"WPSkillLeterature.TeaLeaves");
-table.insert(ProceduralDistributions["list"]["BandPracticeFridge"].items, 6);
-table.insert(ProceduralDistributions["list"]["BurgerKitchenFridge"].items,"WPSkillLeterature.TeaLeaves");
-table.insert(ProceduralDistributions["list"]["BurgerKitchenFridge"].items, 4);
-table.insert(ProceduralDistributions["list"]["CafeKitchenFridge"].items,"WPSkillLeterature.TeaLeaves");
-table.insert(ProceduralDistributions["list"]["CafeKitchenFridge"].items, 5);
-table.insert(ProceduralDistributions["list"]["CrateTea"].items,"WPSkillLeterature.TeaLeaves");
-table.insert(ProceduralDistributions["list"]["CrateTea"].items, 20);
-table.insert(ProceduralDistributions["list"]["FridgeBreakRoom"].items,"WPSkillLeterature.TeaLeaves");
-table.insert(ProceduralDistributions["list"]["FridgeBreakRoom"].items, 1);
-table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items,"WPSkillLeterature.TeaLeaves");
-table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, 1);
-table.insert(ProceduralDistributions["list"]["FridgeOffice"].items,"WPSkillLeterature.TeaLeaves");
-table.insert(ProceduralDistributions["list"]["FridgeOffice"].items, 8);
-table.insert(ProceduralDistributions["list"]["FridgeOther"].items,"WPSkillLeterature.TeaLeaves");
-table.insert(ProceduralDistributions["list"]["FridgeOther"].items, 1);
-table.insert(ProceduralDistributions["list"]["FridgeRich"].items,"WPSkillLeterature.TeaLeaves");
-table.insert(ProceduralDistributions["list"]["FridgeRich"].items, 1);
-table.insert(ProceduralDistributions["list"]["SpiffosKitchenFridge"].items,"WPSkillLeterature.TeaLeaves");
-table.insert(ProceduralDistributions["list"]["SpiffosKitchenFridge"].items, 20);
-table.insert(ProceduralDistributions["list"]["SushiKitchenFridge"].items,"WPSkillLeterature.TeaLeaves");
-table.insert(ProceduralDistributions["list"]["SushiKitchenFridge"].items, 1);
-table.insert(ProceduralDistributions["list"]["WesternKitchenFridge"].items,"WPSkillLeterature.TeaLeaves");
-table.insert(ProceduralDistributions["list"]["WesternKitchenFridge"].items, 1);
-
-table.insert(ProceduralDistributions["list"]["BakeryKitchenFridge"].items,"WPSkillLeterature.CoffeeBeans");
-table.insert(ProceduralDistributions["list"]["BakeryKitchenFridge"].items, 1);
-table.insert(ProceduralDistributions["list"]["BandPracticeFridge"].items,"WPSkillLeterature.CoffeeBeans");
-table.insert(ProceduralDistributions["list"]["BandPracticeFridge"].items, 6);
-table.insert(ProceduralDistributions["list"]["BurgerKitchenFridge"].items,"WPSkillLeterature.CoffeeBeans");
-table.insert(ProceduralDistributions["list"]["BurgerKitchenFridge"].items, 4);
-table.insert(ProceduralDistributions["list"]["CafeKitchenFridge"].items,"WPSkillLeterature.CoffeeBeans");
-table.insert(ProceduralDistributions["list"]["CafeKitchenFridge"].items, 5);
-table.insert(ProceduralDistributions["list"]["CrateCoffee"].items,"WPSkillLeterature.CoffeeBeans");
-table.insert(ProceduralDistributions["list"]["CrateCoffee"].items, 20);
-table.insert(ProceduralDistributions["list"]["FridgeBreakRoom"].items,"WPSkillLeterature.CoffeeBeans");
-table.insert(ProceduralDistributions["list"]["FridgeBreakRoom"].items, 1);
-table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items,"WPSkillLeterature.CoffeeBeans");
-table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, 1);
-table.insert(ProceduralDistributions["list"]["FridgeOffice"].items,"WPSkillLeterature.CoffeeBeans");
-table.insert(ProceduralDistributions["list"]["FridgeOffice"].items, 8);
-table.insert(ProceduralDistributions["list"]["FridgeOther"].items,"WPSkillLeterature.CoffeeBeans");
-table.insert(ProceduralDistributions["list"]["FridgeOther"].items, 1);
-table.insert(ProceduralDistributions["list"]["FridgeRich"].items,"WPSkillLeterature.CoffeeBeans");
-table.insert(ProceduralDistributions["list"]["FridgeRich"].items, 1);
-table.insert(ProceduralDistributions["list"]["SpiffosKitchenFridge"].items,"WPSkillLeterature.CoffeeBeans");
-table.insert(ProceduralDistributions["list"]["SpiffosKitchenFridge"].items, 20);
-table.insert(ProceduralDistributions["list"]["SushiKitchenFridge"].items,"WPSkillLeterature.CoffeeBeans");
-table.insert(ProceduralDistributions["list"]["SushiKitchenFridge"].items, 1);
-table.insert(ProceduralDistributions["list"]["WesternKitchenFridge"].items,"WPSkillLeterature.CoffeeBeans");
-table.insert(ProceduralDistributions["list"]["WesternKitchenFridge"].items, 1);
-
-table.insert(ProceduralDistributions["list"]["BakeryKitchenFridge"].items,"WPSkillLeterature.CoffeeBeansRoasted");
-table.insert(ProceduralDistributions["list"]["BakeryKitchenFridge"].items, 1);
-table.insert(ProceduralDistributions["list"]["BandPracticeFridge"].items,"WPSkillLeterature.CoffeeBeansRoasted");
-table.insert(ProceduralDistributions["list"]["BandPracticeFridge"].items, 6);
-table.insert(ProceduralDistributions["list"]["BurgerKitchenFridge"].items,"WPSkillLeterature.CoffeeBeansRoasted");
-table.insert(ProceduralDistributions["list"]["BurgerKitchenFridge"].items, 4);
-table.insert(ProceduralDistributions["list"]["CafeKitchenFridge"].items,"WPSkillLeterature.CoffeeBeansRoasted");
-table.insert(ProceduralDistributions["list"]["CafeKitchenFridge"].items, 5);
-table.insert(ProceduralDistributions["list"]["CrateCoffee"].items,"WPSkillLeterature.CoffeeBeansRoasted");
-table.insert(ProceduralDistributions["list"]["CrateCoffee"].items, 20);
-table.insert(ProceduralDistributions["list"]["FridgeBreakRoom"].items,"WPSkillLeterature.CoffeeBeansRoasted");
-table.insert(ProceduralDistributions["list"]["FridgeBreakRoom"].items, 1);
-table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items,"WPSkillLeterature.CoffeeBeansRoasted");
-table.insert(ProceduralDistributions["list"]["FridgeGeneric"].items, 1);
-table.insert(ProceduralDistributions["list"]["FridgeOffice"].items,"WPSkillLeterature.CoffeeBeansRoasted");
-table.insert(ProceduralDistributions["list"]["FridgeOffice"].items, 8);
-table.insert(ProceduralDistributions["list"]["FridgeOther"].items,"WPSkillLeterature.CoffeeBeansRoasted");
-table.insert(ProceduralDistributions["list"]["FridgeOther"].items, 1);
-table.insert(ProceduralDistributions["list"]["FridgeRich"].items,"WPSkillLeterature.CoffeeBeansRoasted");
-table.insert(ProceduralDistributions["list"]["FridgeRich"].items, 1);
-table.insert(ProceduralDistributions["list"]["SpiffosKitchenFridge"].items,"WPSkillLeterature.CoffeeBeansRoasted");
-table.insert(ProceduralDistributions["list"]["SpiffosKitchenFridge"].items, 20);
-table.insert(ProceduralDistributions["list"]["SushiKitchenFridge"].items,"WPSkillLeterature.CoffeeBeansRoasted");
-table.insert(ProceduralDistributions["list"]["SushiKitchenFridge"].items, 1);
-table.insert(ProceduralDistributions["list"]["WesternKitchenFridge"].items,"WPSkillLeterature.CoffeeBeansRoasted");
-table.insert(ProceduralDistributions["list"]["WesternKitchenFridge"].items, 1);
-

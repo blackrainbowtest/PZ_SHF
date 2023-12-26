@@ -31,6 +31,7 @@ Recipes_EN {
     /*___________________ТИП: ХЗ___________________*/
         Recipe_Open_Packet_of_Tea_Seeds             = "Open packet of tea seeds",
         Recipe_Open_Packet_of_Coffee_Seeds          = "Open packet of coffee seeds",
+        Recipe_Open_Packet_of_Wheat_Seeds          = "Open packet of wheat seeds",
 
 
 /*___________________РЕЦЕПТЫ_ДЛЯ_ЗАКРЫТИЯ_ПАЧЕК___________________*/
@@ -65,6 +66,7 @@ Recipes_EN {
     /*___________________ТИП: ХЗ___________________*/
         Recipe_Put_Tea_Seeds_in_Packet              = "Put tea seeds in the packet",
         Recipe_Put_Coffee_Seeds_in_Packet           = "Put coffee seeds in the packet",
+        Recipe_Put_Wheat_Seeds_in_Packet            = "Put wheat seeds in the packet",
 
 /*___________________РЕЦЕПТЫ_ДЛЯ_ПОЛУЧЕНИЯ_СЕМЯН__________________*/
 
@@ -100,6 +102,7 @@ Recipes_EN {
         Recipe_Claim_Tea_Seeds                      = "Get seeds"
         Recipe_Claim_Coffee_Seeds                   = "Get seeds"
         Recipe_Claim_SunFlower_Seeds                = "Get seeds"
+        Recipe_Claim_Wheat_Seeds                    = "Get seeds"
 
 /*_________________РЕЦЕПТЫ_ДЛЯ_СОЗДАНИЯ_ПРЕДМЕТОВ_________________*/
 
@@ -107,4 +110,5 @@ Recipes_EN {
 
         Recipe_Make_Tea_Bag                         = "Make tea bag"
         Recipe_Make_Coffee                          = "Make coffee"
+        Recipe_Make_Flour_From_Wheat_Grain          = "Make flour"
 }
