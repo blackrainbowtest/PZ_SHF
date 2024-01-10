@@ -1,4 +1,4 @@
-version=1
+version=1.10
 id=3050914195
 title=Shelter Farm mod
 description=[h1]The mod will be updated depending on the needs of the server.[/h1]
@@ -9,22 +9,16 @@ description=[h2]    * Added new food sunflower.[/h2]
 description=[h2]    * Added missing translation for Russian and Ukrainian.[/h2]
 description=[h2]    * After a successful harvest, the plant returns to phase 03 without disease.[/h2]
 description=
+description=[h1]UPDATE 12/26/2023 WHEAT[/h1]
 description=
-description=[h1]SUNFLOWERS GROWING SPRITES[/h1]
+description=[h2] * Added new items: Wheat, grains of wheat.[/h2]
+description=[h2] * New crafts have been added: Get/Pack wheat grains, Make flour from wheat.[/h2]
+description=[h2] * The loot distribution code has been completely rewritten.[/h2]
+description=[h2] * Fixed shortcomings and errors in distribution, now all items are distributed correctly into the appropriate containers.[/h2]
+description=[h2] * Added spawning of seed packs in zombie farmers (rare chance 3).[/h2]
+description=[h2] * Added spawning of roasted coffee beans in simple zombies (legendary chance 0.01).[/h2]
 description=
-description=[table]
-description=[tr]
-description=[td][img]https://steamuserimages-a.akamaihd.net/ugc/2285078746115111889/938F14B5B45EADE62401F9F65A5F6C9745DF5FFC/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false[/img][/td]
-description=[td][img]https://steamuserimages-a.akamaihd.net/ugc/2285078746115109349/143B17C603AAFD4034E47A248BFD4EA66642AC76/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false[/img][/td]
-description=[td][img]https://steamuserimages-a.akamaihd.net/ugc/2285078746115112478/1094EC0AA150BFB93F518F3890399FBB943782B5/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false[/img][/td]
-description=[td][img]https://steamuserimages-a.akamaihd.net/ugc/2285078746115113157/5C477701BA9C2702C029310138028C6B9D00D49F/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false[/img][/td]
-description=[/tr]
-description=[tr]
-description=[td][img]https://steamuserimages-a.akamaihd.net/ugc/2285078746115113772/93C44A6BFE880E2C4605C5621B7B0A7067540E73/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false[/img][/td]
-description=[td][img]https://steamuserimages-a.akamaihd.net/ugc/2285078746115114333/91665DD81327EE61D7BE9C11C44FA41155BD631A/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false[/img][/td]
-description=[td][img]https://steamuserimages-a.akamaihd.net/ugc/2285078746115114809/EDE113BDF878500AC424882F2440188F72DBF1BE/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false[/img][/td]
-description=[td][img]https://steamuserimages-a.akamaihd.net/ugc/2285078746115115293/749DEB177249429A816B0937D8F93C10891C4D13/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false[/img][/td]
-description=[/tr]
-description=[/table]
+description=
+description=
 tags=Build 41;Food;Items
 visibility=public
