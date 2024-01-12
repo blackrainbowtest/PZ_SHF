@@ -60,6 +60,97 @@ SHFFarmingConfigurations.growNewCrop = function(planting, nextGrowing, updateNbO
     return planting
 end
 
+-- Cabbage
+-- Need 5 seeds
+-- Water lvl over 100
+-- Need 4 weeks to grow (112h per phase)
+farming_vegetableconf.growSunFlower = function(planting, nextGrowing, updateNbOfGrow)
+	local nbOfGrow = planting.nbOfGrow;
+	local water = farming_vegetableconf.calcWater(planting.waterNeeded, planting.waterLvl);
+	local diseaseLvl = farming_vegetableconf.calcDisease(planting.mildewLvl);
+	if(nbOfGrow <= 0) then -- young
+		nbOfGrow = 0;
+		planting.nbOfGrow = 0;
+		planting = growNext(planting, farming_vegetableconf.getSpriteName(planting), farming_vegetableconf.getObjectName(planting), nextGrowing, farming_vegetableconf.props[planting.typeOfSeed].timeToGrow + water + diseaseLvl);
+		planting.waterNeeded = 85;
+	elseif (nbOfGrow <= 4) then -- young
+		if(water >= 0 and diseaseLvl >= 0) then
+			planting = growNext(planting, farming_vegetableconf.getSpriteName(planting), farming_vegetableconf.getObjectName(planting), nextGrowing, farming_vegetableconf.props[planting.typeOfSeed].timeToGrow + water + diseaseLvl);
+			planting.waterNeeded = farming_vegetableconf.props[planting.typeOfSeed].waterLvl;
+		else
+			badPlant(water, nil, diseaseLvl, planting, nextGrowing, updateNbOfGrow);
+		end
+	elseif (nbOfGrow == 5) then -- mature
+		if(water >= 0 and diseaseLvl >= 0) then
+			planting.nextGrowing = calcNextGrowing(nextGrowing, farming_vegetableconf.props[planting.typeOfSeed].timeToGrow + water + diseaseLvl);
+			planting:setObjectName(farming_vegetableconf.getObjectName(planting))
+			planting:setSpriteName(farming_vegetableconf.getSpriteName(planting))
+			planting.hasVegetable = true;
+		else
+			badPlant(water, nil, diseaseLvl, planting, nextGrowing, updateNbOfGrow);
+		end
+	elseif (nbOfGrow == 6) then -- mature with seed
+		if(water >= 0 and diseaseLvl >= 0) then
+			planting.nextGrowing = calcNextGrowing(nextGrowing, 48);
+			planting:setObjectName(farming_vegetableconf.getObjectName(planting))
+			planting:setSpriteName(farming_vegetableconf.getSpriteName(planting))
+			planting.hasVegetable = true;
+			planting.hasSeed = true;
+		else
+			badPlant(water, nil, diseaseLvl, planting, nextGrowing, updateNbOfGrow);
+		end
+	elseif (planting.state ~= "rotten") then -- rotten
+		planting:rottenThis()
+	end
+	return planting;
+end
+
+
+-- Cabbage
+-- Need 5 seeds
+-- Water lvl over 100
+-- Need 4 weeks to grow (112h per phase)
+farming_vegetableconf.growWheat = function(planting, nextGrowing, updateNbOfGrow)
+	local nbOfGrow = planting.nbOfGrow;
+	local water = farming_vegetableconf.calcWater(planting.waterNeeded, planting.waterLvl);
+	local diseaseLvl = farming_vegetableconf.calcDisease(planting.mildewLvl);
+	if(nbOfGrow <= 0) then -- young
+		nbOfGrow = 0;
+		planting.nbOfGrow = 0;
+		planting = growNext(planting, farming_vegetableconf.getSpriteName(planting), farming_vegetableconf.getObjectName(planting), nextGrowing, farming_vegetableconf.props[planting.typeOfSeed].timeToGrow + water + diseaseLvl);
+		planting.waterNeeded = 100;
+	elseif (nbOfGrow <= 4) then -- young
+		if(water >= 0 and diseaseLvl >= 0) then
+			planting = growNext(planting, farming_vegetableconf.getSpriteName(planting), farming_vegetableconf.getObjectName(planting), nextGrowing, farming_vegetableconf.props[planting.typeOfSeed].timeToGrow + water + diseaseLvl);
+			planting.waterNeeded = farming_vegetableconf.props[planting.typeOfSeed].waterLvl;
+		else
+			badPlant(water, nil, diseaseLvl, planting, nextGrowing, updateNbOfGrow);
+		end
+	elseif (nbOfGrow == 5) then -- mature
+		if(water >= 0 and diseaseLvl >= 0) then
+			planting.nextGrowing = calcNextGrowing(nextGrowing, farming_vegetableconf.props[planting.typeOfSeed].timeToGrow + water + diseaseLvl);
+			planting:setObjectName(farming_vegetableconf.getObjectName(planting))
+			planting:setSpriteName(farming_vegetableconf.getSpriteName(planting))
+			planting.hasVegetable = true;
+		else
+			badPlant(water, nil, diseaseLvl, planting, nextGrowing, updateNbOfGrow);
+		end
+	elseif (nbOfGrow == 6) then -- mature with seed
+		if(water >= 0 and diseaseLvl >= 0) then
+			planting.nextGrowing = calcNextGrowing(nextGrowing, 48);
+			planting:setObjectName(farming_vegetableconf.getObjectName(planting))
+			planting:setSpriteName(farming_vegetableconf.getSpriteName(planting))
+			planting.hasVegetable = true;
+			planting.hasSeed = true;
+		else
+			badPlant(water, nil, diseaseLvl, planting, nextGrowing, updateNbOfGrow);
+		end
+	elseif (planting.state ~= "rotten") then -- rotten
+		planting:rottenThis()
+	end
+	return planting;
+end
+
 -- Иконки для всех растений
 farming_vegetableconf.icons["Avocado"] = "media/textures/WorldItems/Vegetable/item_Avocado.png"
 farming_vegetableconf.icons["Pepper"] = "media/textures/WorldItems/Vegetable/item_BellPepper.png"
@@ -515,7 +606,7 @@ farming_vegetableconf.props["CoffeeBeans"].retainOnHarvest = 3;
 -- Конфигурация для растения подсолнух (20 to 24 weeks to grow)
 farming_vegetableconf.props["SunFlower"] = farming_vegetableconf.props["SunFlower"] or {}
 farming_vegetableconf.props["SunFlower"].seedsRequired = 5;
-farming_vegetableconf.props["SunFlower"].texture = "shf_sunflower_07";
+farming_vegetableconf.props["SunFlower"].texture = "shf_farm_01_14";
 farming_vegetableconf.props["SunFlower"].waterLvl = 85;
 farming_vegetableconf.props["SunFlower"].timeToGrow = ZombRand(103, 117);
 farming_vegetableconf.props["SunFlower"].minVegAutorized = 4;
@@ -524,7 +615,6 @@ farming_vegetableconf.props["SunFlower"].vegetableName = "SHF.SunFlower";
 farming_vegetableconf.props["SunFlower"].seedName = "Base.SunflowerSeeds";
 farming_vegetableconf.props["SunFlower"].seedPerVeg = 1;
 
-farming_vegetableconf.props["SunFlower"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["SunFlower"].minVeg = 5;
 farming_vegetableconf.props["SunFlower"].maxVeg = 7;
 
@@ -540,7 +630,6 @@ farming_vegetableconf.props["Wheat"].vegetableName = "SHF.Wheat";
 farming_vegetableconf.props["Wheat"].seedName = "SHF.WheatGrain";
 farming_vegetableconf.props["Wheat"].seedPerVeg = 1;
 
-farming_vegetableconf.props["Wheat"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Wheat"].minVeg = 5;
 farming_vegetableconf.props["Wheat"].maxVeg = 7;
 
@@ -796,22 +885,22 @@ farming_vegetableconf.sprite["CoffeeBeans"] = {
 "shf_coffeebeans_08"
 }
 farming_vegetableconf.sprite["SunFlower"] = {
-"shf_sunflower_01", 
-"shf_sunflower_02", 
-"shf_sunflower_03", 
-"shf_sunflower_04", 
-"shf_sunflower_05",
-"shf_sunflower_06", 
-"shf_sunflower_07", 
-"shf_sunflower_08"
+"shf_farm_01_8", 
+"shf_farm_01_9", 
+"shf_farm_01_10", 
+"shf_farm_01_11", 
+"shf_farm_01_12",
+"shf_farm_01_13", 
+"shf_farm_01_14", 
+"shf_farm_01_15"
 }
 farming_vegetableconf.sprite["Wheat"] = {
-"shf_wheat_01", 
-"shf_wheat_02", 
-"shf_wheat_03", 
-"shf_wheat_04", 
-"shf_wheat_05",
-"shf_wheat_06", 
-"shf_wheat_07", 
-"shf_wheat_08"
+"shf_farm_01_0", 
+"shf_farm_01_1", 
+"shf_farm_01_2", 
+"shf_farm_01_3", 
+"shf_farm_01_4",
+"shf_farm_01_5", 
+"shf_farm_01_6", 
+"shf_farm_01_7"
 }

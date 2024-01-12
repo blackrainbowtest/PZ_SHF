@@ -111,4 +111,5 @@ Recipes_RU {
         Recipe_Make_Tea_Bag                         = "Изготовить пакетик чая"
         Recipe_Make_Coffee                          = "Изготовить пакет кофе"
 		Recipe_Make_Flour_From_Wheat_Grain          = "Изготовить муку"
+		Recipe_Make_OilVegetable_From_SunflowerSeeds = "Изготовить растительное масло"
 }

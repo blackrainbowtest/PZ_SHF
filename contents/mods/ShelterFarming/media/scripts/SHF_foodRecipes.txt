@@ -958,5 +958,23 @@ module SFZ
                 Category:Cooking,
                 AnimNode:Disassemble,
             }
+        
+        /* создание растительного масла */
+            recipe Make OilVegetable From SunflowerSeeds
+            {
+                keep MortarPestle,
+                SunflowerSeeds=30,
+                EmptyPopBottle/WaterBottleEmpty,
+
+                Result:OilVegetable,
+                Time:180.0,
+                NeedToBeLearn:false,
+                OnGiveXP:Recipe.OnGiveXP.SHFCooking3,
+                CanBeDoneFromFloor:false,
+                StopOnWalk:false,
+                Sound:MakePlaster,
+                Category:Cooking,
+                AnimNode:Disassemble,
+            }
 
 }

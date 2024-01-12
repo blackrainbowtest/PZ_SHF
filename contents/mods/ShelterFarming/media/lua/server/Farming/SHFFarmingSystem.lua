@@ -33,6 +33,10 @@ function SFarmingSystem:growPlant(luaObject, nextGrowing, updateNbOfGrow)
             luaObject = farming_vegetableconf.growPotato(luaObject, nextGrowing, updateNbOfGrow)
         elseif (luaObject.typeOfSeed == "Cabbages") then
             luaObject = farming_vegetableconf.growCabbage(luaObject, nextGrowing, updateNbOfGrow)
+        elseif (luaObject.typeOfSeed == "Wheat") then
+            luaObject = farming_vegetableconf.growWheat(luaObject, nextGrowing, updateNbOfGrow)
+        elseif (luaObject.typeOfSeed == "SunFlower") then
+            luaObject = farming_vegetableconf.growSunFlower(luaObject, nextGrowing, updateNbOfGrow)
         elseif luaObject.typeOfSeed then
             if farming_vegetableconf.props[luaObject.typeOfSeed].growCode ~= nil then
                 local growCode = farming_vegetableconf.props[luaObject.typeOfSeed].growCode
@@ -140,6 +144,10 @@ function SPlantGlobalObject:rottenThis()
         texture = "vegetation_farming_01_47"
     elseif self.typeOfSeed == "Cabbages" then
         texture = "vegetation_farming_01_31"
+    elseif self.typeOfSeed == "Wheat" then
+        texture = "shf_farm_01_7"
+    elseif self.typeOfSeed == "SunFlower" then
+        texture = "shf_farm_01_15"
     elseif self.typeOfSeed then
         if farming_vegetableconf.sprite[self.typeOfSeed][8] ~= nil then
             texture = farming_vegetableconf.sprite[self.typeOfSeed][8]

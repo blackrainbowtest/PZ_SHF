@@ -6,5 +6,7 @@ description=26 added vegetations, +1 COMING SOON.
 versionMin=41.56
 pack=shf_default
 pack=shf_farm
+pack=shf_farm2
 pack=shf_newTrees
 pack=shf_newVegetables
+tiledef=shf_tiledefinitions 4756

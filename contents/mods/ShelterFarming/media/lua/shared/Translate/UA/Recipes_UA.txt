@@ -111,4 +111,5 @@ Recipes_UA {
         Recipe_Make_Tea_Bag                         = "Виготовити пакетик чаю"
         Recipe_Make_Coffee                          = "Виготовити пакет кави"
 		Recipe_Make_Flour_From_Wheat_Grain          = "Виготовити борошно"
+		Recipe_Make_OilVegetable_From_SunflowerSeeds = "Виготовити олію"
 }

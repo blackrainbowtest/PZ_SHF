@@ -111,4 +111,5 @@ Recipes_EN {
         Recipe_Make_Tea_Bag                         = "Make tea bag"
         Recipe_Make_Coffee                          = "Make coffee"
         Recipe_Make_Flour_From_Wheat_Grain          = "Make flour"
+        Recipe_Make_OilVegetable_From_SunflowerSeeds = "Make oil vegetable"
 }
