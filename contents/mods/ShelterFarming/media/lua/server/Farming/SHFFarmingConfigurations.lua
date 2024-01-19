@@ -205,11 +205,11 @@ farming_vegetableconf.props["Corn"].seedsRequired = 8;
 farming_vegetableconf.props["Corn"].texture = "vegetation_farming_01_78";
 farming_vegetableconf.props["Corn"].waterLvl = 55;
 farming_vegetableconf.props["Corn"].timeToGrow = ZombRand(50,55);
-farming_vegetableconf.props["Corn"].minVegAutorized = 10;
-farming_vegetableconf.props["Corn"].maxVegAutorized = 15;
+farming_vegetableconf.props["Corn"].minVegAutorized = 8;
+farming_vegetableconf.props["Corn"].maxVegAutorized = 12;
 farming_vegetableconf.props["Corn"].vegetableName = "Base.Corn";
 farming_vegetableconf.props["Corn"].seedName = "SHF.Cornseed";
-farming_vegetableconf.props["Corn"].seedPerVeg = 4;
+farming_vegetableconf.props["Corn"].seedPerVeg = 2;
 
 farming_vegetableconf.props["Corn"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Corn"].minVeg = 5;
@@ -349,9 +349,9 @@ farming_vegetableconf.props["Apple"].retainOnHarvest = 3;
 
 -- Конфигурация для растения Банана (20 to 24 weeks to grow)
 farming_vegetableconf.props["Banana"] = farming_vegetableconf.props["Banana"] or {}
-farming_vegetableconf.props["Banana"].seedsRequired = 7;
-farming_vegetableconf.props["Banana"].texture = "shf_banana_07";
-farming_vegetableconf.props["Banana"].waterLvl = 45;
+farming_vegetableconf.props["Banana"].seedsRequired = 5;
+farming_vegetableconf.props["Banana"].texture = "shf_farm_01_22";
+farming_vegetableconf.props["Banana"].waterLvl = 75;
 farming_vegetableconf.props["Banana"].timeToGrow = ZombRand(103, 117);
 farming_vegetableconf.props["Banana"].minVegAutorized = 5;
 farming_vegetableconf.props["Banana"].maxVegAutorized = 8;
@@ -735,14 +735,14 @@ farming_vegetableconf.sprite["Apple"] = {
 "shf_apple_08"
 }
 farming_vegetableconf.sprite["Banana"] = {
-"shf_banana_01",
-"shf_banana_02",
-"shf_banana_03",
-"shf_banana_04",
-"shf_banana_05",
-"shf_banana_06",
-"shf_banana_07",
-"shf_banana_08"
+"shf_farm_01_16",
+"shf_farm_01_17",
+"shf_farm_01_18",
+"shf_farm_01_19",
+"shf_farm_01_20",
+"shf_farm_01_21",
+"shf_farm_01_22",
+"shf_farm_01_23"
 }
 farming_vegetableconf.sprite["BerryBlack"] = {
 "shf_berryblack_01",

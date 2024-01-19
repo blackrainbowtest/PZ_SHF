@@ -976,5 +976,21 @@ module SFZ
                 Category:Cooking,
                 AnimNode:Disassemble,
             }
+        
+        /* создание попкорна */
+            recipe Make Popcorn From Corn
+            {
+                Corn=5,
+                Garbagebag/Lunchbag/Plasticbag/Tote,
 
+                Result:Popcorn,
+                Time:180.0,
+                NeedToBeLearn:false,
+                OnGiveXP:Recipe.OnGiveXP.SHFCooking3,
+                CanBeDoneFromFloor:false,
+                StopOnWalk:false,
+                Sound:GetingSeeds,
+                Category:Cooking,
+                AnimNode:Disassemble,
+            }
 }

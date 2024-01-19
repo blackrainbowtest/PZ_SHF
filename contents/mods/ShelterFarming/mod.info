@@ -1,4 +1,4 @@
-name=Shelter Farms
+name=Zomboid Farms
 poster=poster.png
 id=SHF
 icon=icon.png
@@ -9,4 +9,3 @@ pack=shf_farm
 pack=shf_farm2
 pack=shf_newTrees
 pack=shf_newVegetables
-tiledef=shf_tiledefinitions 4756
