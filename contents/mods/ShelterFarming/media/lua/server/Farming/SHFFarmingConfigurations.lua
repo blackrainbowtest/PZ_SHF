@@ -60,97 +60,6 @@ SHFFarmingConfigurations.growNewCrop = function(planting, nextGrowing, updateNbO
     return planting
 end
 
--- Cabbage
--- Need 5 seeds
--- Water lvl over 100
--- Need 4 weeks to grow (112h per phase)
-farming_vegetableconf.growSunFlower = function(planting, nextGrowing, updateNbOfGrow)
-	local nbOfGrow = planting.nbOfGrow;
-	local water = farming_vegetableconf.calcWater(planting.waterNeeded, planting.waterLvl);
-	local diseaseLvl = farming_vegetableconf.calcDisease(planting.mildewLvl);
-	if(nbOfGrow <= 0) then -- young
-		nbOfGrow = 0;
-		planting.nbOfGrow = 0;
-		planting = growNext(planting, farming_vegetableconf.getSpriteName(planting), farming_vegetableconf.getObjectName(planting), nextGrowing, farming_vegetableconf.props[planting.typeOfSeed].timeToGrow + water + diseaseLvl);
-		planting.waterNeeded = 85;
-	elseif (nbOfGrow <= 4) then -- young
-		if(water >= 0 and diseaseLvl >= 0) then
-			planting = growNext(planting, farming_vegetableconf.getSpriteName(planting), farming_vegetableconf.getObjectName(planting), nextGrowing, farming_vegetableconf.props[planting.typeOfSeed].timeToGrow + water + diseaseLvl);
-			planting.waterNeeded = farming_vegetableconf.props[planting.typeOfSeed].waterLvl;
-		else
-			badPlant(water, nil, diseaseLvl, planting, nextGrowing, updateNbOfGrow);
-		end
-	elseif (nbOfGrow == 5) then -- mature
-		if(water >= 0 and diseaseLvl >= 0) then
-			planting.nextGrowing = calcNextGrowing(nextGrowing, farming_vegetableconf.props[planting.typeOfSeed].timeToGrow + water + diseaseLvl);
-			planting:setObjectName(farming_vegetableconf.getObjectName(planting))
-			planting:setSpriteName(farming_vegetableconf.getSpriteName(planting))
-			planting.hasVegetable = true;
-		else
-			badPlant(water, nil, diseaseLvl, planting, nextGrowing, updateNbOfGrow);
-		end
-	elseif (nbOfGrow == 6) then -- mature with seed
-		if(water >= 0 and diseaseLvl >= 0) then
-			planting.nextGrowing = calcNextGrowing(nextGrowing, 48);
-			planting:setObjectName(farming_vegetableconf.getObjectName(planting))
-			planting:setSpriteName(farming_vegetableconf.getSpriteName(planting))
-			planting.hasVegetable = true;
-			planting.hasSeed = true;
-		else
-			badPlant(water, nil, diseaseLvl, planting, nextGrowing, updateNbOfGrow);
-		end
-	elseif (planting.state ~= "rotten") then -- rotten
-		planting:rottenThis()
-	end
-	return planting;
-end
-
-
--- Cabbage
--- Need 5 seeds
--- Water lvl over 100
--- Need 4 weeks to grow (112h per phase)
-farming_vegetableconf.growWheat = function(planting, nextGrowing, updateNbOfGrow)
-	local nbOfGrow = planting.nbOfGrow;
-	local water = farming_vegetableconf.calcWater(planting.waterNeeded, planting.waterLvl);
-	local diseaseLvl = farming_vegetableconf.calcDisease(planting.mildewLvl);
-	if(nbOfGrow <= 0) then -- young
-		nbOfGrow = 0;
-		planting.nbOfGrow = 0;
-		planting = growNext(planting, farming_vegetableconf.getSpriteName(planting), farming_vegetableconf.getObjectName(planting), nextGrowing, farming_vegetableconf.props[planting.typeOfSeed].timeToGrow + water + diseaseLvl);
-		planting.waterNeeded = 100;
-	elseif (nbOfGrow <= 4) then -- young
-		if(water >= 0 and diseaseLvl >= 0) then
-			planting = growNext(planting, farming_vegetableconf.getSpriteName(planting), farming_vegetableconf.getObjectName(planting), nextGrowing, farming_vegetableconf.props[planting.typeOfSeed].timeToGrow + water + diseaseLvl);
-			planting.waterNeeded = farming_vegetableconf.props[planting.typeOfSeed].waterLvl;
-		else
-			badPlant(water, nil, diseaseLvl, planting, nextGrowing, updateNbOfGrow);
-		end
-	elseif (nbOfGrow == 5) then -- mature
-		if(water >= 0 and diseaseLvl >= 0) then
-			planting.nextGrowing = calcNextGrowing(nextGrowing, farming_vegetableconf.props[planting.typeOfSeed].timeToGrow + water + diseaseLvl);
-			planting:setObjectName(farming_vegetableconf.getObjectName(planting))
-			planting:setSpriteName(farming_vegetableconf.getSpriteName(planting))
-			planting.hasVegetable = true;
-		else
-			badPlant(water, nil, diseaseLvl, planting, nextGrowing, updateNbOfGrow);
-		end
-	elseif (nbOfGrow == 6) then -- mature with seed
-		if(water >= 0 and diseaseLvl >= 0) then
-			planting.nextGrowing = calcNextGrowing(nextGrowing, 48);
-			planting:setObjectName(farming_vegetableconf.getObjectName(planting))
-			planting:setSpriteName(farming_vegetableconf.getSpriteName(planting))
-			planting.hasVegetable = true;
-			planting.hasSeed = true;
-		else
-			badPlant(water, nil, diseaseLvl, planting, nextGrowing, updateNbOfGrow);
-		end
-	elseif (planting.state ~= "rotten") then -- rotten
-		planting:rottenThis()
-	end
-	return planting;
-end
-
 -- Иконки для всех растений
 farming_vegetableconf.icons["Avocado"] = "media/textures/WorldItems/Vegetable/item_Avocado.png"
 farming_vegetableconf.icons["Pepper"] = "media/textures/WorldItems/Vegetable/item_BellPepper.png"
@@ -357,7 +266,7 @@ farming_vegetableconf.props["Banana"].minVegAutorized = 5;
 farming_vegetableconf.props["Banana"].maxVegAutorized = 8;
 farming_vegetableconf.props["Banana"].vegetableName = "Base.Banana";
 farming_vegetableconf.props["Banana"].seedName = "SHF.Bananaseed";
-farming_vegetableconf.props["Banana"].seedPerVeg = 4;
+farming_vegetableconf.props["Banana"].seedPerVeg = 2;
 
 farming_vegetableconf.props["Banana"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Banana"].minVeg = 4;
@@ -374,7 +283,7 @@ farming_vegetableconf.props["BerryBlack"].minVegAutorized = 9;
 farming_vegetableconf.props["BerryBlack"].maxVegAutorized = 16;
 farming_vegetableconf.props["BerryBlack"].vegetableName = "Base.BerryBlack";
 farming_vegetableconf.props["BerryBlack"].seedName = "SHF.BerryBlackseed";
-farming_vegetableconf.props["BerryBlack"].seedPerVeg = 2;
+farming_vegetableconf.props["BerryBlack"].seedPerVeg = 1;
 
 farming_vegetableconf.props["BerryBlack"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["BerryBlack"].minVeg = 8;
@@ -391,7 +300,7 @@ farming_vegetableconf.props["BerryBlue"].minVegAutorized = 9;
 farming_vegetableconf.props["BerryBlue"].maxVegAutorized = 16;
 farming_vegetableconf.props["BerryBlue"].vegetableName = "Base.BerryBlue";
 farming_vegetableconf.props["BerryBlue"].seedName = "SHF.BerryBlueseed";
-farming_vegetableconf.props["BerryBlue"].seedPerVeg = 2;
+farming_vegetableconf.props["BerryBlue"].seedPerVeg = 1;
 
 farming_vegetableconf.props["BerryBlue"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["BerryBlue"].minVeg = 8;
@@ -408,7 +317,7 @@ farming_vegetableconf.props["Cherry"].minVegAutorized = 8;
 farming_vegetableconf.props["Cherry"].maxVegAutorized = 14;
 farming_vegetableconf.props["Cherry"].vegetableName = "Base.Cherry";
 farming_vegetableconf.props["Cherry"].seedName = "SHF.Cherryseed";
-farming_vegetableconf.props["Cherry"].seedPerVeg = 4;
+farming_vegetableconf.props["Cherry"].seedPerVeg = 1;
 
 farming_vegetableconf.props["Cherry"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Cherry"].minVeg = 5;
@@ -425,7 +334,7 @@ farming_vegetableconf.props["Grapefruit"].minVegAutorized = 7;
 farming_vegetableconf.props["Grapefruit"].maxVegAutorized = 12;
 farming_vegetableconf.props["Grapefruit"].vegetableName = "Base.Grapefruit";
 farming_vegetableconf.props["Grapefruit"].seedName = "SHF.Grapefruitseed";
-farming_vegetableconf.props["Grapefruit"].seedPerVeg = 3;
+farming_vegetableconf.props["Grapefruit"].seedPerVeg = 2;
 
 farming_vegetableconf.props["Grapefruit"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Grapefruit"].minVeg = 2;
@@ -442,7 +351,7 @@ farming_vegetableconf.props["Grapes"].minVegAutorized = 6;
 farming_vegetableconf.props["Grapes"].maxVegAutorized = 10;
 farming_vegetableconf.props["Grapes"].vegetableName = "Base.Grapes";
 farming_vegetableconf.props["Grapes"].seedName = "SHF.Grapesseed";
-farming_vegetableconf.props["Grapes"].seedPerVeg = 5;
+farming_vegetableconf.props["Grapes"].seedPerVeg = 2;
 
 farming_vegetableconf.props["Grapes"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Grapes"].minVeg = 3;
@@ -459,7 +368,7 @@ farming_vegetableconf.props["Lemon"].minVegAutorized = 8;
 farming_vegetableconf.props["Lemon"].maxVegAutorized = 14;
 farming_vegetableconf.props["Lemon"].vegetableName = "Base.Lemon";
 farming_vegetableconf.props["Lemon"].seedName = "SHF.Lemonseed";
-farming_vegetableconf.props["Lemon"].seedPerVeg = 3;
+farming_vegetableconf.props["Lemon"].seedPerVeg = 1;
 
 farming_vegetableconf.props["Lemon"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Lemon"].minVeg = 5;
@@ -476,7 +385,7 @@ farming_vegetableconf.props["Lime"].minVegAutorized = 8;
 farming_vegetableconf.props["Lime"].maxVegAutorized = 14;
 farming_vegetableconf.props["Lime"].vegetableName = "Base.Lime";
 farming_vegetableconf.props["Lime"].seedName = "SHF.Limeseed";
-farming_vegetableconf.props["Lime"].seedPerVeg = 3;
+farming_vegetableconf.props["Lime"].seedPerVeg = 1;
 
 farming_vegetableconf.props["Lime"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Lime"].minVeg = 5;
@@ -510,7 +419,7 @@ farming_vegetableconf.props["Orange"].minVegAutorized = 6;
 farming_vegetableconf.props["Orange"].maxVegAutorized = 10;
 farming_vegetableconf.props["Orange"].vegetableName = "Base.Orange";
 farming_vegetableconf.props["Orange"].seedName = "SHF.Orangeseed";
-farming_vegetableconf.props["Orange"].seedPerVeg = 3;
+farming_vegetableconf.props["Orange"].seedPerVeg = 2;
 
 farming_vegetableconf.props["Orange"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Orange"].minVeg = 4;
@@ -548,8 +457,8 @@ farming_vegetableconf.props["Pear"].seedName = "SHF.Pearseed";
 farming_vegetableconf.props["Pear"].seedPerVeg = 2;
 
 farming_vegetableconf.props["Pear"].growCode = "SHFFarmingConfigurations.growNewCrop";
-farming_vegetableconf.props["Pear"].minVeg = 5;
-farming_vegetableconf.props["Pear"].maxVeg = 7;
+farming_vegetableconf.props["Pear"].minVeg = 3;
+farming_vegetableconf.props["Pear"].maxVeg = 5;
 farming_vegetableconf.props["Pear"].retainOnHarvest = 3;
 
 -- Конфигурация для растения ананаса (4 to 8 weeks to grow)
@@ -615,13 +524,14 @@ farming_vegetableconf.props["SunFlower"].vegetableName = "SHF.SunFlower";
 farming_vegetableconf.props["SunFlower"].seedName = "Base.SunflowerSeeds";
 farming_vegetableconf.props["SunFlower"].seedPerVeg = 1;
 
+farming_vegetableconf.props["CoffeeBeans"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["SunFlower"].minVeg = 5;
 farming_vegetableconf.props["SunFlower"].maxVeg = 7;
 
 -- Конфигурация для растения пшеница (20 to 24 weeks to grow)
 farming_vegetableconf.props["Wheat"] = farming_vegetableconf.props["Wheat"] or {}
 farming_vegetableconf.props["Wheat"].seedsRequired = 5;
-farming_vegetableconf.props["Wheat"].texture = "shf_wheat_07";
+farming_vegetableconf.props["Wheat"].texture = "shf_farm_01_6";
 farming_vegetableconf.props["Wheat"].waterLvl = 100;
 farming_vegetableconf.props["Wheat"].timeToGrow = ZombRand(103, 117);
 farming_vegetableconf.props["Wheat"].minVegAutorized = 5;
@@ -630,6 +540,7 @@ farming_vegetableconf.props["Wheat"].vegetableName = "SHF.Wheat";
 farming_vegetableconf.props["Wheat"].seedName = "SHF.WheatGrain";
 farming_vegetableconf.props["Wheat"].seedPerVeg = 1;
 
+farming_vegetableconf.props["CoffeeBeans"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Wheat"].minVeg = 5;
 farming_vegetableconf.props["Wheat"].maxVeg = 7;
 

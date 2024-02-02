@@ -160,7 +160,7 @@ local suburbsDistribution = {
     }
 }
 
-local proceduralDistributions = {
+local proceduralDistribution = {
     list = {
         ArmyStorageMedical = {
             items = {
@@ -422,7 +422,7 @@ for location, data in pairs(suburbsDistribution.all) do
     end
 end
 
-for location, data in pairs(proceduralDistributions.list) do
+for location, data in pairs(proceduralDistribution.list) do
     for _, value in ipairs(data.items) do
         table.insert(ProceduralDistributions['list'][location].items, value);
     end
