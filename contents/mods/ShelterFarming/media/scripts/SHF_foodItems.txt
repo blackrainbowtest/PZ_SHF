@@ -585,6 +585,17 @@ module SHF {
                 SurvivalGear                    = TRUE,
                 WorldStaticModel                = WheatSeedBag_Ground,
             }
+        
+        /* пачка семян подсолнуха */
+            item SunFlowerBagSeed{
+                DisplayCategory                 = Gardening,
+                Type                            = Normal,
+                DisplayName                     = SunFlower Seeds Packet,
+                Icon                            = SHF_Bag_SunFlowerSeedBag,
+                Weight                          = 0.1,
+                SurvivalGear                    = TRUE,
+                WorldStaticModel                = SunFlowerSeedBag_Ground,
+            }
 
 /*___________________ПРЕДМЕТЫ: НОВЫЕ ХЗ ОБЕКТЫ___________________*/
 

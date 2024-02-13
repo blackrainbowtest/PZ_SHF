@@ -32,6 +32,7 @@ Recipes_UA {
         Recipe_Open_Packet_of_Tea_Seeds             = "Відкрити пачку з насінням чаю",
         Recipe_Open_Packet_of_Coffee_Seeds          = "Відкрити пачку з насінням кави",
 		Recipe_Open_Packet_of_Wheat_Seeds           = "Відкрити пачку з насінням пшениці",
+		Recipe_Open_Packet_of_SunFlower_Seeds       = "Відкрити пачку з насінням соняшника",
 
 
 /*___________________РЕЦЕПТИ_ДЛЯ_ЗАКРИТТЯ_ПАЧОК___________________*/
@@ -67,6 +68,7 @@ Recipes_UA {
         Recipe_Put_Tea_Seeds_in_Packet              = "Покласти насіння чаю в пачку",
         Recipe_Put_Coffee_Seeds_in_Packet           = "Покласти насіння кави в пачку",
 		Recipe_Put_Wheat_Seeds_in_Packet            = "Покласти насіння пшениці в пачку",
+		Recipe_Put_SunFlower_Seeds_in_Packet        = "Покласти насіння соняшнику в пачку",
 
 /*___________________РЕЦЕПТИ_ДЛЯ_ОТРИМАННЯ_НАСІННЯ__________________*/
 

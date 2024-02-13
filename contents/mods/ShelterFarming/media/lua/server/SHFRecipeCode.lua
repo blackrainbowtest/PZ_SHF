@@ -29,36 +29,53 @@ function Recipe.OnGiveXP.SHFTest10(recipe, ingredients, result, player)
 		
 		-- crafting skills
 		player:getXp():AddXP(Perks.Woodwork, xp);
-		player:getXp():AddXP(Perks.Cooking, xp);
+		player:getXp():AddXP(Perks.Cooking, xp * 4);
 		player:getXp():AddXP(Perks.Farming, xp);
-		player:getXp():AddXP(Perks.Doctor, xp);
+		player:getXp():AddXP(Perks.Doctor, xp * 10);
 		player:getXp():AddXP(Perks.Electricity, xp);
 		player:getXp():AddXP(Perks.MetalWelding, xp);
 		player:getXp():AddXP(Perks.Mechanics, xp);
-		player:getXp():AddXP(Perks.Tailoring, xp);
+		player:getXp():AddXP(Perks.Tailoring, xp * 2);
 
 		-- fight
-		player:getXp():AddXP(Perks.Axe, xp);
-		player:getXp():AddXP(Perks.Blunt, xp);
-		player:getXp():AddXP(Perks.Spear, xp);
-		player:getXp():AddXP(Perks.LongBlade, xp);
-		player:getXp():AddXP(Perks.SmallBlade, xp);
-		player:getXp():AddXP(Perks.SmallBlunt, xp);
+		player:getXp():AddXP(Perks.Axe, xp * 2);
+		player:getXp():AddXP(Perks.Blunt, xp );
+		player:getXp():AddXP(Perks.Spear, xp * 3);
+		-- player:getXp():AddXP(Perks.LongBlade, xp);
+		-- player:getXp():AddXP(Perks.SmallBlade, xp);
+		-- player:getXp():AddXP(Perks.SmallBlunt, xp);
 
 		-- weapon
-		player:getXp():AddXP(Perks.Aiming, xp);
-		player:getXp():AddXP(Perks.Reloading, xp);
+		-- player:getXp():AddXP(Perks.Aiming, xp);
+		-- player:getXp():AddXP(Perks.Reloading, xp);
 
 
-		player:getXp():AddXP(Perks.Fishing, xp);
-		player:getXp():AddXP(Perks.Trapping, xp);
-		player:getXp():AddXP(Perks.PlantScavenging, xp);
+		-- player:getXp():AddXP(Perks.Fishing, xp);
+		-- player:getXp():AddXP(Perks.Trapping, xp);
+		-- player:getXp():AddXP(Perks.PlantScavenging, xp);
 
-		player:getXp():AddXP(Perks.Sprinting, 10);
-		player:getXp():AddXP(Perks.Nimble, 15);
+		-- player:getXp():AddXP(Perks.Sprinting, 10);
+		-- player:getXp():AddXP(Perks.Nimble, 15);
 
-		player:getXp():AddXP(Perks.Maintenance, 25);
+		-- player:getXp():AddXP(Perks.Maintenance, 25);
 
 		-- player:getXp():AddXP(Perks.Blacksmith, xp);
 	end
+end
+
+-- Lifestyle: Hobbies
+function Recipe.OnGiveXP.SHFTest12(recipe, ingredients, result, player)
+	player:getXp():AddXP(Perks.Dancing, 450);
+end
+
+-- Lifestyle: Hobbies
+function Recipe.OnGiveXP.SHFTest13(recipe, ingredients, result, player)
+	player:getXp():AddXP(Perks.Dancing, 450);
+end
+
+-- aiming
+function Recipe.OnGiveXP.SHFTest14(recipe, ingredients, result, player)
+	-- weapon
+	player:getXp():AddXP(Perks.Aiming, 250);
+	player:getXp():AddXP(Perks.Reloading, 260);
 end

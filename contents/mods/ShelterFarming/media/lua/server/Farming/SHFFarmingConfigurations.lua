@@ -524,7 +524,7 @@ farming_vegetableconf.props["SunFlower"].vegetableName = "SHF.SunFlower";
 farming_vegetableconf.props["SunFlower"].seedName = "Base.SunflowerSeeds";
 farming_vegetableconf.props["SunFlower"].seedPerVeg = 1;
 
-farming_vegetableconf.props["CoffeeBeans"].growCode = "SHFFarmingConfigurations.growNewCrop";
+farming_vegetableconf.props["SunFlower"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["SunFlower"].minVeg = 5;
 farming_vegetableconf.props["SunFlower"].maxVeg = 7;
 
@@ -540,7 +540,7 @@ farming_vegetableconf.props["Wheat"].vegetableName = "SHF.Wheat";
 farming_vegetableconf.props["Wheat"].seedName = "SHF.WheatGrain";
 farming_vegetableconf.props["Wheat"].seedPerVeg = 1;
 
-farming_vegetableconf.props["CoffeeBeans"].growCode = "SHFFarmingConfigurations.growNewCrop";
+farming_vegetableconf.props["Wheat"].growCode = "SHFFarmingConfigurations.growNewCrop";
 farming_vegetableconf.props["Wheat"].minVeg = 5;
 farming_vegetableconf.props["Wheat"].maxVeg = 7;
 

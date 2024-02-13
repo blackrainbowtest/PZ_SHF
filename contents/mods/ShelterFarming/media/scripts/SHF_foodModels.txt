@@ -425,6 +425,14 @@ module SFZ
                 texture         = WorldItems/SHF_Bag_WheatSeeds_Ground,
                 scale           = 0.5,
             }
+        
+        /* пачка семян подсолнуха */
+            model SunFlowerSeedBag_Ground
+            {
+                mesh            = WorldItems/SeedPacket,
+                texture         = WorldItems/SHF_Bag_SunFlowerSeeds_Ground,
+                scale           = 0.5,
+            }
 
 /*___________________ПРЕДМЕТЫ: НОВЫЕ ПРОД.___________________*/
 

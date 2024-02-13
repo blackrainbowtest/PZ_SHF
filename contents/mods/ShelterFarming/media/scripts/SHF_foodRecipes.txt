@@ -267,7 +267,17 @@ module SFZ
             recipe Open Packet of Wheat Seeds {
                 WheatBagSeed,
         
-                Result:WheatGrain=20,
+                Result:WheatGrain=50,
+                Time:20.0,
+                Category:Farming,
+                Sound:OpenSeedPacket,
+            }
+        
+        /* пачка семян подсолнуха */
+            recipe Open Packet of SunFlower Seeds {
+                SunFlowerBagSeed,
+        
+                Result:SunflowerSeeds=50,
                 Time:20.0,
                 Category:Farming,
                 Sound:OpenSeedPacket,
@@ -532,9 +542,19 @@ module SFZ
         
         /* пачка семян пшеницы */
             recipe Put Wheat Seeds in Packet {
-                WheatGrain=20,
+                WheatGrain=50,
 
                 Result:WheatBagSeed,
+                Time:20.0,
+                Category:Farming,
+                Sound:OpenSeedPacket,
+            }
+        
+        /* пачка семян подсолнуха */
+            recipe Put SunFlower Seeds in Packet {
+                SunflowerSeeds=50,
+
+                Result:SunFlowerBagSeed,
                 Time:20.0,
                 Category:Farming,
                 Sound:OpenSeedPacket,
@@ -547,183 +567,225 @@ module SFZ
         /* семена яблоки */
             recipe Claim Apple Seeds
                 {
-                    Apple=5,
+                    Apple,
 
-                    Result:Appleseed=5,
+                    Result:Apple,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Apple,
                 }
 
         /* пачка семян банана */
             recipe Claim Banana Seeds
                 {
-                    Banana=5,
+                    Banana,
 
-                    Result:Bananaseed=5,
+                    Result:Banana,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Banana,
                 }
 
         /* семена черники */
             recipe Claim BerryBlack Seeds
                 {
-                    BerryBlack=5,
+                    BerryBlack,
 
-                    Result:BerryBlackseed=5,
+                    Result:BerryBlackseed,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_BerryBlack,
                 }
 
         /* семена смородины */
             recipe Claim BerryBlue Seeds
                 {
-                    BerryBlue=5,
+                    BerryBlue,
 
-                    Result:BerryBlueseed=5,
+                    Result:BerryBlueseed,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_BerryBlue,
                 }
 
         /* семена вишни */
             recipe Claim Cherry Seeds
                 {
-                    Cherry=5,
+                    Cherry,
 
-                    Result:Cherryseed=5,
+                    Result:Cherry,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Cherry,
                 }
 
         /* семена грейфрута */
             recipe Claim Grapefruit Seeds
                 {
-                    Grapefruit=5,
+                    Grapefruit,
 
-                    Result:Grapefruitseed=5,
+                    Result:Grapefruit,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Grapefruit,
                 }
 
         /* семена винограда */
             recipe Claim Grapes Seeds
                 {
-                    Grapes=5,
+                    Grapes,
 
-                    Result:Grapesseed=5,
+                    Result:Grapes,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Grapes,
                 }
 
         /* семена лимона */
             recipe Claim Lemon Seeds
                 {
-                    Lemon=5,
+                    Lemon,
 
-                    Result:Lemonseed=5,
+                    Result:Lemon,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Lemon,
                 }
 
         /* семена лайма */
             recipe Claim Lime Seeds
                 {
-                    Lime=5,
+                    Lime,
 
-                    Result:Limeseed=5,
+                    Result:Lime,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Lime,
                 }
 
         /* семена манго */
             recipe Claim Mango Seeds
                 {
-                    Mango=5,
+                    Mango,
 
-                    Result:Mangoseed=5,
+                    Result:Mango,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Mango,
                 }
 
         /* семена апельсина */
             recipe Claim Orange Seeds
                 {
-                    Orange=5,
+                    Orange,
 
-                    Result:Orangeseed=5,
+                    Result:Orange,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Orange,
                 }
 
         /* семена персика */
             recipe Claim Peach Seeds
                 {
-                    Peach=5,
+                    Peach,
 
-                    Result:Peachseed=5,
+                    Result:Peach,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Peach,
                 }
 
         /* семена груши */
             recipe Claim Pear Seeds
                 {
-                    Pear=5,
+                    Pear,
 
-                    Result:Pearseed=5,
+                    Result:Pear,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Pear,
                 }
 
         /* семена ананаса */
             recipe Claim Pineapple Seeds
                 {
-                    Pineapple=5,
+                    Pineapple,
 
-                    Result:Pineappleseed=5,
+                    Result:Pineapple,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Pineapple,
                 }
 
     /*___________________ТИП:  ОВОЩИ___________________*/
@@ -731,172 +793,211 @@ module SFZ
         /* семена авокадо */
             recipe Claim Avocado Seeds
                 {
-                    Avocado=5,
+                    Avocado,
 
-                    Result:Avocadoseed=5,
+                    Result:Avocado,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Avocado,
                 }
 
         /* семена кукурузы */
             recipe Claim Corn Seeds
                 {
-                    Corn=5,
+                    Corn,
 
-                    Result:Cornseed=5,
+                    Result:Corn,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Corn,
                 }
 
         /* семена баклажана */
             recipe Claim Eggplant Seeds
                 {
-                    Eggplant=5,
+                    Eggplant,
 
-                    Result:Eggplantseed=5,
+                    Result:Eggplant,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Eggplant,
                 }
 
         /* семена лука-порей */
             recipe Claim Leek Seeds
                 {
-                    Leek=5,
+                    Leek,
 
-                    Result:Leekseed=5,
+                    Result:Leek,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Leek,
                 }
 
         /* семена салата */
             recipe Claim Lettuce Seeds
                 {
-                    Lettuce=5,
+                    Lettuce,
 
-                    Result:Lettuceseed=5,
+                    Result:Lettuce,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Lettuce,
                 }
 
         /* семена лука */
             recipe Claim Onion Seeds
                 {
-                    Onion=5,
+                    Onion,
 
-                    Result:Onionseed=5,
+                    Result:Onion,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Onion,
                 }
 
         /* семена перца */
             recipe Claim Pepper Seeds
                 {
-                    Pepper=5,
+                    Pepper,
 
-                    Result:Pepperseed=5,
+                    Result:Pepper,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Pepper,
                 }
 
         /* семена арбуза */
             recipe Claim Watermelon Seeds
                 {
-                    Watermelon=5,
+                    Watermelon,
 
-                    Result:Watermelonseed=5,
+                    Result:Watermelon,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Watermelon,
                 }
                 
         /* семена кабачков */   
             recipe Claim Zucchini Seeds
                 {
-                    Zucchini=5,
+                    Zucchini,
 
-                    Result:Zucchiniseed=5,
+                    Result:Zucchini,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Zucchini,
                 }
     
     /*___________________ТИП: ХЗ___________________*/
 
-        /* пачка семян чая */
+        /* семена чая */
             recipe Claim Tea Seeds
                 {
-                    TeaLeaves=10,
+                    TeaLeaves,
 
-                    Result:Teaseed=5,
+                    Result:TeaLeaves,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Tea,
                 }
 
-        /* пачка семян кофе */
+        /* семена кофе */
             recipe Claim Coffee Seeds
                 {
-                    CoffeeBeans=10,
+                    CoffeeBeans,
 
-                    Result:Coffeeseed=5,
+                    Result:CoffeeBeans,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Coffee,
                 }
 
         /* подсолнухи */
             recipe Claim SunFlower Seeds
                 {
-                    SunFlower=1,
+                    SunFlower,
 
-                    Result:Base.SunflowerSeeds=5,
+                    Result:SunFlower,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_SunFlower,
                 }
         
         /* пшеница */
             recipe Claim Wheat Seeds
                 {
-                    Wheat=1,
+                    Wheat,
 
-                    Result:WheatGrain=7,
+                    Result:Wheat,
                     Time:150.0,
                     OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
                     Category:Farming,
                     NeedToBeLearn:False,
                     Sound:GetingSeeds,
+                    
+                    RemoveResultItem:true,
+                    OnCreate: Seed_Wheat,
                 }
 
 /*_________________РЕЦЕПТЫ_ДЛЯ_СОЗДАНИЯ_ПРЕДМЕТОВ_________________*/

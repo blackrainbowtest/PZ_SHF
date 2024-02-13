@@ -41,6 +41,7 @@ local suburbsDistribution = {
                 "SHF.TeaBagSeed", LootRarity.VeryRare,
                 "SHF.CoffeeBagSeed", LootRarity.VeryRare,
                 "SHF.WheatBagSeed", LootRarity.VeryRare,
+                "SHF.SunFlowerBagSeed", LootRarity.VeryRare,
             }
         },
         -- Zombie female inventory
@@ -83,6 +84,7 @@ local suburbsDistribution = {
                 "SHF.TeaBagSeed", LootRarity.Rare,
                 "SHF.CoffeeBagSeed", LootRarity.Rare,
                 "SHF.WheatBagSeed", LootRarity.Rare,
+                "SHF.SunFlowerBagSeed", LootRarity.Rare,
             }
         }
     },
@@ -125,6 +127,7 @@ local suburbsDistribution = {
             "SHF.TeaBagSeed", LootRarity.Rare,
             "SHF.CoffeeBagSeed", LootRarity.Rare,
             "SHF.WheatBagSeed", LootRarity.Rare,
+            "SHF.SunFlowerBagSeed", LootRarity.Rare,
         }
     },
     -- Сумка с семенами
@@ -156,6 +159,7 @@ local suburbsDistribution = {
             "SHF.TeaBagSeed", LootRarity.Common,
             "SHF.CoffeeBagSeed", LootRarity.Common,
             "SHF.WheatBagSeed", LootRarity.Common,
+            "SHF.SunFlowerBagSeed", LootRarity.Common,
         }
     }
 }
@@ -196,6 +200,7 @@ local proceduralDistribution = {
                 "SHF.TeaBagSeed", LootRarity.Uncommon,
                 "SHF.CoffeeBagSeed", LootRarity.Uncommon,
                 "SHF.WheatBagSeed", LootRarity.Uncommon,
+                "SHF.SunFlowerBagSeed", LootRarity.Uncommon,
             }
         },
         -- Магазин садоводства
@@ -227,6 +232,7 @@ local proceduralDistribution = {
                 "SHF.TeaBagSeed", LootRarity.Common,
                 "SHF.CoffeeBagSeed", LootRarity.Common,
                 "SHF.WheatBagSeed", LootRarity.Common,
+                "SHF.SunFlowerBagSeed", LootRarity.Common,
             }
         },
         -- Гигамаркеты садоводства
@@ -258,6 +264,7 @@ local proceduralDistribution = {
                 "SHF.TeaBagSeed", LootRarity.Common,
                 "SHF.CoffeeBagSeed", LootRarity.Common,
                 "SHF.WheatBagSeed", LootRarity.Common,
+                "SHF.SunFlowerBagSeed", LootRarity.Common,
             }
         },
         -- Усадьбы
@@ -289,6 +296,7 @@ local proceduralDistribution = {
                 "SHF.TeaBagSeed", LootRarity.Rare,
                 "SHF.CoffeeBagSeed", LootRarity.Rare,
                 "SHF.WheatBagSeed", LootRarity.Rare,
+                "SHF.SunFlowerBagSeed", LootRarity.Rare,
             }
         },
         -- Магазин инструментов
@@ -320,6 +328,7 @@ local proceduralDistribution = {
                 "SHF.TeaBagSeed", LootRarity.Uncommon,
                 "SHF.CoffeeBagSeed", LootRarity.Uncommon,
                 "SHF.WheatBagSeed", LootRarity.Uncommon,
+                "SHF.SunFlowerBagSeed", LootRarity.Uncommon,
             }
         },
         BakeryKitchenFridge = {

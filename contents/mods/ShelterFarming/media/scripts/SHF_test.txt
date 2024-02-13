@@ -28,5 +28,32 @@ module SHF {
                 StopOnWalk:false,
                 OnGiveXP:Recipe.OnGiveXP.SHFTest10,
             }
+            recipe Test Check Dance
+            {
+                TestItem,
+
+                Result:TestItem,
+                Time:20.0,
+                StopOnWalk:false,
+                OnGiveXP:Recipe.OnGiveXP.SHFTest12,
+            }
+            recipe Test Check Meditation
+            {
+                TestItem,
+
+                Result:TestItem,
+                Time:20.0,
+                StopOnWalk:false,
+                OnGiveXP:Recipe.OnGiveXP.SHFTest13,
+            }
+            recipe Test Check Aiming
+            {
+                TestItem,
+
+                Result:TestItem,
+                Time:20.0,
+                StopOnWalk:false,
+                OnGiveXP:Recipe.OnGiveXP.SHFTest14,
+            }
 
 }
