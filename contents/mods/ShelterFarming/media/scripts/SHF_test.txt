@@ -46,6 +46,15 @@ module SHF {
                 StopOnWalk:false,
                 OnGiveXP:Recipe.OnGiveXP.SHFTest13,
             }
+            recipe Test Check Music
+            {
+                TestItem,
+
+                Result:TestItem,
+                Time:20.0,
+                StopOnWalk:false,
+                OnGiveXP:Recipe.OnGiveXP.SHFTest15,
+            }
             recipe Test Check Aiming
             {
                 TestItem,
@@ -54,6 +63,15 @@ module SHF {
                 Time:20.0,
                 StopOnWalk:false,
                 OnGiveXP:Recipe.OnGiveXP.SHFTest14,
+            }
+            recipe Test Check Str
+            {
+                TestItem,
+
+                Result:TestItem,
+                Time:20.0,
+                StopOnWalk:false,
+                OnGiveXP:Recipe.OnGiveXP.SHFTest16,
             }
 
 }

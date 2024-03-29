@@ -1,0 +1,8 @@
+IGUI_UA =
+{
+	IGUI_BTSE.Farming_Group_Vegetables = "ќвоч≥",
+	IGUI_BTSE.Farming_Group_Fruits = "‘рукти",
+	IGUI_BTSE.Farming_Group_Berries = "ягоди",
+	IGUI_BTSE.Farming_Group_Cultivated = " ультурн≥ рослини",
+	IGUI_BTSE.Farming_Group_Cereal = "«лаков≥ рослини",
+}
