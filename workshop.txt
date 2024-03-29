@@ -4,6 +4,14 @@ title=Zomboid Farm mod
 description=[h1]github.[/h1]
 description=[url=https://github.com/blackrainbowtest/PZ_SHF][img]https://steamuserimages-a.akamaihd.net/ugc/2179239408539739936/BDD2C884759B7AEC99B1028F3735CE58DE84C769/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false[/img][/url]
 description=
+description=Added compatibility with the BetterSorting mod.
+description=Changed main farming function to function from 2784972075 BSE.
+description=All vegetables/fruits/berries are grouped.
+description=It is planned to soon add the ability to grow Jalapeno Pepper, Habanero Pepper, Edamame, Daikon, Pickles, Ginger (Pepper Jalapeno, Pepper Habanero, Edamame, Daikon, Pickles, Ginger)
+description=Plans to add Kraft Dried Black Beans, Dried Chickpeas, Dried Kidney Beans, Dried Lentils, Dried Split Peas, Dried White Beans (Dried Black Beans, Dried Chick Peas, Dried Kidney Beans, Dried Lentils, Dried Split Peas, Dried White Beans)
+description=Most likely, new types of vegetation will also be added for these crafts.
+description=It is planned to add the ability to grow Wild plants and Wild herbs
+description=
 description=[h1]My other mods.[/h1]
 description=https://steamcommunity.com/sharedfiles/filedetails/?id=3073622069
 description=
