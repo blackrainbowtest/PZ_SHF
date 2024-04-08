@@ -29,4 +29,6 @@ Farming_UA = {
    Farming_CoffeeBeans = "Кавові зерна",
    Farming_SunFlower = "Соняшник",
    Farming_Wheat       = "Пшениця",
+
+   Farming_Peanuts     = "Арахис",
 }

@@ -131,3 +131,8 @@ function Seed_Wheat(items, result, player)
     local seed = ZombRand(3, 6)
     player:getInventory():AddItems("SHF.WheatGrain", seed);
 end
+
+function Seed_Peanut(items, result, player)
+    local seed = ZombRand(3, 6)
+    player:getInventory():AddItems("SHF.PeanutSeeds", seed);
+end

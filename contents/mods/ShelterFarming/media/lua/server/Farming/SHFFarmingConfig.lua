@@ -1075,7 +1075,7 @@ BTSE.Farming:addNewCrop({
 BTSE.Farming:addNewCrop({
     name = "SunFlower",
     group = "IGUI_BTSE.Farming_Group_Cereal",
-    seedItemType = "SHF.SunflowerSeeds",
+    seedItemType = "Base.SunflowerSeeds",
     seedsPerPlot = 7,
     seedsPerVegetable = 2,
     waterOptimum = 85,
@@ -1134,4 +1134,37 @@ BTSE.Farming:addNewCrop({
     drySprite = "shf_farm_01_7",
     destroyedSprite = "shf_farm_01_7",
     rottenSprite = "shf_farm_01_7",
+});
+
+-- Орехи
+BTSE.Farming:addNewCrop({
+    name = "Peanuts",
+    group = "IGUI_BTSE.Farming_Group_Nuts",
+    seedItemType = "SHF.Peanutseed",
+    seedsPerPlot = 5,
+    seedsPerVegetable = 1,
+    waterOptimum = 85,
+    waterMaximum = 100,
+    harvestItemType = "Base.Peanuts",
+    normalHarvestMin = 5,
+    normalHarvestMax = 7,
+    abundantHarvestMin = 7,
+    abundantHarvestMax = 9,
+    growTimeHours = 90,
+    rotTimeHours = 90,
+    growSprites = {
+        "shf_farm_01_24", 
+        "shf_farm_01_25", 
+        "shf_farm_01_26", 
+        "shf_farm_01_27", 
+        "shf_farm_01_28",
+        "shf_farm_01_29", 
+        "shf_farm_01_30", 
+        "shf_farm_01_31"
+    },
+    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Peanut.png",
+    tooltipSprite = "shf_farm_01_30",
+    drySprite = "shf_farm_01_31",
+    destroyedSprite = "shf_farm_01_31",
+    rottenSprite = "shf_farm_01_31",
 });

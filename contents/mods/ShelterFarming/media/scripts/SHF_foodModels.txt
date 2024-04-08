@@ -211,6 +211,14 @@ module SFZ
                 texture         = WorldItems/SHF_Seed_CoffeeSeeds_Ground,
                 scale           = 0.5,
             }
+    /*___________________ТИП: ОРЕХИ___________________*/
+        /* семена кофе */
+            model PeanutSeeds_Ground
+            {
+                mesh            = WorldItems/Seeds,
+                texture         = WorldItems/SHF_Seed_PeanutSeeds_Ground,
+                scale           = 0.5,
+            }
 
 /*___________________ПРЕДМЕТЫ: ПАЧКИ СЕМЯН___________________*/
 
@@ -431,6 +439,14 @@ module SFZ
             {
                 mesh            = WorldItems/SeedPacket,
                 texture         = WorldItems/SHF_Bag_SunFlowerSeeds_Ground,
+                scale           = 0.5,
+            }
+    /*___________________ТИП: ОРЕХИ___________________*/
+        /* пачка семян орахиса */
+            model PeanutSeedBag_Ground
+            {
+                mesh            = WorldItems/SeedPacket,
+                texture         = WorldItems/SHF_Bag_PeanutSeedBag_Ground,
                 scale           = 0.5,
             }
 

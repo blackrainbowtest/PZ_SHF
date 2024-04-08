@@ -5,4 +5,5 @@ IGUI_EN =
 	IGUI_BTSE.Farming_Group_Berries = "Berries",
 	IGUI_BTSE.Farming_Group_Cultivated = "Cultivated plants",
 	IGUI_BTSE.Farming_Group_Cereal = "Cereal plants",
+	IGUI_BTSE.Farming_Group_Nuts = "Nuts",
 }

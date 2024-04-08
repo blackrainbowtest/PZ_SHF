@@ -19,6 +19,162 @@ module SHF {
                 WorldStaticModel                = CoffeeBeans_Ground,
             }
     /* проверка можно ли получать одновременно 2 опыта (предположим при готовке бензина получить автомеханику и медецину) */
+            
+            recipe Test SHF_Woodwork
+            {
+                TestItem,
+
+                Result:TestItem,
+                Time:20.0,
+                StopOnWalk:false,
+                OnGiveXP:Recipe.OnGiveXP.SHF_Woodwork,
+            }
+            recipe Test SHF_Cooking
+            {
+                TestItem,
+
+                Result:TestItem,
+                Time:20.0,
+                StopOnWalk:false,
+                OnGiveXP:Recipe.OnGiveXP.SHF_Cooking,
+            }
+            recipe Test SHF_Farming
+            {
+                TestItem,
+
+                Result:TestItem,
+                Time:20.0,
+                StopOnWalk:false,
+                OnGiveXP:Recipe.OnGiveXP.SHF_Farming,
+            }
+            recipe Test SHF_Doctor
+            {
+                TestItem,
+
+                Result:TestItem,
+                Time:20.0,
+                StopOnWalk:false,
+                OnGiveXP:Recipe.OnGiveXP.SHF_Doctor,
+            }
+            recipe Test SHF_Electricity
+            {
+                TestItem,
+
+                Result:TestItem,
+                Time:20.0,
+                StopOnWalk:false,
+                OnGiveXP:Recipe.OnGiveXP.SHF_Electricity,
+            }
+            recipe Test SHF_MetalWelding
+            {
+                TestItem,
+
+                Result:TestItem,
+                Time:20.0,
+                StopOnWalk:false,
+                OnGiveXP:Recipe.OnGiveXP.SHF_MetalWelding,
+            }
+            recipe Test SHF_Mechanics
+            {
+                TestItem,
+
+                Result:TestItem,
+                Time:20.0,
+                StopOnWalk:false,
+                OnGiveXP:Recipe.OnGiveXP.SHF_Mechanics,
+            }
+            recipe Test SHF_Tailoring
+            {
+                TestItem,
+
+                Result:TestItem,
+                Time:20.0,
+                StopOnWalk:false,
+                OnGiveXP:Recipe.OnGiveXP.SHF_Tailoring,
+            }
+
+            recipe Test SHF_Aiming
+            {
+                TestItem,
+
+                Result:TestItem,
+                Time:20.0,
+                StopOnWalk:false,
+                OnGiveXP:Recipe.OnGiveXP.SHF_Aiming,
+            }
+            recipe Test SHF_Reloading
+            {
+                TestItem,
+
+                Result:TestItem,
+                Time:20.0,
+                StopOnWalk:false,
+                OnGiveXP:Recipe.OnGiveXP.SHF_Reloading,
+            }
+            recipe Test SHF_Sprinting
+            {
+                TestItem,
+
+                Result:TestItem,
+                Time:20.0,
+                StopOnWalk:false,
+                OnGiveXP:Recipe.OnGiveXP.SHF_Sprinting,
+            }
+            recipe Test SHF_Nimble
+            {
+                TestItem,
+
+                Result:TestItem,
+                Time:20.0,
+                StopOnWalk:false,
+                OnGiveXP:Recipe.OnGiveXP.SHF_Nimble,
+            }
+           
+            recipe Test Check SHF_Dancing
+            {
+                TestItem,
+
+                Result:TestItem,
+                Time:20.0,
+                StopOnWalk:false,
+                OnGiveXP:Recipe.OnGiveXP.SHF_Dancing,
+            }
+            recipe Test Check SHF_Meditation
+            {
+                TestItem,
+
+                Result:TestItem,
+                Time:20.0,
+                StopOnWalk:false,
+                OnGiveXP:Recipe.OnGiveXP.SHF_Meditation,
+            }
+            recipe Test Check SHF_Music
+            {
+                TestItem,
+
+                Result:TestItem,
+                Time:20.0,
+                StopOnWalk:false,
+                OnGiveXP:Recipe.OnGiveXP.SHF_Music,
+            }
+            recipe Test Check SHF_Strength
+            {
+                TestItem,
+
+                Result:TestItem,
+                Time:20.0,
+                StopOnWalk:false,
+                OnGiveXP:Recipe.OnGiveXP.SHF_Strength,
+            }
+            recipe Test Check SHF_Fitness
+            {
+                TestItem,
+
+                Result:TestItem,
+                Time:20.0,
+                StopOnWalk:false,
+                OnGiveXP:Recipe.OnGiveXP.SHF_Fitness,
+            }
             recipe Test Check
             {
                 TestItem,
@@ -27,51 +183,6 @@ module SHF {
                 Time:20.0,
                 StopOnWalk:false,
                 OnGiveXP:Recipe.OnGiveXP.SHFTest10,
-            }
-            recipe Test Check Dance
-            {
-                TestItem,
-
-                Result:TestItem,
-                Time:20.0,
-                StopOnWalk:false,
-                OnGiveXP:Recipe.OnGiveXP.SHFTest12,
-            }
-            recipe Test Check Meditation
-            {
-                TestItem,
-
-                Result:TestItem,
-                Time:20.0,
-                StopOnWalk:false,
-                OnGiveXP:Recipe.OnGiveXP.SHFTest13,
-            }
-            recipe Test Check Music
-            {
-                TestItem,
-
-                Result:TestItem,
-                Time:20.0,
-                StopOnWalk:false,
-                OnGiveXP:Recipe.OnGiveXP.SHFTest15,
-            }
-            recipe Test Check Aiming
-            {
-                TestItem,
-
-                Result:TestItem,
-                Time:20.0,
-                StopOnWalk:false,
-                OnGiveXP:Recipe.OnGiveXP.SHFTest14,
-            }
-            recipe Test Check Str
-            {
-                TestItem,
-
-                Result:TestItem,
-                Time:20.0,
-                StopOnWalk:false,
-                OnGiveXP:Recipe.OnGiveXP.SHFTest16,
             }
 
 }

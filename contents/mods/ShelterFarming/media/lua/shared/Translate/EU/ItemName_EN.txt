@@ -32,6 +32,8 @@ ItemName_EN = {
         ItemName_SHF.Teaseed            = "Tea seeds",
         ItemName_SHF.Coffeeseed         = "Coffee seeds",
 
+    /*___________________ТИП: ОРЕХИ_______________________*/
+        ItemName_SHF.Peanutseed         = "Peanuts seeds",
 
 /*___________________ПРЕДМЕТЫ: ПАЧКИ СЕМЯН___________________*/
 
@@ -67,6 +69,9 @@ ItemName_EN = {
         ItemName_SHF.CoffeeBagSeed      = "Coffee seed packet",
         ItemName_SHF.WheatBagSeed       = "Wheat seed packet",
         ItemName_SHF.SunFlowerBagSeed   = "Sunflower seed packet",
+    
+    /*___________________ТИП: ОРЕХИ_______________________*/
+        ItemName_SHF.PeanutBagSeed      = "Peanuts seed packet",
 
 
 /*___________________ПРЕДМЕТЫ: НОВЫЕ ХЗ ОБЕКТЫ___________________*/

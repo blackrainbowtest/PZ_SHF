@@ -22,20 +22,42 @@ function Recipe.OnGiveXP.SHFCooking10(recipe, ingredients, result, player)
 	player:getXp():AddXP(Perks.Cooking, 10);
 end
 
--- here is all skills in game ????
+-- crafting skills
+function Recipe.OnGiveXP.SHF_Woodwork(recipe, ingredients, result, player)
+	player:getXp():AddXP(Perks.Woodwork, 100);
+end
+function Recipe.OnGiveXP.SHF_Cooking(recipe, ingredients, result, player)
+	player:getXp():AddXP(Perks.Cooking, 100);
+end
+function Recipe.OnGiveXP.SHF_Farming(recipe, ingredients, result, player)
+	player:getXp():AddXP(Perks.Farming, 100);
+end
+function Recipe.OnGiveXP.SHF_Doctor(recipe, ingredients, result, player)
+	player:getXp():AddXP(Perks.Doctor, 100);
+end
+function Recipe.OnGiveXP.SHF_Electricity(recipe, ingredients, result, player)
+	player:getXp():AddXP(Perks.Electricity, 100);
+end
+function Recipe.OnGiveXP.SHF_MetalWelding(recipe, ingredients, result, player)
+	player:getXp():AddXP(Perks.MetalWelding, 100);
+end
+function Recipe.OnGiveXP.SHF_Mechanics(recipe, ingredients, result, player)
+	player:getXp():AddXP(Perks.Mechanics, 100);
+end
+function Recipe.OnGiveXP.SHF_Tailoring(recipe, ingredients, result, player)
+	player:getXp():AddXP(Perks.Tailoring, 100);
+end
+function Recipe.OnGiveXP.SHF_Sprinting(recipe, ingredients, result, player)
+	player:getXp():AddXP(Perks.Sprinting, 100);
+end
+function Recipe.OnGiveXP.SHF_Nimble(recipe, ingredients, result, player)
+	player:getXp():AddXP(Perks.Nimble, 100);
+end
+
+
 function Recipe.OnGiveXP.SHFTest10(recipe, ingredients, result, player)
 	local xp = 100
 	if true then
-		
-		-- crafting skills
-		player:getXp():AddXP(Perks.Woodwork, xp);
-		-- player:getXp():AddXP(Perks.Cooking, xp * 4);
-		-- player:getXp():AddXP(Perks.Farming, xp);
-		player:getXp():AddXP(Perks.Doctor, xp);
-		player:getXp():AddXP(Perks.Electricity, xp);
-		player:getXp():AddXP(Perks.MetalWelding, xp);
-		player:getXp():AddXP(Perks.Mechanics, xp);
-		-- player:getXp():AddXP(Perks.Tailoring, xp * 2);
 
 		-- fight
 		player:getXp():AddXP(Perks.Axe, xp * 2);
@@ -64,30 +86,32 @@ function Recipe.OnGiveXP.SHFTest10(recipe, ingredients, result, player)
 end
 
 -- Lifestyle: Hobbies
-function Recipe.OnGiveXP.SHFTest12(recipe, ingredients, result, player)
-	player:getXp():AddXP(Perks.Dancing, 450);
+function Recipe.OnGiveXP.SHF_Dancing(recipe, ingredients, result, player)
+	player:getXp():AddXP(Perks.Dancing, 100);
 end
 
 -- Lifestyle: Hobbies
-function Recipe.OnGiveXP.SHFTest13(recipe, ingredients, result, player)
-	player:getXp():AddXP(Perks.Meditation, 450);
+function Recipe.OnGiveXP.SHF_Meditation(recipe, ingredients, result, player)
+	player:getXp():AddXP(Perks.Meditation, 100);
 end
 
 -- aiming
-function Recipe.OnGiveXP.SHFTest14(recipe, ingredients, result, player)
-	-- weapon
-	player:getXp():AddXP(Perks.Aiming, 250);
-	player:getXp():AddXP(Perks.Reloading, 260);
-	MapObjectTestFarming()
+function Recipe.OnGiveXP.SHF_Aiming(recipe, ingredients, result, player)
+	player:getXp():AddXP(Perks.Aiming, 100);
+end
+function Recipe.OnGiveXP.SHF_Reloading(recipe, ingredients, result, player)
+	player:getXp():AddXP(Perks.Reloading, 100);
 end
 
 -- Lifestyle: Hobbies
-function Recipe.OnGiveXP.SHFTest15(recipe, ingredients, result, player)
-	player:getXp():AddXP(Perks.Music, 450);
+function Recipe.OnGiveXP.SHF_Music(recipe, ingredients, result, player)
+	player:getXp():AddXP(Perks.Music, 100);
 end
 
 -- str
-function Recipe.OnGiveXP.SHFTest16(recipe, ingredients, result, player)
-	player:getXp():AddXP(Perks.Strength, 3540);
-    player:getXp():AddXP(Perks.Fitness, 2540);
+function Recipe.OnGiveXP.SHF_Strength(recipe, ingredients, result, player)
+	player:getXp():AddXP(Perks.Strength, 3200);
+end
+function Recipe.OnGiveXP.SHF_Fitness(recipe, ingredients, result, player)
+    player:getXp():AddXP(Perks.Fitness, 3200);
 end
