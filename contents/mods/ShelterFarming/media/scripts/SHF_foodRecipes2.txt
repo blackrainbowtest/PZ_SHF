@@ -1,0 +1,39 @@
+module SHF 
+{
+    
+/*___________________ИМПОРТ_БАЗОВОГО_КЛАССА___________________*/
+    imports
+    {
+        Base
+    }
+
+    recipe Open Packet of Peanut Seeds {
+        PeanutBagSeed,
+
+        Result:Peanutseed=50,
+        Time:20.0,
+        Category:Farming,
+        Sound:OpenSeedPacket,
+    }
+    recipe Put Peanut Seeds in Packet {
+        Peanutseed=50,
+
+        Result:PeanutBagSeed,
+        Time:20.0,
+        Category:Farming,
+        Sound:OpenSeedPacket,
+    }
+    recipe Claim Peanut Seeds {
+        Peanuts,
+
+        Result:Peanuts,
+        Time:150.0,
+        OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
+        Category:Farming,
+        NeedToBeLearn:False,
+        Sound:GetingSeeds,
+        
+        RemoveResultItem:true,
+        OnCreate: Seed_Peanut,
+    }
+}

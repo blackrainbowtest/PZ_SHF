@@ -5,5 +5,5 @@ IGUI_UA =
 	IGUI_BTSE.Farming_Group_Berries = "Ягоди",
 	IGUI_BTSE.Farming_Group_Cultivated = "Культурні рослини",
 	IGUI_BTSE.Farming_Group_Cereal = "Злакові рослини",
-	IGUI_BTSE.Farming_Group_Nuts = "Горіхи",
+	IGUI_BTSE.Farming_Group_Nuts = "Орехи",
 }

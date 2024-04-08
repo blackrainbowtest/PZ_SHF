@@ -1,4 +1,4 @@
-module SFZ 
+module SHF 
 {
     
 /*___________________ИМПОРТ_БАЗОВОГО_КЛАССА___________________*/
@@ -282,17 +282,6 @@ module SFZ
                 Category:Farming,
                 Sound:OpenSeedPacket,
             }
-    
-    /*___________________ТИП: ОРЕХИ___________________*/
-        /* пачка семян арахиса */
-            recipe Open Packet of Peanut Seeds {
-                PeanutBagSeed,
-        
-                Result:PeanutSeeds=50,
-                Time:20.0,
-                Category:Farming,
-                Sound:OpenSeedPacket,
-            }
 /*___________________РЕЦЕПТЫ_ДЛЯ_ЗАКРЫТИЯ_ПАЧЕК___________________*/
     
     /*___________________ТИП: ФРУКТЫ___________________*/
@@ -570,16 +559,6 @@ module SFZ
                 Sound:OpenSeedPacket,
             }
 
-    /*___________________ТИП: ОРЕХИ___________________*/
-        /* пачка семян арахиса */
-            recipe Put Peanut Seeds in Packet {
-                PeanutSeeds=50,
-
-                Result:PeanutBagSeed,
-                Time:20.0,
-                Category:Farming,
-                Sound:OpenSeedPacket,
-            }
 /*___________________РЕЦЕПТЫ_ДЛЯ_ПОЛУЧЕНИЯ_СЕМЯН__________________*/
 
     /*___________________ТИП: ФРУКТЫ___________________*/
@@ -1020,22 +999,6 @@ module SFZ
                     OnCreate: Seed_Wheat,
                 }
 
-    *___________________ТИП: ОРЕХИ___________________*/
-        /* арахис */
-            recipe Claim Peanut Seeds
-                {
-                    Peanuts,
-
-                    Result:Peanuts,
-                    Time:150.0,
-                    OnGiveXP:Recipe.OnGiveXP.SHFFarming3,
-                    Category:Farming,
-                    NeedToBeLearn:False,
-                    Sound:GetingSeeds,
-                    
-                    RemoveResultItem:true,
-                    OnCreate: Seed_Peanut,
-                }
 /*_________________РЕЦЕПТЫ_ДЛЯ_СОЗДАНИЯ_ПРЕДМЕТОВ_________________*/
     
     /*___________________ТИП: ХЗ___________________*/

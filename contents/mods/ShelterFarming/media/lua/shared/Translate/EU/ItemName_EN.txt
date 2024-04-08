@@ -69,7 +69,7 @@ ItemName_EN = {
         ItemName_SHF.CoffeeBagSeed      = "Coffee seed packet",
         ItemName_SHF.WheatBagSeed       = "Wheat seed packet",
         ItemName_SHF.SunFlowerBagSeed   = "Sunflower seed packet",
-    
+
     /*___________________ТИП: ОРЕХИ_______________________*/
         ItemName_SHF.PeanutBagSeed      = "Peanuts seed packet",
 

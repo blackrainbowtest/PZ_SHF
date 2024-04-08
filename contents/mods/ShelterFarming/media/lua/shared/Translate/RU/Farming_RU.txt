@@ -31,5 +31,4 @@ Farming_RU = {
   Farming_Wheat       = "Пшеница",
 
   Farming_Peanuts     = "Арахис",
-  
 }

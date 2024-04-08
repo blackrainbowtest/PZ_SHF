@@ -134,5 +134,5 @@ end
 
 function Seed_Peanut(items, result, player)
     local seed = ZombRand(3, 6)
-    player:getInventory():AddItems("SHF.PeanutSeeds", seed);
+    player:getInventory():AddItems("SHF.Peanutseed", seed);
 end
