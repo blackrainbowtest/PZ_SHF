@@ -5,6 +5,16 @@ require "BTSE_Farming_Server";
 -- Дебаг
 BTSE.Farming["debugMode"] = false;
 
+PlantGrowthRate = {}
+PlantGrowthRate.VeryFast = 0.24 -- 24
+PlantGrowthRate.Fast = 0.48     -- 48
+PlantGrowthRate.Moderate = 0.72 -- 72
+PlantGrowthRate.Slow = 0.96     -- 96
+PlantGrowthRate.VerySlow = 1.2  -- 120
+
+function plantGrowthTime(rate, rand)
+    return rand and (100 * rate + ZombRand(1, rand)) or (100 * rate);
+end
 -- name - Уникальное имя ["Avocado"]
 -- group - Название группы
 -- seedItemType - Тип семян
@@ -27,6 +37,7 @@ BTSE.Farming["debugMode"] = false;
 -- rottenSprite - Уведающее растение
 
 -- Овощи
+-- Морковь
 BTSE.Farming:addNewCrop({
     name = "Carrots",
     group = "IGUI_BTSE.Farming_Group_Vegetables",
@@ -40,8 +51,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 6,
     abundantHarvestMin = 6,
     abundantHarvestMax = 7,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Fast, 5),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "vegetation_farming_01_32",
         "vegetation_farming_01_33",
@@ -58,7 +69,7 @@ BTSE.Farming:addNewCrop({
     destroyedSprite = "vegetation_farming_01_13",
     rottenSprite = "vegetation_farming_01_39",
 });
-
+-- Броколи
 BTSE.Farming:addNewCrop({
     name = "Broccoli",
     group = "IGUI_BTSE.Farming_Group_Vegetables",
@@ -72,8 +83,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 4,
     abundantHarvestMin = 6,
     abundantHarvestMax = 8,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow, 3),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "vegetation_farming_01_24",
         "vegetation_farming_01_25",
@@ -90,7 +101,7 @@ BTSE.Farming:addNewCrop({
     destroyedSprite = "vegetation_farming_01_13",
     rottenSprite = "vegetation_farming_01_31",
 });
-
+-- Редис
 BTSE.Farming:addNewCrop({
     name = "Radishes",
     group = "IGUI_BTSE.Farming_Group_Vegetables",
@@ -104,8 +115,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 9,
     abundantHarvestMin = 11,
     abundantHarvestMax = 15,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Fast, 6),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "vegetation_farming_01_48",
         "vegetation_farming_01_49",
@@ -122,7 +133,7 @@ BTSE.Farming:addNewCrop({
     destroyedSprite = "vegetation_farming_01_13",
     rottenSprite = "vegetation_farming_01_55",
 });
-
+-- Помидор
 BTSE.Farming:addNewCrop({
     name = "Tomato",
     group = "IGUI_BTSE.Farming_Group_Vegetables",
@@ -136,8 +147,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 5,
     abundantHarvestMin = 6,
     abundantHarvestMax = 10,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Slow),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "vegetation_farming_01_64",
         "vegetation_farming_01_65",
@@ -154,7 +165,7 @@ BTSE.Farming:addNewCrop({
     destroyedSprite = "vegetation_farming_01_14",
     rottenSprite = "vegetation_farming_01_71",
 });
-
+-- Картошка
 BTSE.Farming:addNewCrop({
     name = "Potatoes",
     group = "IGUI_BTSE.Farming_Group_Vegetables",
@@ -168,8 +179,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 4,
     abundantHarvestMin = 5,
     abundantHarvestMax = 9,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Slow),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "vegetation_farming_01_40",
         "vegetation_farming_01_41",
@@ -186,7 +197,7 @@ BTSE.Farming:addNewCrop({
     destroyedSprite = "vegetation_farming_01_13",
     rottenSprite = "vegetation_farming_01_47",
 });
-
+-- Капустный салат
 BTSE.Farming:addNewCrop({
     name = "Cabbages",
     group = "IGUI_BTSE.Farming_Group_Vegetables",
@@ -200,8 +211,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 6,
     abundantHarvestMin = 9,
     abundantHarvestMax = 11,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Fast),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "vegetation_farming_01_16",
         "vegetation_farming_01_17",
@@ -218,46 +229,13 @@ BTSE.Farming:addNewCrop({
     destroyedSprite = "vegetation_farming_01_13",
     rottenSprite = "vegetation_farming_01_23",
 });
-
-BTSE.Farming:addNewCrop({
-    name = "Avocado",
-    group = "IGUI_BTSE.Farming_Group_Vegetables",
-    seedItemType = "SHF.Avocadoseed",
-    seedsPerPlot = 8,
-    seedsPerVegetable = 4,
-    waterOptimum = 45,
-    waterMaximum = 100,
-    harvestItemType = "Base.Avocado",
-    normalHarvestMin = 4,
-    normalHarvestMax = 5,
-    abundantHarvestMin = 6,
-    abundantHarvestMax = 7,
-    growTimeHours = 90,
-    rotTimeHours = 90,
-    growSprites = {
-        "shf_avocado_01", 
-        "shf_avocado_02", 
-        "shf_avocado_03", 
-        "shf_avocado_04",
-        "shf_avocado_05", 
-        "shf_avocado_06", 
-        "shf_avocado_07", 
-        "shf_avocado_08"
-    },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Avocado.png",
-    tooltipSprite = "shf_avocado_07",
-    drySprite = "shf_avocado_08",
-    destroyedSprite = "shf_avocado_08",
-    rottenSprite = "shf_avocado_08",
-    revertAfterHarvest = 3,
-});
-
+-- Кукуруза
 BTSE.Farming:addNewCrop({
     name = "Corn",
     group = "IGUI_BTSE.Farming_Group_Vegetables",
     seedItemType = "SHF.Cornseed",
     seedsPerPlot = 10,
-    seedsPerVegetable = 2,
+    seedsPerVegetable = 4,
     waterOptimum = 60,
     waterMaximum = 100,
     harvestItemType = "Base.Corn",
@@ -265,8 +243,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 5,
     abundantHarvestMin = 6,
     abundantHarvestMax = 7,
-    growTimeHours = 48,
-    rotTimeHours = 48,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Fast),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "vegetation_farming_01_72", 
         "vegetation_farming_01_73",
@@ -277,13 +255,13 @@ BTSE.Farming:addNewCrop({
         "vegetation_farming_01_78", 
         "vegetation_farming_01_79"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Corn.png",
+    infoPanelIcon = "Item_Corn",
     tooltipSprite = "vegetation_farming_01_78",
     drySprite = "vegetation_farming_01_79",
     destroyedSprite = "vegetation_farming_01_79",
     rottenSprite = "vegetation_farming_01_79",
 });
-
+-- Баклажан
 BTSE.Farming:addNewCrop({
     name = "Eggplant",
     group = "IGUI_BTSE.Farming_Group_Vegetables",
@@ -297,8 +275,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 5,
     abundantHarvestMin = 6,
     abundantHarvestMax = 7,
-    growTimeHours = 48,
-    rotTimeHours = 48,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.VeryFast, 8),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "egg_0", 
         "egg_1", 
@@ -309,13 +287,13 @@ BTSE.Farming:addNewCrop({
         "egg_6", 
         "egg_7"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Eggplant.png",
+    infoPanelIcon = "Item_Eggplant",
     tooltipSprite = "egg_6",
     drySprite = "egg_7",
     destroyedSprite = "egg_7",
     rottenSprite = "egg_7",
 });
-
+-- лук-порей
 BTSE.Farming:addNewCrop({
     name = "Leek",
     group = "IGUI_BTSE.Farming_Group_Vegetables",
@@ -329,8 +307,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 5,
     abundantHarvestMin = 5,
     abundantHarvestMax = 8,
-    growTimeHours = 48,
-    rotTimeHours = 48,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Fast, 4),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "leek_0", 
         "leek_1", 
@@ -341,13 +319,13 @@ BTSE.Farming:addNewCrop({
         "leek_6", 
         "leek_7"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Leek.png",
+    infoPanelIcon = "Item_Leek",
     tooltipSprite = "leek_6",
     drySprite = "leek_7",
     destroyedSprite = "leek_7",
     rottenSprite = "leek_7",
 });
-
+-- Капуста
 BTSE.Farming:addNewCrop({
     name = "Lettuce",
     group = "IGUI_BTSE.Farming_Group_Vegetables",
@@ -361,8 +339,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 5,
     abundantHarvestMin = 5,
     abundantHarvestMax = 8,
-    growTimeHours = 48,
-    rotTimeHours = 48,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.VeryFast, 3),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "vegetation_farming_01_16", 
         "vegetation_farming_01_17",
@@ -373,13 +351,13 @@ BTSE.Farming:addNewCrop({
         "vegetation_farming_01_22", 
         "vegetation_farming_01_23"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Lettuce.png",
+    infoPanelIcon = "Item_Lettuce",
     tooltipSprite = "vegetation_farming_01_22",
     drySprite = "vegetation_farming_01_23",
     destroyedSprite = "vegetation_farming_01_23",
     rottenSprite = "vegetation_farming_01_23",
 });
-
+-- Лук
 BTSE.Farming:addNewCrop({
     name = "Onion",
     group = "IGUI_BTSE.Farming_Group_Vegetables",
@@ -393,8 +371,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 5,
     abundantHarvestMin = 5,
     abundantHarvestMax = 8,
-    growTimeHours = 48,
-    rotTimeHours = 48,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Moderate, 5),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "onion_0",
         "onion_1",
@@ -405,13 +383,13 @@ BTSE.Farming:addNewCrop({
         "onion_6",
         "onion_7"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Onion.png",
+    infoPanelIcon = "Item_Onion",
     tooltipSprite = "onion_6",
     drySprite = "onion_7",
     destroyedSprite = "onion_7",
     rottenSprite = "onion_7",
 });
-
+-- Болгарский перец
 BTSE.Farming:addNewCrop({
     name = "Pepper",
     group = "IGUI_BTSE.Farming_Group_Vegetables",
@@ -425,8 +403,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 5,
     abundantHarvestMin = 6,
     abundantHarvestMax = 7,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Moderate, 5),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "pepper_0", 
         "pepper_1", 
@@ -437,13 +415,13 @@ BTSE.Farming:addNewCrop({
         "pepper_6", 
         "pepper_7"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_BellPepper.png",
+    infoPanelIcon = "Item_BellPepper",
     tooltipSprite = "pepper_6",
     drySprite = "pepper_7",
     destroyedSprite = "pepper_7",
     rottenSprite = "pepper_7",
 });
-
+-- Цуккини
 BTSE.Farming:addNewCrop({
     name = "Zucchini",
     group = "IGUI_BTSE.Farming_Group_Vegetables",
@@ -457,8 +435,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 5,
     abundantHarvestMin = 6,
     abundantHarvestMax = 7,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Slow, 6),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "zucc_0", 
         "zucc_1", 
@@ -469,7 +447,7 @@ BTSE.Farming:addNewCrop({
         "zucc_6",
         "zucc_7"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Zucchini.png",
+    infoPanelIcon = "Item_Zucchini",
     tooltipSprite = "zucc_6",
     drySprite = "zucc_7",
     destroyedSprite = "zucc_7",
@@ -477,6 +455,7 @@ BTSE.Farming:addNewCrop({
 });
 
 -- Ягоды
+-- Клюбника
 BTSE.Farming:addNewCrop({
     name = "Strawberry plant",
     group = "IGUI_BTSE.Farming_Group_Berries",
@@ -490,8 +469,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 6,
     abundantHarvestMin = 8,
     abundantHarvestMax = 14,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Moderate, 5),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "vegetation_farming_01_56",
         "vegetation_farming_01_57",
@@ -509,7 +488,7 @@ BTSE.Farming:addNewCrop({
     rottenSprite = "vegetation_farming_01_63",
     revertAfterHarvest = 3,
 });
-
+-- Черника
 BTSE.Farming:addNewCrop({
     name = "BerryBlack",
     group = "IGUI_BTSE.Farming_Group_Berries",
@@ -523,8 +502,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 9,
     abundantHarvestMin = 9,
     abundantHarvestMax = 11,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Fast, 4),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "shf_berryblack_01",
         "shf_berryblack_02",
@@ -535,13 +514,13 @@ BTSE.Farming:addNewCrop({
         "shf_berryblack_07",
         "shf_berryblack_08"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_BerryBlack.png",
+    infoPanelIcon = "Item_BerryBlack",
     tooltipSprite = "shf_berryblack_07",
     drySprite = "shf_berryblack_08",
     destroyedSprite = "shf_berryblack_08",
     rottenSprite = "shf_berryblack_08",
 });
-
+-- Смародина
 BTSE.Farming:addNewCrop({
     name = "BerryBlue",
     group = "IGUI_BTSE.Farming_Group_Berries",
@@ -555,8 +534,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 9,
     abundantHarvestMin = 9,
     abundantHarvestMax = 11,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Fast, 4),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "shf_berryblue_01", 
         "shf_berryblue_02", 
@@ -567,7 +546,7 @@ BTSE.Farming:addNewCrop({
         "shf_berryblue_07", 
         "shf_berryblue_08"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_BerryBlue.png",
+    infoPanelIcon = "Item_BerryBlue",
     tooltipSprite = "shf_berryblue_07",
     drySprite = "shf_berryblue_08",
     destroyedSprite = "shf_berryblue_08",
@@ -575,6 +554,40 @@ BTSE.Farming:addNewCrop({
 });
 
 -- Фрукты
+-- Авокадо
+BTSE.Farming:addNewCrop({
+    name = "Avocado",
+    group = "IGUI_BTSE.Farming_Group_Fruits",
+    seedItemType = "SHF.Avocadoseed",
+    seedsPerPlot = 8,
+    seedsPerVegetable = 4,
+    waterOptimum = 45,
+    waterMaximum = 100,
+    harvestItemType = "Base.Avocado",
+    normalHarvestMin = 4,
+    normalHarvestMax = 5,
+    abundantHarvestMin = 6,
+    abundantHarvestMax = 7,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Moderate, 4),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
+    growSprites = {
+        "shf_avocado_01", 
+        "shf_avocado_02", 
+        "shf_avocado_03", 
+        "shf_avocado_04",
+        "shf_avocado_05", 
+        "shf_avocado_06", 
+        "shf_avocado_07", 
+        "shf_avocado_08"
+    },
+    infoPanelIcon = "Item_Avocado",
+    tooltipSprite = "shf_avocado_07",
+    drySprite = "shf_avocado_08",
+    destroyedSprite = "shf_avocado_08",
+    rottenSprite = "shf_avocado_08",
+    revertAfterHarvest = 3,
+});
+-- Арбуз
 BTSE.Farming:addNewCrop({
     name = "Watermelon",
     group = "IGUI_BTSE.Farming_Group_Fruits",
@@ -588,8 +601,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 5,
     abundantHarvestMin = 6,
     abundantHarvestMax = 7,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow, 4),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "melon_0",
         "melon_1",
@@ -600,20 +613,20 @@ BTSE.Farming:addNewCrop({
         "melon_6",
         "melon_7"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Watermelon.png",
+    infoPanelIcon = "Item_Watermelon.png",
     tooltipSprite = "melon_6",
     drySprite = "melon_7",
     destroyedSprite = "melon_7",
     rottenSprite = "melon_7",
     revertAfterHarvest = 3,
 });
-
+-- Яблоко
 BTSE.Farming:addNewCrop({
     name = "Apple",
     group = "IGUI_BTSE.Farming_Group_Fruits",
     seedItemType = "SHF.Appleseed",
     seedsPerPlot = 8,
-    seedsPerVegetable = 3,
+    seedsPerVegetable = 2,
     waterOptimum = 65,
     waterMaximum = 100,
     harvestItemType = "Base.Apple",
@@ -621,8 +634,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 5,
     abundantHarvestMin = 6,
     abundantHarvestMax = 7,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Slow, 4),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "shf_apple_01",
         "shf_apple_02",
@@ -633,14 +646,14 @@ BTSE.Farming:addNewCrop({
         "shf_apple_07",
         "shf_apple_08"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Apple.png",
+    infoPanelIcon = "Item_Apple",
     tooltipSprite = "shf_apple_07",
     drySprite = "shf_apple_08",
     destroyedSprite = "shf_apple_08",
     rottenSprite = "shf_apple_08",
     revertAfterHarvest = 3,
 });
-
+-- Банан
 BTSE.Farming:addNewCrop({
     name = "Banana",
     group = "IGUI_BTSE.Farming_Group_Fruits",
@@ -654,8 +667,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 5,
     abundantHarvestMin = 6,
     abundantHarvestMax = 7,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Slow, 4),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "shf_farm_01_16",
         "shf_farm_01_17",
@@ -666,14 +679,14 @@ BTSE.Farming:addNewCrop({
         "shf_farm_01_22",
         "shf_farm_01_23"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Banana.png",
+    infoPanelIcon = "Item_Banana",
     tooltipSprite = "shf_farm_01_22",
     drySprite = "shf_farm_01_23",
     destroyedSprite = "shf_farm_01_23",
     rottenSprite = "shf_farm_01_23",
     revertAfterHarvest = 3,
 });
-
+-- Вишня
 BTSE.Farming:addNewCrop({
     name = "Cherry",
     group = "IGUI_BTSE.Farming_Group_Fruits",
@@ -687,8 +700,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 5,
     abundantHarvestMin = 6,
     abundantHarvestMax = 7,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Slow, 4),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "shf_cherry_01", 
         "shf_cherry_02", 
@@ -699,14 +712,14 @@ BTSE.Farming:addNewCrop({
         "shf_cherry_07", 
         "shf_cherry_08"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Cherry.png",
+    infoPanelIcon = "Item_Cherry",
     tooltipSprite = "shf_cherry_07",
     drySprite = "shf_cherry_08",
     destroyedSprite = "shf_cherry_08",
     rottenSprite = "shf_cherry_08",
     revertAfterHarvest = 3,
 });
-
+-- Грейфрут
 BTSE.Farming:addNewCrop({
     name = "Grapefruit",
     group = "IGUI_BTSE.Farming_Group_Fruits",
@@ -720,8 +733,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 5,
     abundantHarvestMin = 6,
     abundantHarvestMax = 7,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Slow, 4),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "shf_grapefruit_01",
         "shf_grapefruit_02",
@@ -732,14 +745,14 @@ BTSE.Farming:addNewCrop({
         "shf_grapefruit_07", 
         "shf_grapefruit_08"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Grapefruit.png",
+    infoPanelIcon = "Item_Grapefruit",
     tooltipSprite = "shf_grapefruit_07",
     drySprite = "shf_grapefruit_08",
     destroyedSprite = "shf_grapefruit_08",
     rottenSprite = "shf_grapefruit_08",
     revertAfterHarvest = 3,
 });
-
+-- Виноград
 BTSE.Farming:addNewCrop({
     name = "Grapes",
     group = "IGUI_BTSE.Farming_Group_Fruits",
@@ -753,8 +766,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 5,
     abundantHarvestMin = 5,
     abundantHarvestMax = 7,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Fast, 4),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "shf_grapes_01", 
         "shf_grapes_02", 
@@ -765,14 +778,14 @@ BTSE.Farming:addNewCrop({
         "shf_grapes_07", 
         "shf_grapes_08"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Grapes.png",
+    infoPanelIcon = "Item_Grapes",
     tooltipSprite = "shf_grapes_07",
     drySprite = "shf_grapes_08",
     destroyedSprite = "shf_grapes_08",
     rottenSprite = "shf_grapes_08",
     revertAfterHarvest = 3,
 });
-
+-- Лимон
 BTSE.Farming:addNewCrop({
     name = "Lemon",
     group = "IGUI_BTSE.Farming_Group_Fruits",
@@ -786,8 +799,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 5,
     abundantHarvestMin = 5,
     abundantHarvestMax = 7,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Slow, 4),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "shf_lemon_01", 
         "shf_lemon_02", 
@@ -798,14 +811,14 @@ BTSE.Farming:addNewCrop({
         "shf_lemon_07", 
         "shf_lemon_08"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Lemon.png",
+    infoPanelIcon = "Item_Lemon",
     tooltipSprite = "shf_lemon_07",
     drySprite = "shf_lemon_08",
     destroyedSprite = "shf_lemon_08",
     rottenSprite = "shf_lemon_08",
     revertAfterHarvest = 3,
 });
-
+-- Лайм
 BTSE.Farming:addNewCrop({
     name = "Lime",
     group = "IGUI_BTSE.Farming_Group_Fruits",
@@ -819,8 +832,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 5,
     abundantHarvestMin = 5,
     abundantHarvestMax = 7,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Slow, 4),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "shf_lime_01",
         "shf_lime_02",
@@ -831,14 +844,14 @@ BTSE.Farming:addNewCrop({
         "shf_lime_07",
         "shf_lime_08"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Lime.png",
+    infoPanelIcon = "Item_Lime",
     tooltipSprite = "shf_lime_07",
     drySprite = "shf_lime_08",
     destroyedSprite = "shf_lime_08",
     rottenSprite = "shf_lime_08",
     revertAfterHarvest = 3,
 });
-
+-- Манго
 BTSE.Farming:addNewCrop({
     name = "Mango",
     group = "IGUI_BTSE.Farming_Group_Fruits",
@@ -852,8 +865,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 8,
     abundantHarvestMin = 8,
     abundantHarvestMax = 12,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Slow, 4),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "shf_mango_01", 
         "shf_mango_02", 
@@ -864,14 +877,14 @@ BTSE.Farming:addNewCrop({
         "shf_mango_07", 
         "shf_mango_08"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Mango.png",
+    infoPanelIcon = "Item_Mango",
     tooltipSprite = "shf_mango_07",
     drySprite = "shf_mango_08",
     destroyedSprite = "shf_mango_08",
     rottenSprite = "shf_mango_08",
     revertAfterHarvest = 3,
 });
-
+-- Апельсин
 BTSE.Farming:addNewCrop({
     name = "Orange",
     group = "IGUI_BTSE.Farming_Group_Fruits",
@@ -885,8 +898,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 8,
     abundantHarvestMin = 8,
     abundantHarvestMax = 12,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Slow, 4),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "shf_orange_01", 
         "shf_orange_02", 
@@ -897,14 +910,14 @@ BTSE.Farming:addNewCrop({
         "shf_orange_07", 
         "shf_orange_08"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Orange.png",
+    infoPanelIcon = "Item_Orange",
     tooltipSprite = "shf_orange_07",
     drySprite = "shf_orange_08",
     destroyedSprite = "shf_orange_08",
     rottenSprite = "shf_orange_08",
     revertAfterHarvest = 3,
 });
-
+-- Персик
 BTSE.Farming:addNewCrop({
     name = "Peach",
     group = "IGUI_BTSE.Farming_Group_Fruits",
@@ -918,8 +931,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 5,
     abundantHarvestMin = 5,
     abundantHarvestMax = 7,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Slow, 4),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "shf_peach_01", 
         "shf_peach_02", 
@@ -930,20 +943,20 @@ BTSE.Farming:addNewCrop({
         "shf_peach_07", 
         "shf_peach_08"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Peach.png",
+    infoPanelIcon = "Item_Peach",
     tooltipSprite = "shf_peach_07",
     drySprite = "shf_peach_08",
     destroyedSprite = "shf_peach_08",
     rottenSprite = "shf_peach_08",
     revertAfterHarvest = 3,
 });
-
+-- Груша
 BTSE.Farming:addNewCrop({
     name = "Pear",
     group = "IGUI_BTSE.Farming_Group_Fruits",
     seedItemType = "SHF.Pearseed",
     seedsPerPlot = 7,
-    seedsPerVegetable = 2,
+    seedsPerVegetable = 3,
     waterOptimum = 85,
     waterMaximum = 100,
     harvestItemType = "Base.Pear",
@@ -951,8 +964,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 5,
     abundantHarvestMin = 5,
     abundantHarvestMax = 7,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Slow, 4),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "shf_pear_01", 
         "shf_pear_02", 
@@ -963,14 +976,14 @@ BTSE.Farming:addNewCrop({
         "shf_pear_07", 
         "shf_pear_08"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Pear.png",
+    infoPanelIcon = "Item_Pear",
     tooltipSprite = "shf_pear_07",
     drySprite = "shf_pear_08",
     destroyedSprite = "shf_pear_08",
     rottenSprite = "shf_pear_08",
     revertAfterHarvest = 3,
 });
-
+-- Ананас
 BTSE.Farming:addNewCrop({
     name = "Pineapple",
     group = "IGUI_BTSE.Farming_Group_Fruits",
@@ -984,8 +997,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 4,
     abundantHarvestMin = 4,
     abundantHarvestMax = 7,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow, 5),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "shf_pineapple_01", 
         "shf_pineapple_02", 
@@ -996,7 +1009,7 @@ BTSE.Farming:addNewCrop({
         "shf_pineapple_07", 
         "shf_pineapple_08"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Pineapple.png",
+    infoPanelIcon = "Item_Pineapple",
     tooltipSprite = "shf_pineapple_07",
     drySprite = "shf_pineapple_08",
     destroyedSprite = "shf_pineapple_08",
@@ -1005,6 +1018,7 @@ BTSE.Farming:addNewCrop({
 });
 
 -- Культурные растения
+-- Чай
 BTSE.Farming:addNewCrop({
     name = "TeaLeaves",
     group = "IGUI_BTSE.Farming_Group_Cultivated",
@@ -1018,8 +1032,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 6,
     abundantHarvestMin = 6,
     abundantHarvestMax = 8,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Slow, 4),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "shf_tealeaves_01", 
         "shf_tealeaves_02", 
@@ -1030,14 +1044,14 @@ BTSE.Farming:addNewCrop({
         "shf_tealeaves_07", 
         "shf_tealeaves_08"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_TeaLeaves.png",
+    infoPanelIcon = "media/textures/item_TeaLeaves.png",
     tooltipSprite = "shf_tealeaves_07",
     drySprite = "shf_tealeaves_08",
     destroyedSprite = "shf_tealeaves_08",
     rottenSprite = "shf_tealeaves_08",
     revertAfterHarvest = 3,
 });
-
+-- Кофе
 BTSE.Farming:addNewCrop({
     name = "CoffeeBeans",
     group = "IGUI_BTSE.Farming_Group_Cultivated",
@@ -1051,8 +1065,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 6,
     abundantHarvestMin = 6,
     abundantHarvestMax = 8,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Slow, 4),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "shf_coffeebeans_01", 
         "shf_coffeebeans_02", 
@@ -1063,7 +1077,7 @@ BTSE.Farming:addNewCrop({
         "shf_coffeebeans_07", 
         "shf_coffeebeans_08"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_CoffeeBeans.png",
+    infoPanelIcon = "media/textures/item_CoffeeBeans.png",
     tooltipSprite = "shf_coffeebeans_07",
     drySprite = "shf_coffeebeans_08",
     destroyedSprite = "shf_coffeebeans_08",
@@ -1072,12 +1086,13 @@ BTSE.Farming:addNewCrop({
 });
 
 -- Злаковые растения
+-- Подсолнух
 BTSE.Farming:addNewCrop({
     name = "SunFlower",
     group = "IGUI_BTSE.Farming_Group_Cereal",
     seedItemType = "Base.SunflowerSeeds",
     seedsPerPlot = 7,
-    seedsPerVegetable = 2,
+    seedsPerVegetable = 3,
     waterOptimum = 85,
     waterMaximum = 100,
     harvestItemType = "SHF.SunFlower",
@@ -1085,8 +1100,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 7,
     abundantHarvestMin = 7,
     abundantHarvestMax = 9,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Slow, 4),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "shf_farm_01_8", 
         "shf_farm_01_9", 
@@ -1097,19 +1112,19 @@ BTSE.Farming:addNewCrop({
         "shf_farm_01_14", 
         "shf_farm_01_15"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_SunFlower.png",
+    infoPanelIcon = "media/textures/item_SunFlower.png",
     tooltipSprite = "shf_farm_01_14",
     drySprite = "shf_farm_01_15",
     destroyedSprite = "shf_farm_01_15",
     rottenSprite = "shf_farm_01_15",
 });
-
+-- Пшеница
 BTSE.Farming:addNewCrop({
     name = "Wheat",
     group = "IGUI_BTSE.Farming_Group_Cereal",
     seedItemType = "SHF.WheatGrain",
     seedsPerPlot = 5,
-    seedsPerVegetable = 1,
+    seedsPerVegetable = 3,
     waterOptimum = 85,
     waterMaximum = 100,
     harvestItemType = "SHF.Wheat",
@@ -1117,8 +1132,8 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 7,
     abundantHarvestMin = 7,
     abundantHarvestMax = 9,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Slow, 4),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
         "shf_farm_01_0", 
         "shf_farm_01_1", 
@@ -1129,7 +1144,7 @@ BTSE.Farming:addNewCrop({
         "shf_farm_01_6", 
         "shf_farm_01_7"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Wheat.png",
+    infoPanelIcon = "media/textures/item_Wheat.png",
     tooltipSprite = "shf_farm_01_6",
     drySprite = "shf_farm_01_7",
     destroyedSprite = "shf_farm_01_7",
@@ -1137,6 +1152,7 @@ BTSE.Farming:addNewCrop({
 });
 
 -- Орехи
+-- Арахис
 BTSE.Farming:addNewCrop({
     name = "Peanuts",
     group = "IGUI_BTSE.Farming_Group_Nuts",
@@ -1150,21 +1166,21 @@ BTSE.Farming:addNewCrop({
     normalHarvestMax = 7,
     abundantHarvestMin = 7,
     abundantHarvestMax = 9,
-    growTimeHours = 90,
-    rotTimeHours = 90,
+    growTimeHours = plantGrowthTime(PlantGrowthRate.Slow, 4),
+    rotTimeHours = plantGrowthTime(PlantGrowthRate.VerySlow),
     growSprites = {
-        "shf_farm_01_24", 
-        "shf_farm_01_25", 
-        "shf_farm_01_26", 
-        "shf_farm_01_27", 
-        "shf_farm_01_28",
-        "shf_farm_01_29", 
-        "shf_farm_01_30", 
-        "shf_farm_01_31"
+        "vegetation_farming_01_56",
+        "vegetation_farming_01_57",
+        "vegetation_farming_01_58",
+        "vegetation_farming_01_59",
+        "vegetation_farming_01_60",
+        "vegetation_farming_01_61",
+        "vegetation_farming_01_62",
+        "vegetation_farming_01_63"
     },
-    infoPanelIcon = "media/textures/WorldItems/Vegetable/item_Peanut.png",
-    tooltipSprite = "shf_farm_01_30",
-    drySprite = "shf_farm_01_31",
-    destroyedSprite = "shf_farm_01_31",
-    rottenSprite = "shf_farm_01_31",
+    infoPanelIcon = "Item_Peanut",
+    tooltipSprite = "vegetation_farming_01_62",
+    drySprite = "vegetation_farming_01_63",
+    destroyedSprite = "vegetation_farming_01_13",
+    rottenSprite = "vegetation_farming_01_63",
 });

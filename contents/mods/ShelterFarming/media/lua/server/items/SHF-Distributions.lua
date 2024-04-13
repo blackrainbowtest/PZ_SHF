@@ -37,7 +37,8 @@ function getItems(rarity)
         {"SHF.TeaBagSeed", rarity},
         {"SHF.CoffeeBagSeed", rarity},
         {"SHF.WheatBagSeed", rarity},
-        {"SHF.SunFlowerBagSeed", rarity}
+        {"SHF.SunFlowerBagSeed", rarity},
+        {"SHF.PeanutBagSeed", rarity},
     }
     return items
 end
