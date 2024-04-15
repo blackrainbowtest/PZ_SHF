@@ -235,7 +235,7 @@ BTSE.Farming:addNewCrop({
     group = "IGUI_BTSE.Farming_Group_Vegetables",
     seedItemType = "SHF.Cornseed",
     seedsPerPlot = 10,
-    seedsPerVegetable = 4,
+    seedsPerVegetable = 5,
     waterOptimum = 60,
     waterMaximum = 100,
     harvestItemType = "Base.Corn",
