@@ -15,7 +15,7 @@ Balanced amount of harvest/seed
 
 
 ### 🏴 Used in the project:
-[![Lua](https://img.shields.io/badge/lua-00F.svg?&style=for-the-badge&logo=lua&logoColor=FFF)](https://www.lua.org/)
+[![Lua](https://img.shields.io/badge/lua-2C2D72.svg?&style=for-the-badge&logo=lua&logoColor=FFF)](https://www.lua.org/)
 
 
 ### ♻ Used packages:
