@@ -14,7 +14,7 @@ Balanced amount of harvest/seed
 [![Visual Studio Code](https://img.shields.io/badge/vs%20code-007ACC.svg?&style=for-the-badge&logo=visual-studio-code&logoColor=fff)](https://code.visualstudio.com/)
 
 
-### 🏴 Used in the project:
+### 🏴 Used in the project: 
 [![Lua](https://img.shields.io/badge/lua-2C2D72.svg?&style=for-the-badge&logo=lua&logoColor=FFF)](https://www.lua.org/)
 
 
