@@ -1,4 +1,5 @@
-### Project Zomboid Shelter Farm Mod
+## Project Zomboid Shelter Farm Mod
+
 
 
 ### 💫 Project Description:
@@ -14,7 +15,7 @@ Balanced amount of harvest/seed
 [![Visual Studio Code](https://img.shields.io/badge/vs%20code-007ACC.svg?&style=for-the-badge&logo=visual-studio-code&logoColor=fff)](https://code.visualstudio.com/)
 
 
-### 🏴 Used in the project:
+### 🏴 Used in the project: 
 [![Lua](https://img.shields.io/badge/lua-2C2D72.svg?&style=for-the-badge&logo=lua&logoColor=FFF)](https://www.lua.org/)
 
 
@@ -37,10 +38,10 @@ Balanced amount of harvest/seed
 Please adhere to the project's general coding guidelines and style. If you have any questions or concerns, feel free to ask for assistance.
 
 ### 📝 License:
-This project is licensed under the [MIT License](https://github.com/blackrainbowtest/StationProject2_aram_arakelyan/blob/main/LICENSE).
+This project is licensed under the [MIT License](https://github.com/blackrainbowtest/blackrainbowtest/blob/main/LICENSE).
 
 ### 📧 Contact:
 If you have any questions or suggestions, don't hesitate to [get in touch with me](https://github.com/blackrainbowtest).
 
 
-### 💖💙🧡 Thank you for your interest in the project!
+### 💖💙🧡 Thank you for your interest in the project!!!
